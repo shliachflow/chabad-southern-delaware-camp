@@ -1,0 +1,70 @@
+{
+  "hero": {
+    "eyebrow": "Chabad of Southern Delaware · Summer 2025",
+    "headline_1": "Splash.",
+    "headline_2": "Create.",
+    "headline_3": "Celebrate.",
+    "subtitle": "One incredible week of hands-on kosher cooking, baking, beach-town adventures, Jewish pride, and the best summer energy for kids ages 3–12.",
+    "fact_1_value": "Aug 17–21",
+    "fact_1_label": "One week only",
+    "fact_2_value": "9am–3pm",
+    "fact_2_label": "Daily hours",
+    "fact_3_value": "$300",
+    "fact_3_label": "Per child",
+    "fact_4_value": "Southern DE",
+    "fact_4_label": "Shore country"
+  },
+  "sessions": {
+    "session_start": "Aug 17, 2025",
+    "session_end": "Aug 21, 2025",
+    "weekly_price": "$300",
+    "care_price": "+$75"
+  },
+  "photos": {
+    "eyebrow": "Latest From Camp",
+    "headline": "Camp photos",
+    "headline_emphasis": "coming soon.",
+    "body": "Once camp begins, this section will feature fresh moments from the kitchen, beach-town trips, activities, and all the smiles in between.",
+    "callout_title": "Photo albums live here.",
+    "callout_body": "During camp, new albums can be added for each day, trip, or special activity."
+  },
+  "contact": {
+    "email": "rabbi@jewishpedro.org",
+    "instagram": "https://www.instagram.com/chabadsoutherndelaware/",
+    "facebook": "https://www.facebook.com/chabadsoutherndelaware/"
+  },
+  "faq": [
+    {
+      "question": "What ages is camp for?",
+      "answer": "Camp welcomes kids ages 3–12. Activities and cooking stations are adapted by age so every camper can fully participate and succeed."
+    },
+    {
+      "question": "What are drop-off and pickup times?",
+      "answer": "Drop-off is at 9:00 AM. Pickup is at 3:00 PM. Optional Before & After Care extends the day from 8:30 AM to 3:30 PM."
+    },
+    {
+      "question": "How does drop-off and pickup work?",
+      "answer": "When you arrive, a staff member will greet your child. At pickup, only individuals listed on your registration form are authorized to collect your camper — please have ID ready."
+    },
+    {
+      "question": "Why only one week?",
+      "answer": "One week is exactly enough to make it magical. We pack everything — cooking, trips, Jewish pride, friendships — into five unforgettable days. It's exclusive by design."
+    },
+    {
+      "question": "Will there be security on site?",
+      "answer": "Yes. Camp will have security presence during camp hours, along with staff-supervised drop-off, pickup, and activities."
+    },
+    {
+      "question": "What should my child bring?",
+      "answer": "Comfortable clothes they don't mind getting messy (aprons are provided), a water bottle, sunscreen, any allergy medications, and a great appetite. We take care of everything else."
+    },
+    {
+      "question": "My child has food allergies — is camp safe?",
+      "answer": "We take allergies seriously. Note all allergies during registration. Our staff reviews every camper's needs. For severe allergies, we'll speak with you directly before camp begins."
+    },
+    {
+      "question": "Are scholarships available?",
+      "answer": "We believe every Jewish child deserves this experience. Limited scholarship assistance is available. Contact rabbi@jewishpedro.org before registering to apply."
+    }
+  ]
+}

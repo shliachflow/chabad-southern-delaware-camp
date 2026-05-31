@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kosher Camp Southern Delaware — Photo Albums</title>
+  <meta name="description" content="View Kosher Camp Southern Delaware photo albums. Camp photos, cooking moments, shore trips, activities, and summer memories.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://camp.jewishpedro.org/photos.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kosher Camp Southern Delaware — Photo Albums">
+  <meta property="og:description" content="Camp photos from Kosher Camp Southern Delaware. Cooking, adventures, and summer joy.">
+  <meta property="og:url" content="https://camp.jewishpedro.org/photos.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,400;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    :root {
+      --ocean: #1B6CA8; --gold: #F4A01C; --sky: #E8F4FD;
+      --text: #2C3E50; --muted: #5D7A8A; --border: #D5E8F2;
+      --font-h: 'Fredoka One', sans-serif; --font-b: 'Nunito', system-ui, sans-serif;
+      --px: clamp(16px, 4vw, 48px);
+    }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #FFFEF7; color: var(--text); font-family: var(--font-b); }
+
+    /* TOPBAR */
+    .topbar {
+      position: sticky; top: 0; z-index: 20;
+      min-height: 60px; display: flex; align-items: center;
+      justify-content: space-between; gap: 14px;
+      padding: 0 var(--px); background: var(--ocean);
+      box-shadow: 0 2px 14px rgba(27,108,168,.3);
+    }
+    .brand { font-family: var(--font-h); font-size: 20px; color: #fff; display: flex; align-items: center; gap: 8px; }
+    .brand em { color: var(--gold); font-style: normal; }
+    .back {
+      flex-shrink: 0; display: inline-flex; align-items: center;
+      min-height: 36px; padding: 8px 16px; border-radius: 100px;
+      background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25);
+      color: #fff; font-size: 12px; font-weight: 800;
+      letter-spacing: .06em; text-transform: uppercase; transition: background 150ms;
+    }
+    .back:hover { background: rgba(255,255,255,.25); }
+
+    /* HERO BAND */
+    .pg-hero {
+      background: linear-gradient(135deg, var(--sky) 0%, #c6e4f5 100%);
+      padding: clamp(36px,6vw,72px) var(--px) clamp(28px,4vw,56px);
+      text-align: center;
+    }
+    .pg-hero-title { font-family: var(--font-h); font-size: clamp(32px,5vw,56px); color: var(--ocean); line-height: 1.05; }
+    .pg-hero-sub { font-size: 16px; color: var(--muted); margin-top: 10px; line-height: 1.6; }
+
+    /* CONTENT */
+    .pg-body { max-width: 1240px; margin: 0 auto; padding: clamp(32px,5vw,64px) var(--px); }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center; padding: 64px 24px;
+      background: var(--sky); border-radius: 20px;
+      border: 2px dashed var(--border);
+    }
+    .empty-icon { font-size: 52px; margin-bottom: 16px; }
+    .empty-title { font-family: var(--font-h); font-size: clamp(22px,3vw,32px); color: var(--ocean); margin-bottom: 10px; }
+    .empty-body { font-size: 15px; color: var(--muted); line-height: 1.65; max-width: 440px; margin: 0 auto 24px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 26px; border-radius: 100px;
+      font-family: var(--font-b); font-size: 13px; font-weight: 800;
+      letter-spacing: .06em; text-transform: uppercase;
+      background: var(--ocean); color: #fff;
+      box-shadow: 0 4px 0 #145484; transition: all 150ms;
+    }
+    .btn:hover { background: #145484; transform: translateY(-2px); }
+
+    /* Album grid (shown when albums exist in gallery.json) */
+    .album-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .album-card {
+      border-radius: 16px; overflow: hidden;
+      border: 2px solid var(--border); background: var(--sky);
+      transition: box-shadow 180ms, transform 180ms;
+    }
+    .album-card:hover { box-shadow: 0 8px 28px rgba(27,108,168,.14); transform: translateY(-3px); }
+    .album-cover {
+      width: 100%; aspect-ratio: 4/3; object-fit: cover;
+      background: linear-gradient(135deg, var(--sky) 0%, #c6e4f5 100%);
+    }
+    .album-cover-ph {
+      width: 100%; aspect-ratio: 4/3;
+      background: linear-gradient(135deg, var(--sky) 0%, #c6e4f5 100%);
+      display: flex; align-items: center; justify-content: center; font-size: 36px;
+    }
+    .album-info { padding: 16px; }
+    .album-title { font-family: var(--font-h); font-size: 18px; color: var(--ocean); margin-bottom: 4px; }
+    .album-meta { font-size: 12px; color: var(--muted); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+
+    /* Lightbox */
+    .lb { display: none; position: fixed; inset: 0; background: rgba(28,28,46,.92); z-index: 9000; align-items: center; justify-content: center; padding: 24px; }
+    .lb.open { display: flex; }
+    .lb img { max-width: 100%; max-height: 90vh; border-radius: 8px; box-shadow: 0 24px 64px rgba(0,0,0,.4); }
+    .lb-close { position: absolute; top: 18px; right: 18px; width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,.15); border: none; color: #fff; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+    .lb-close:hover { background: rgba(255,255,255,.25); }
+
+    /* Footer */
+    .pg-footer { background: var(--text); padding: 28px var(--px); text-align: center; }
+    .pg-footer-text { font-size: 13px; color: rgba(255,255,255,.5); line-height: 1.6; }
+    .pg-footer-text a { color: rgba(255,255,255,.7); }
+    .pg-footer-text a:hover { color: #fff; }
+
+    @media (max-width: 600px) {
+      .album-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">🏖️ <em>Kosher Camp</em> Southern Delaware</div>
+  <a href="index.html" class="back">← Back to Site</a>
+</div>
+
+<div class="pg-hero">
+  <div class="pg-hero-title">Photo Albums</div>
+  <p class="pg-hero-sub">Camp memories from Kosher Camp Southern Delaware — cooking, adventures, and summer joy.</p>
+</div>
+
+<div class="pg-body" id="albumsContainer">
+  <!-- Albums are loaded from content/gallery.json by the script below.
+       When no albums exist, the empty state is shown. -->
+  <div class="empty-state" id="emptyState">
+    <div class="empty-icon">📸</div>
+    <div class="empty-title">Photos Coming Soon</div>
+    <p class="empty-body">
+      Camp photos will appear here once the season begins. Check back during camp week — August 17–21, 2025 — for fresh albums from the kitchen, trips, and every amazing day.
+    </p>
+    <a href="index.html" class="btn">Back to Camp Site</a>
+  </div>
+  <div class="album-grid" id="albumGrid" style="display:none;"></div>
+</div>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" role="dialog" aria-label="Photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close photo viewer">✕</button>
+  <img id="lbImg" src="" alt="">
+</div>
+
+<div class="pg-footer">
+  <p class="pg-footer-text">
+    © 2025 Kosher Camp Southern Delaware · Chabad of Southern Delaware ·
+    <a href="mailto:rabbi@jewishpedro.org">rabbi@jewishpedro.org</a> ·
+    <a href="index.html">Camp Home</a>
+  </p>
+</div>
+
+<script>
+// Load albums from gallery.json
+fetch('content/gallery.json')
+  .then(function(r){ return r.json(); })
+  .then(function(data) {
+    var albums = data.albums || [];
+    if (!albums.length) return; // keep empty state
+
+    var grid = document.getElementById('albumGrid');
+    var empty = document.getElementById('emptyState');
+    empty.style.display = 'none';
+    grid.style.display = 'grid';
+
+    albums.forEach(function(album) {
+      var card = document.createElement('div');
+      card.className = 'album-card';
+      var coverHtml = album.cover
+        ? '<img class="album-cover" src="' + album.cover + '" alt="' + (album.title||'Album') + ' cover" loading="lazy">'
+        : '<div class="album-cover-ph">📷</div>';
+      card.innerHTML = coverHtml +
+        '<div class="album-info">' +
+          '<div class="album-title">' + (album.title||'Album') + '</div>' +
+          '<div class="album-meta">' + (album.date||'') + (album.count ? ' · ' + album.count + ' photos' : '') + '</div>' +
+        '</div>';
+      if (album.cover) {
+        card.querySelector('.album-cover').addEventListener('click', function() {
+          document.getElementById('lbImg').src = album.cover;
+          document.getElementById('lbImg').alt = album.title||'Camp photo';
+          document.getElementById('lb').classList.add('open');
+        });
+      }
+      grid.appendChild(card);
+    });
+  })
+  .catch(function(){});
+
+// Lightbox close
+document.getElementById('lbClose').addEventListener('click', function() {
+  document.getElementById('lb').classList.remove('open');
+});
+document.getElementById('lb').addEventListener('click', function(e) {
+  if (e.target === this) this.classList.remove('open');
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') document.getElementById('lb').classList.remove('open');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kosher Camp Southern Delaware 2025 — Chabad of Southern Delaware</title>
+  <meta name="description" content="One exclusive week of kosher day camp for kids ages 3–12 in Southern Delaware. Hands-on cooking, beach-town adventures, Jewish pride. Aug 17–21, 2025 · 9am–3pm." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Chabad of Southern Delaware" />
+  <meta name="theme-color" content="#1B6CA8" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kosher Camp Southern Delaware 2025" />
+  <meta property="og:description" content="One exclusive week of kosher day camp — cooking, adventures, Jewish pride. Aug 17–21, 2025 · Ages 3–12 · Southern Delaware." />
+  <meta property="og:image" content="uploads/hero-banner.jpg" />
+  <meta property="og:image:alt" content="Kosher Camp Southern Delaware — kids cooking and exploring" />
+  <meta property="og:url" content="https://camp.jewishpedro.org/" />
+  <meta property="og:site_name" content="Kosher Camp Southern Delaware" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kosher Camp Southern Delaware 2025" />
+  <meta name="twitter:description" content="One week of kosher camp magic. Aug 17–21, 2025 · Ages 3–12 · Southern Delaware." />
+  <meta name="twitter:image" content="uploads/hero-banner.jpg" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Event",
+        "name": "Kosher Camp Southern Delaware 2025",
+        "startDate": "2025-08-17",
+        "endDate": "2025-08-21",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "Place",
+          "name": "Chabad of Southern Delaware",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "DE",
+            "addressCountry": "US"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Chabad of Southern Delaware",
+          "url": "https://www.jewishpedro.org",
+          "email": "rabbi@jewishpedro.org"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://camp.jewishpedro.org/register.html",
+          "price": "300",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "description": "One exclusive week of kosher day camp for kids ages 3–12. Hands-on cooking, beach-town adventures, Jewish pride, and summer fun.",
+        "typicalAgeRange": "3-12"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What ages is camp for?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Camp welcomes kids ages 3–12. Activities are adapted by age so every camper can fully participate." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the camp hours?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Camp runs 9:00 AM – 3:00 PM daily. Optional Before & After Care extends the day." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Fredoka One (headings) + Nunito (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; border: none; background: none; }
+    *:focus { outline: none; }
+    *:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+    /* ── DESIGN TOKENS ─────────────────────────────────────────── */
+    :root {
+      --ocean:     #1B6CA8;   /* deep ocean blue — primary */
+      --ocean-dk:  #145484;   /* darker ocean for hover */
+      --gold:      #F4A01C;   /* sunny golden yellow — secondary */
+      --gold-lt:   #FEF3DC;   /* light gold tint */
+      --sky:       #E8F4FD;   /* light sky blue — accent */
+      --sky-mid:   #C6E4F5;   /* mid sky */
+      --sand:      #FFF8ED;   /* warm sand tone */
+      --white:     #FFFFFF;
+      --bg:        #FFFEF7;   /* warm white background */
+      --text:      #2C3E50;   /* main text */
+      --muted:     #5D7A8A;   /* secondary text */
+      --border:    #D5E8F2;   /* light blue border */
+      --font-h:    'Fredoka One', 'Trebuchet MS', sans-serif;
+      --font-b:    'Nunito', 'Segoe UI', system-ui, sans-serif;
+      --max-w:     1360px;
+      --px:        clamp(20px, 4vw, 48px);
+      --radius:    16px;
+    }
+
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: var(--font-b); background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--px); }
+
+    /* ── WAVE DIVIDER ─────────────────────────────────────────── */
+    .wave-top {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      margin-bottom: -2px;
+    }
+    .wave-top svg { display: block; width: 100%; }
+
+    /* ── BUTTONS ─────────────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; font-family: var(--font-b);
+      font-size: 13px; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; cursor: pointer;
+      transition: all 160ms ease; min-height: 48px;
+      border-radius: 100px;
+    }
+    .btn-ocean  { background: var(--ocean); color: var(--white); box-shadow: 0 5px 0 var(--ocean-dk); }
+    .btn-ocean:hover { background: var(--ocean-dk); transform: translateY(-2px); }
+    .btn-gold   { background: var(--gold); color: var(--text); box-shadow: 0 5px 0 rgba(180,115,10,.35); }
+    .btn-gold:hover { opacity: .9; transform: translateY(-2px); }
+    .btn-ghost  { background: transparent; color: var(--ocean); border: 2px solid var(--ocean); }
+    .btn-ghost:hover { background: var(--ocean); color: var(--white); }
+    .btn-white  { background: var(--white); color: var(--ocean); box-shadow: 0 5px 0 rgba(27,108,168,.18); }
+    .btn-white:hover { background: var(--sky); }
+
+    /* ── NAV ─────────────────────────────────────────────────── */
+    .nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--ocean); height: 62px;
+      display: flex; align-items: center;
+      box-shadow: 0 2px 16px rgba(27,108,168,.28);
+    }
+    .nav-inner {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 var(--px);
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--font-h); font-size: 22px; color: var(--white);
+      letter-spacing: .01em;
+    }
+    .nav-logo-badge {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: var(--gold); display: grid; place-items: center;
+      font-size: 18px; flex-shrink: 0;
+    }
+    .nav-logo em { color: var(--gold); font-style: normal; }
+    .nav-links { display: flex; align-items: center; gap: 26px; }
+    .nav-links a { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.82); transition: color 150ms; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-reg {
+      background: var(--gold); color: var(--text) !important;
+      font-size: 12px; font-weight: 800; padding: 9px 20px;
+      border-radius: 100px; letter-spacing: .06em; text-transform: uppercase;
+    }
+    .nav-reg:hover { background: #e6950e !important; }
+    .nav-menu-btn {
+      display: none; width: 42px; height: 42px; border-radius: 50%;
+      background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.2);
+      align-items: center; justify-content: center; flex-direction: column; gap: 5px;
+    }
+    .nav-menu-btn span { width: 18px; height: 2px; background: var(--white); border-radius: 999px; transition: transform 180ms ease, opacity 180ms ease; }
+    .nav.nav-open .nav-menu-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav.nav-open .nav-menu-btn span:nth-child(2) { opacity: 0; }
+    .nav.nav-open .nav-menu-btn span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ── MARQUEE ─────────────────────────────────────────────── */
+    .marquee { background: var(--gold); height: 40px; overflow: hidden; display: flex; align-items: center; }
+    .mq-track { display: flex; width: max-content; animation: mq 28s linear infinite; }
+    .mq-track span { font-size: 10px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--text); white-space: nowrap; padding: 0 14px; }
+    .mq-track span.sep { color: var(--ocean); padding: 0 4px; font-size: 14px; }
+    @keyframes mq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ── HERO ────────────────────────────────────────────────── */
+    .hero {
+      min-height: calc(100vh - 62px - 40px);
+      display: grid;
+      grid-template-columns: minmax(420px, .75fr) minmax(0, 1.25fr);
+      background: linear-gradient(135deg, var(--sky) 0%, #d0ecf9 40%, var(--sky-mid) 100%);
+      position: relative; overflow: hidden;
+    }
+    /* Wave decorations */
+    .hero::before {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 80px;
+      background: var(--bg);
+      clip-path: ellipse(55% 100% at 50% 100%);
+      z-index: 2;
+    }
+    /* Sun circle decoration */
+    .hero::after {
+      content: '';
+      position: absolute;
+      right: -60px; top: -80px;
+      width: 360px; height: 360px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(244,160,28,.35) 0%, rgba(244,160,28,.08) 60%, transparent 75%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-left {
+      position: relative; z-index: 3;
+      padding: clamp(40px, 6vw, 80px) clamp(20px, 3.5vw, 60px);
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--ocean); color: var(--white);
+      font-size: 11px; font-weight: 800; letter-spacing: .14em;
+      text-transform: uppercase; padding: 7px 16px;
+      border-radius: 100px; margin-bottom: 24px; align-self: flex-start;
+      box-shadow: 0 4px 12px rgba(27,108,168,.3);
+    }
+    .hero-tag .star { color: var(--gold); }
+    .hero-h1 {
+      font-family: var(--font-h);
+      font-size: clamp(72px, 7.5vw, 132px);
+      line-height: .88; color: var(--ocean);
+      margin-bottom: 20px;
+      text-shadow: 3px 3px 0 rgba(27,108,168,.12);
+    }
+    .hero-h1 .line2 { color: var(--text); display: block; }
+    .hero-h1 .line3 { color: var(--gold); display: block; font-size: .62em; line-height: .9; margin-top: 6px; }
+    .hero-sub {
+      font-size: 17px; color: var(--text); line-height: 1.65;
+      max-width: 500px; margin-bottom: 20px;
+      background: rgba(255,255,255,.75);
+      border: 2px solid rgba(27,108,168,.15);
+      border-radius: 12px; padding: 16px 20px;
+      box-shadow: 6px 6px 0 rgba(27,108,168,.1);
+    }
+    .hero-facts {
+      display: grid; grid-template-columns: repeat(2, 1fr);
+      gap: 10px; max-width: 460px; margin: 0 0 24px;
+    }
+    .hero-fact {
+      background: var(--white); border: 2px solid var(--border);
+      border-radius: 10px; padding: 12px 14px;
+      font-size: 11px; font-weight: 800; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--text);
+      box-shadow: 3px 4px 0 rgba(27,108,168,.1);
+    }
+    .hero-fact strong { display: block; font-family: var(--font-h); font-size: 22px; line-height: .95; color: var(--ocean); letter-spacing: .02em; margin-bottom: 2px; }
+    .hero-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    .hero-right {
+      position: relative; z-index: 2;
+      overflow: hidden;
+      /* HERO IMAGE — AI gen ok, camp atmosphere, beach/shore vibes, kids cooking outdoors */
+      background: linear-gradient(160deg, var(--ocean) 0%, #0d4a7a 100%);
+      clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .hero-right-img {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+    }
+    /* Placeholder shown when no hero image */
+    .hero-ph {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 16px; padding: 40px;
+      background: linear-gradient(160deg, #1B6CA8 0%, #0d4a7a 100%);
+    }
+    .hero-ph-label {
+      font-family: var(--font-h); font-size: clamp(32px,4vw,56px);
+      color: var(--white); text-align: center; line-height: 1.1;
+    }
+    .hero-ph-label em { color: var(--gold); font-style: normal; display: block; }
+    .hero-ph-note {
+      background: rgba(255,255,255,.12); border: 2px dashed rgba(255,255,255,.4);
+      border-radius: 10px; padding: 14px 20px;
+      font-size: 12px; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: rgba(255,255,255,.7); text-align: center;
+    }
+    /* Wave-pattern overlay on hero right */
+    .hero-right::after {
+      content: '';
+      position: absolute; inset: 0; z-index: 3;
+      background: linear-gradient(90deg, rgba(232,244,253,.45) 0%, rgba(232,244,253,.05) 30%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* ── STATS BAR ───────────────────────────────────────────── */
+    .stats {
+      background: var(--ocean);
+      padding: 44px 0 72px;
+      position: relative; z-index: 1;
+    }
+    .stats::after {
+      content: '';
+      position: absolute; bottom: -1px; left: 0; right: 0; height: 48px;
+      background: var(--bg);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    .stats-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 0; align-items: center; }
+    .stat { text-align: center; padding: 0 40px; border-right: 1px solid rgba(255,255,255,.15); }
+    .stat:last-child { border-right: none; }
+    .stat-n { font-family: var(--font-h); font-size: clamp(36px,5vw,62px); color: var(--gold); line-height: 1; }
+    .stat-l { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.75); margin-top: 6px; line-height: 1.45; }
+
+    /* ── SECTION BASICS ──────────────────────────────────────── */
+    .sec-label { font-size: 12px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: var(--ocean); margin-bottom: 12px; }
+    .sec-h { font-family: var(--font-h); font-size: clamp(34px,4.2vw,52px); color: var(--text); line-height: 1.08; }
+    .sec-h em { font-style: italic; color: var(--ocean); }
+    .sec-body { font-size: 16px; color: var(--muted); line-height: 1.75; margin-top: 14px; max-width: 560px; }
+
+    /* ── FEATURES ────────────────────────────────────────────── */
+    .features {
+      background: var(--bg);
+      padding: 80px 0 96px;
+      position: relative; z-index: 2;
+    }
+    .features-top { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; margin-bottom: 48px; }
+    .features-tally { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 36px; }
+    .ft-item { }
+    .ft-num { display: block; font-family: var(--font-h); font-size: clamp(22px,2.8vw,34px); color: var(--ocean); line-height: 1; }
+    .ft-label { display: block; font-size: 13px; font-weight: 700; color: var(--muted); margin-top: 4px; text-transform: uppercase; letter-spacing: .07em; }
+
+    .feat-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 16px;
+    }
+    .feat-block {
+      padding: 32px 28px; border-radius: 20px;
+      position: relative; overflow: hidden;
+    }
+    /* Wave texture overlay on each card */
+    .feat-block::before {
+      content: '';
+      position: absolute; bottom: -20px; right: -20px;
+      width: 100px; height: 60px;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      opacity: .1; background: currentColor;
+      pointer-events: none;
+    }
+    .feat-block:nth-child(1) { grid-column: span 2; }
+    .feat-block:nth-child(2) { grid-column: span 4; padding: 40px 44px; }
+    .feat-block:nth-child(3) { grid-column: span 3; padding: 38px 38px; }
+    .feat-block:nth-child(4) { grid-column: span 3; padding: 38px 38px; }
+    .feat-block:nth-child(5) { grid-column: span 4; padding: 40px 44px; }
+    .feat-block:nth-child(6) { grid-column: span 2; }
+
+    .feat-block.c-ocean  { background: var(--ocean);  color: var(--white); }
+    .feat-block.c-navy   { background: var(--text);   color: var(--white); }
+    .feat-block.c-gold   { background: var(--gold-lt); color: var(--text); }
+    .feat-block.c-sky    { background: var(--sky);     color: var(--text); }
+
+    .feat-icon {
+      display: inline-grid; place-items: center;
+      width: 60px; height: 60px;
+      background: rgba(255,255,255,.8); border-radius: 18px;
+      font-size: 28px; margin-bottom: 18px;
+      box-shadow: 3px 4px 0 rgba(0,0,0,.08);
+    }
+    .feat-block.c-gold .feat-icon,
+    .feat-block.c-sky .feat-icon { background: var(--white); }
+    .feat-title { font-family: var(--font-h); font-size: clamp(20px,2.4vw,28px); line-height: 1.1; margin-bottom: 10px; }
+    .feat-desc { font-size: 14px; line-height: 1.7; opacity: .88; }
+
+    /* ── ONE WEEK EXCLUSIVE CALLOUT ──────────────────────────── */
+    .exclusive {
+      background: var(--sky);
+      padding: 72px 0;
+      position: relative; overflow: hidden;
+    }
+    .exclusive::before {
+      content: '';
+      position: absolute; top: -30px; left: 0; right: 0; height: 60px;
+      background: var(--bg);
+      clip-path: ellipse(55% 100% at 50% 0%);
+    }
+    .exclusive::after {
+      content: '';
+      position: absolute; bottom: -30px; left: 0; right: 0; height: 60px;
+      background: var(--bg);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    .exclusive-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;
+    }
+    .exclusive-badge {
+      background: var(--ocean); color: var(--white);
+      border-radius: 20px; padding: 32px 36px;
+      text-align: center;
+    }
+    .exclusive-badge-big {
+      font-family: var(--font-h); font-size: clamp(56px,7vw,96px);
+      color: var(--gold); line-height: .9; display: block;
+    }
+    .exclusive-badge-label {
+      font-size: 12px; font-weight: 800; letter-spacing: .18em;
+      text-transform: uppercase; color: rgba(255,255,255,.75); margin-top: 8px;
+    }
+    .exclusive-tagline {
+      font-family: var(--font-h); font-size: clamp(18px,2.4vw,28px);
+      color: var(--ocean); margin-top: 12px; line-height: 1.2;
+    }
+
+    /* ── SESSION PANEL ───────────────────────────────────────── */
+    .sessions {
+      padding: 80px 0 96px;
+      background: var(--bg);
+    }
+    .sessions > .wrap { display: flex; flex-direction: column; gap: 24px; }
+    .session-panel {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: start;
+      padding: 48px;
+      background: var(--white);
+      border-radius: 24px;
+      border: 2px solid var(--border);
+      box-shadow: 0 8px 40px rgba(27,108,168,.08);
+      position: relative; overflow: hidden;
+    }
+    /* Wavy top stripe on session panel */
+    .session-panel::before {
+      content: '';
+      position: absolute; left: 0; top: 0; right: 0; height: 6px;
+      background: linear-gradient(90deg, var(--ocean) 0%, var(--gold) 50%, var(--ocean) 100%);
+    }
+    .ep-label { font-size: 11px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--ocean); display: block; margin-bottom: 10px; }
+    .session-h {
+      font-family: var(--font-h); font-size: clamp(44px,6vw,74px);
+      line-height: .92; color: var(--text); margin-bottom: 14px;
+    }
+    .session-h em { font-style: italic; color: var(--ocean); display: block; }
+    .session-rule { width: 100%; height: 2px; background: var(--border); margin-bottom: 18px; }
+    .recipe-meta {
+      font-size: 9px; font-weight: 800; letter-spacing: .2em;
+      text-transform: uppercase; color: var(--muted);
+      padding: 6px 0; margin-bottom: 18px;
+      border-top: 1px dashed var(--border); border-bottom: 1px dashed var(--border);
+    }
+    .session-dates { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 18px; }
+    .sd-label { font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+    .sd-val { font-family: var(--font-h); font-size: 19px; color: var(--text); }
+    .session-desc { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 22px; }
+    .price-row { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .price-row:last-child { border-bottom: none; }
+    .price-tier { font-size: 15px; font-weight: 700; }
+    .price-note { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .price-amt { font-family: var(--font-h); font-size: 26px; color: var(--ocean); }
+    .session-img { aspect-ratio: 4/3; overflow: hidden; border-radius: 14px; margin-bottom: 16px; background: var(--sky); position: relative; }
+    .session-img img { width: 100%; height: 100%; object-fit: cover; }
+    .session-img-ph {
+      width: 100%; height: 100%; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 10px;
+      background: linear-gradient(135deg, var(--sky) 0%, var(--sky-mid) 100%);
+      padding: 24px; text-align: center;
+    }
+    .session-img-ph-label {
+      font-family: var(--font-h); font-size: 18px; color: var(--ocean);
+    }
+    .session-img-ph-note {
+      font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--muted); background: rgba(255,255,255,.7);
+      border: 1.5px dashed var(--border); border-radius: 8px; padding: 8px 14px;
+    }
+    .session-perks { border: 2px solid var(--border); border-radius: 14px; overflow: hidden; background: var(--sky); }
+    .perk { display: flex; align-items: flex-start; gap: 12px; padding: 13px 16px; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--text); line-height: 1.5; }
+    .perk:last-child { border-bottom: none; }
+    .perk::before {
+      content: '✓'; flex-shrink: 0; margin-top: 1px;
+      display: inline-grid; place-items: center;
+      width: 20px; height: 20px; border-radius: 50%;
+      background: var(--ocean); color: var(--white); font-size: 11px; font-weight: 900;
+    }
+
+    /* ── COUNTDOWN ───────────────────────────────────────────── */
+    .countdown {
+      background: linear-gradient(135deg, var(--ocean) 0%, #145484 100%);
+      padding: 28px 0;
+    }
+    .cd-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .cd-label { font-family: var(--font-h); font-size: 20px; color: rgba(255,255,255,.9); display: flex; align-items: center; gap: 10px; }
+    .cd-units { display: flex; align-items: center; gap: 0; }
+    .cd-unit { text-align: center; padding: 0 16px; }
+    .cd-n { font-family: var(--font-h); font-size: 48px; color: var(--gold); line-height: 1; }
+    .cd-l { font-size: 9px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-top: 2px; }
+    .cd-sep { font-family: var(--font-h); font-size: 32px; color: rgba(255,255,255,.3); margin-top: -4px; }
+
+    /* ── GALLERY STRIP ───────────────────────────────────────── */
+    .gallery {
+      padding: 80px 0 64px;
+      background: var(--sand);
+      position: relative;
+    }
+    .gallery::before {
+      content: '';
+      position: absolute; top: -30px; left: 0; right: 0; height: 60px;
+      background: var(--bg);
+      clip-path: ellipse(55% 100% at 50% 0%);
+    }
+    .gallery-hd { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; margin-bottom: 0; }
+    .gallery-rolls { }
+    .gallery-roll { font-family: var(--font-h); font-size: clamp(20px,2.6vw,30px); color: var(--text); line-height: 1.15; }
+    .gallery-roll em { font-style: italic; color: var(--ocean); }
+    .gallery-roll-small { font-size: clamp(16px,2vw,22px); opacity: .55; margin-top: 8px; }
+    .gallery-scroll-outer { position: relative; overflow: hidden; margin-top: 36px; }
+    .gallery-scroll-track {
+      display: flex; gap: 14px; overflow-x: auto;
+      overscroll-behavior-x: contain; scroll-snap-type: x mandatory;
+      scroll-behavior: smooth; -webkit-overflow-scrolling: touch;
+      touch-action: pan-x; scrollbar-width: none;
+      padding: 0 var(--px) 20px; cursor: grab;
+    }
+    .gallery-scroll-track:active { cursor: grabbing; }
+    .gallery-scroll-track::-webkit-scrollbar { display: none; }
+    .gs {
+      flex-shrink: 0; width: 320px; height: 380px;
+      overflow: hidden; scroll-snap-align: start;
+      position: relative; border-radius: 18px;
+      background: var(--sky);
+    }
+    .gs img { width: 100%; height: 100%; object-fit: cover; transition: transform 400ms cubic-bezier(0.22,1,0.36,1); }
+    .gs:hover img { transform: scale(1.05); }
+    .gs-label {
+      position: absolute; bottom: 0; left: 0; right: 0; padding: 18px 14px 12px;
+      background: linear-gradient(transparent, rgba(27,108,168,.7));
+      color: var(--white); font-size: 11px; font-weight: 800;
+      letter-spacing: .12em; text-transform: uppercase; pointer-events: none;
+    }
+    /* Gallery placeholder card */
+    .gs-ph {
+      width: 100%; height: 100%; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 10px; padding: 20px; text-align: center;
+    }
+    .gs-ph-icon { font-size: 36px; opacity: .5; }
+    .gs-ph-note { font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    .gs.comp-block {
+      background: var(--ocean); padding: 28px;
+      display: flex; flex-direction: column; justify-content: space-between; width: 280px;
+    }
+    .comp-eyebrow { font-size: 9px; font-weight: 800; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); }
+    .comp-h { font-family: var(--font-h); font-size: clamp(24px,2.8vw,36px); color: var(--white); line-height: .95; margin-top: 10px; }
+    .comp-h em { font-style: italic; color: var(--gold); display: block; }
+    .comp-body { font-size: 12px; color: rgba(255,255,255,.6); line-height: 1.6; margin-top: 10px; }
+    .comp-link { display: inline-flex; align-items: center; background: var(--gold); color: var(--text); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; padding: 10px 16px; margin-top: 16px; align-self: flex-start; border-radius: 100px; }
+    .gallery-arrow {
+      position: absolute; top: 45%; transform: translateY(-50%);
+      width: 46px; height: 46px; border-radius: 50%;
+      background: var(--ocean); color: var(--white);
+      font-size: 18px; display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: all 150ms; z-index: 10;
+    }
+    .gallery-arrow:hover { background: var(--ocean-dk); }
+    .gallery-arrow-l { left: 14px; }
+    .gallery-arrow-r { right: 14px; }
+    .gallery-arrow.hidden { opacity: 0; pointer-events: none; }
+
+    /* ── POLAROIDS ───────────────────────────────────────────── */
+    .polars { background: var(--ocean); padding: 64px 0; overflow: hidden; }
+    .polars-hd { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-bottom: 32px; }
+    .polars-hd .sec-label { color: var(--gold); }
+    .polars-hd .sec-h { color: var(--white); }
+    .polars-quote { display: flex; flex-direction: column; gap: 16px; }
+    .polars-q-line { font-family: var(--font-h); font-size: clamp(16px,2vw,24px); color: rgba(255,255,255,.65); line-height: 1.2; }
+    .polars-q-line strong { color: var(--gold); }
+    .polar-scroll-outer { position: relative; overflow: hidden; }
+    .polar-track {
+      display: flex; gap: 16px; cursor: grab; user-select: none;
+      padding: 8px var(--px) 20px; width: 100%; overflow-x: auto;
+      overscroll-behavior-x: contain; scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch; touch-action: pan-x; scrollbar-width: none;
+    }
+    .polar-track::-webkit-scrollbar { display: none; }
+    .polar-track:active { cursor: grabbing; }
+    .polar { flex-shrink: 0; width: 176px; background: var(--white); padding: 9px 9px 28px; box-shadow: 0 6px 20px rgba(0,0,0,.28); transform: rotate(var(--r,0deg)); border-radius: 3px; }
+    .polar:nth-child(odd)  { --r: -1.6deg; }
+    .polar:nth-child(even) { --r: 1.3deg; }
+    .polar:nth-child(3n)   { --r: -.6deg; }
+    .polar-img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--sky); min-height: 158px; }
+    /* Placeholder for polaroid when no image */
+    .polar-img-ph {
+      width: 100%; aspect-ratio: 1; min-height: 158px;
+      background: var(--sky); display: flex; align-items: center; justify-content: center;
+      font-size: 28px; opacity: .5; color: var(--ocean);
+    }
+    .polar-cap { font-family: var(--font-b); font-size: 11px; font-style: italic; color: var(--muted); text-align: center; margin-top: 7px; line-height: 1.3; font-weight: 700; }
+    .polar-arrow {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--gold); color: var(--text);
+      font-size: 18px; font-weight: 900; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,.25); z-index: 5; transition: opacity 150ms, transform 150ms;
+    }
+    .polar-arrow:hover { transform: translateY(-50%) scale(1.05); }
+    .polar-arrow-l { left: 14px; }
+    .polar-arrow-r { right: 14px; }
+    .polar-arrow.hidden { opacity: 0; pointer-events: none; }
+
+    /* ── SOCIAL FEED ─────────────────────────────────────────── */
+    .social-feed { background: var(--bg); padding: 80px 0; }
+    .social-feed-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 48px; align-items: center; }
+    .social-feed-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .photo-callout {
+      background: var(--sky); border: 2px solid var(--border);
+      border-radius: 20px; padding: clamp(22px,3.5vw,36px);
+      display: grid; grid-template-columns: auto 1fr auto;
+      gap: 18px; align-items: center;
+    }
+    .photo-callout-icon {
+      width: 66px; height: 66px; display: grid; place-items: center;
+      border-radius: 50%; background: var(--ocean); color: var(--white);
+      font-size: 28px; box-shadow: 0 6px 0 rgba(27,108,168,.2);
+    }
+    .photo-callout-title { font-family: var(--font-h); font-size: clamp(22px,2.6vw,32px); color: var(--text); line-height: 1; }
+    .photo-callout-text { color: var(--muted); line-height: 1.6; margin-top: 6px; font-size: 14px; }
+
+    /* ── TRIPS ───────────────────────────────────────────────── */
+    .trips {
+      background: linear-gradient(135deg, var(--ocean) 0%, #145484 100%);
+      padding: 88px 0; position: relative; overflow: hidden;
+    }
+    /* Decorative wave shapes */
+    .trips::before {
+      content: '';
+      position: absolute; right: -60px; bottom: -60px;
+      width: 340px; height: 340px; border-radius: 50%;
+      background: rgba(244,160,28,.12); pointer-events: none;
+    }
+    .trips::after {
+      content: '';
+      position: absolute; right: 40px; bottom: -80px;
+      width: 260px; height: 260px; border-radius: 50%;
+      background: rgba(244,160,28,.07); pointer-events: none;
+    }
+    .trips-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; position: relative; z-index: 1; }
+    .trips-h { font-family: var(--font-h); font-size: clamp(34px,5vw,56px); color: var(--white); line-height: .95; margin-bottom: 14px; }
+    .trips-h em { font-style: italic; color: var(--gold); }
+    .trips-body { font-size: 15px; color: rgba(255,255,255,.82); line-height: 1.75; }
+    .trips-tagline { font-family: var(--font-h); font-size: 18px; color: rgba(255,255,255,.9); margin-top: 18px; }
+    .trips-badge { background: var(--gold); color: var(--text); padding: 24px 28px; margin-bottom: 14px; border-radius: 16px; }
+    .trips-badge-big { font-family: var(--font-h); font-size: 46px; line-height: 1; }
+    .trips-badge-label { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; opacity: .65; margin-top: 4px; }
+    .trips-note { font-size: 13px; color: rgba(255,255,255,.8); line-height: 1.7; }
+
+    /* ── TESTIMONIALS ────────────────────────────────────────── */
+    .testimonials { padding: 48px 0; background: var(--ocean); }
+    .testimonials .sec-label { color: var(--gold); }
+    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); margin-top: 36px; border-top: 3px solid rgba(255,255,255,.12); }
+    .testi { padding: 32px 28px; border-right: 1px solid rgba(255,255,255,.12); }
+    .testi:last-child { border-right: none; }
+    .testi-q { font-family: var(--font-h); font-size: 64px; line-height: .5; color: var(--gold); opacity: .4; margin-bottom: 14px; }
+    .testi-text { font-family: var(--font-b); font-size: 18px; font-style: italic; color: var(--white); line-height: 1.5; margin-bottom: 16px; }
+    .testi-rule { width: 22px; height: 2px; background: var(--gold); margin-bottom: 10px; }
+    .testi-by { font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+
+    /* ── LOCATION ────────────────────────────────────────────── */
+    .location { background: var(--bg); padding: 96px 0; }
+    .loc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .loc-body { font-size: 15px; color: var(--muted); line-height: 1.75; margin-top: 14px; }
+    .loc-addr { font-family: var(--font-h); font-size: 18px; color: var(--text); line-height: 1.45; margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--border); }
+    .loc-photo {
+      border-radius: 20px; overflow: hidden; position: relative;
+      box-shadow: 10px 10px 0 rgba(27,108,168,.18); background: var(--sky);
+      aspect-ratio: 4/3;
+    }
+    .loc-photo img { width: 100%; height: 100%; object-fit: cover; }
+    /* Placeholder for location photo */
+    .loc-photo-ph {
+      width: 100%; height: 100%; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 12px; padding: 32px; text-align: center;
+      background: linear-gradient(135deg, var(--sky) 0%, var(--sky-mid) 100%);
+    }
+    .loc-photo-ph-icon { font-size: 48px; opacity: .45; }
+    .loc-photo-ph-label { font-family: var(--font-h); font-size: 20px; color: var(--ocean); }
+    .loc-photo-ph-note { font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: rgba(255,255,255,.7); border: 1.5px dashed var(--border); border-radius: 8px; padding: 8px 14px; }
+
+    /* ── FAQ ─────────────────────────────────────────────────── */
+    .faq { padding: 88px 0; background: var(--sand); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 56px; align-items: start; }
+    .faq-sidebar-body { font-size: 15px; color: var(--muted); line-height: 1.7; margin-top: 14px; margin-bottom: 22px; }
+    .faq-item { border-bottom: 1px solid var(--border); transition: background 150ms; }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-item:hover { background: rgba(27,108,168,.04); }
+    .faq-q { display: flex; justify-content: space-between; align-items: flex-start; padding: 17px 0; cursor: pointer; gap: 16px; }
+    .faq-qt { font-family: var(--font-h); font-size: 18px; color: var(--text); line-height: 1.2; }
+    .faq-tog { font-family: var(--font-h); font-size: 24px; color: var(--muted); flex-shrink: 0; transition: transform 200ms; }
+    .faq-item.open .faq-tog { transform: rotate(45deg); color: var(--ocean); }
+    .faq-ans { max-height: 0; overflow: hidden; transition: max-height 300ms ease; }
+    .faq-ans-in { padding-bottom: 16px; font-size: 14px; color: var(--muted); line-height: 1.75; }
+
+    /* ── SAFETY ──────────────────────────────────────────────── */
+    .safety { background: var(--ocean); padding: 14px 0; }
+    .safety-in { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 13px; font-weight: 700; color: rgba(255,255,255,.8); text-align: center; }
+
+    /* ── REGISTER ────────────────────────────────────────────── */
+    .register { padding: 88px 0; background: var(--gold-lt); }
+    .reg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    .pricing-table { margin-top: 20px; border: 2px solid var(--border); border-radius: 14px; overflow: hidden; }
+    .pt-row { display: grid; grid-template-columns: 1fr auto; padding: 13px 14px; border-bottom: 1px solid var(--border); align-items: baseline; gap: 14px; }
+    .pt-row:last-child { border-bottom: none; }
+    .pt-row.hd { background: var(--ocean); }
+    .pt-row.hd span { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+    .pt-tier { font-size: 14px; font-weight: 700; color: var(--text); }
+    .pt-note { font-size: 11px; color: var(--muted); margin-top: 2px; }
+    .pt-price { font-family: var(--font-h); font-size: 26px; color: var(--ocean); text-align: right; }
+    .scholarship { margin-top: 14px; padding: 13px 14px; background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; font-size: 13px; color: var(--text); line-height: 1.65; }
+    .scholarship strong { font-weight: 700; color: var(--ocean); }
+    .reg-cta-body { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 24px; }
+    .reg-actions { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+    .reg-note { font-size: 12px; color: var(--muted); line-height: 1.6; margin-top: 10px; }
+
+    /* ── FOOTER ──────────────────────────────────────────────── */
+    .footer { background: var(--text); padding: 48px 0 24px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    .footer-logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-h); font-size: 20px; color: var(--white); margin-bottom: 10px; }
+    .footer-logo em { color: var(--gold); font-style: normal; }
+    .footer-tag { font-size: 13px; color: rgba(255,255,255,.6); line-height: 1.65; max-width: 280px; margin-bottom: 14px; }
+    .footer-dir { font-size: 13px; color: rgba(255,255,255,.55); line-height: 1.6; }
+    .footer-dir strong { color: rgba(255,255,255,.8); }
+    .footer-col-title { font-size: 10px; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 10px; }
+    .footer-links { display: flex; flex-direction: column; gap: 8px; }
+    .footer-links a { font-size: 13px; color: rgba(255,255,255,.7); transition: color 150ms; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 18px; display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+    .footer-legal { font-size: 12px; color: rgba(255,255,255,.45); }
+    .footer-email { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.55); transition: color 150ms; }
+    .footer-email:hover { color: var(--white); }
+
+    /* ── ב"ה ─────────────────────────────────────────────────── */
+    .bh { font-size: 11px; font-weight: 400; color: rgba(255,255,255,.3); margin-right: 6px; vertical-align: middle; }
+
+    /* ── FLOAT CTA ───────────────────────────────────────────── */
+    .float-cta { position: fixed; bottom: 22px; right: 22px; z-index: 200; opacity: 0; pointer-events: none; transform: translateY(10px); transition: opacity 180ms, transform 180ms; }
+    .float-cta.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+    /* ── RESPONSIVE ──────────────────────────────────────────── */
+    @media (max-width: 1100px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { max-width: 720px; padding: 48px var(--px) 38px; }
+      .hero-right { width: 100%; min-height: 500px; clip-path: none; }
+    }
+    @media (max-width: 960px) {
+      :root { --px: 20px; }
+      .nav-menu-btn { display: inline-flex; }
+      .nav-links {
+        position: absolute; top: calc(100% + 8px); left: var(--px); right: var(--px);
+        display: grid; grid-template-columns: 1fr; gap: 6px; padding: 10px;
+        background: var(--white); border: 2px solid var(--border); border-radius: 14px;
+        box-shadow: 0 16px 36px rgba(0,0,0,.18);
+        opacity: 0; pointer-events: none; visibility: hidden;
+        transform: translateY(-6px); transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+      }
+      .nav.nav-open .nav-links { opacity: 1; pointer-events: auto; visibility: visible; transform: translateY(0); }
+      .nav-links a { display: block; width: 100%; padding: 12px 14px; border-radius: 10px; background: var(--sky); color: var(--text); }
+      .nav-links a.nav-reg { text-align: center; background: var(--ocean); color: var(--white) !important; }
+      .features-top, .exclusive-inner, .trips-inner, .loc-grid, .faq-grid, .reg-grid, .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .session-panel { grid-template-columns: 1fr; padding: 28px 24px; gap: 24px; }
+      .gallery-hd { grid-template-columns: 1fr; gap: 28px; }
+      .social-feed-grid { grid-template-columns: 1fr; gap: 28px; }
+      .polars-hd { grid-template-columns: 1fr; gap: 28px; }
+      .feat-grid { grid-template-columns: 1fr 1fr; }
+      .feat-block { grid-column: span 1 !important; padding: 26px 22px !important; }
+      .stats-row { grid-template-columns: 1fr; }
+      .stat { padding: 12px 0; border-right: none; border-bottom: 1px solid rgba(255,255,255,.12); text-align: center; }
+      .stat:last-child { border-bottom: none; }
+      .cd-inner { flex-direction: column; text-align: center; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .testi { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); }
+      .testi:last-child { border-bottom: none; }
+    }
+    @media (max-width: 600px) {
+      :root { --px: 16px; }
+      .hero-h1 { font-size: clamp(60px,18vw,82px); }
+      .hero-facts { grid-template-columns: 1fr 1fr; }
+      .feat-grid { grid-template-columns: 1fr; }
+      .gs { width: min(76vw, 280px); height: 320px; }
+      .float-cta { left: 12px; right: 12px; bottom: 12px; text-align: center; }
+      .session-dates { grid-template-columns: 1fr 1fr; }
+      .photo-callout { grid-template-columns: 1fr; }
+    }
+
+    /* ── ANIMATIONS ──────────────────────────────────────────── */
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-enter { opacity: 0; transform: translateY(24px); transition: opacity 650ms cubic-bezier(0.22,1,0.36,1), transform 650ms cubic-bezier(0.22,1,0.36,1); }
+      .hero-enter.hero-go { opacity: 1; transform: translateY(0); }
+      .hero-right.hero-enter { transform: translateX(28px); }
+      .hero-right.hero-enter.hero-go { transform: translateX(0); }
+      .nav { transition: height 260ms ease, box-shadow 260ms ease; }
+      .nav.scrolled { height: 52px; box-shadow: 0 3px 24px rgba(0,0,0,.35); }
+      .session-panel { opacity: 0; transform: translateY(28px); transition: opacity 600ms cubic-bezier(0.22,1,0.36,1), transform 600ms cubic-bezier(0.22,1,0.36,1); }
+      .session-panel.sp-in { opacity: 1; transform: none; }
+      .reveal-ready { opacity: 0; transform: translateY(20px); transition: opacity 480ms cubic-bezier(0.22,1,0.36,1), transform 480ms cubic-bezier(0.22,1,0.36,1); }
+      .reveal-ready.visible { opacity: 1; transform: translateY(0); }
+      .sec-label { opacity: 0; transform: translateY(12px) scale(0.9); transition: opacity 360ms ease, transform 400ms cubic-bezier(0.34,1.5,0.64,1); }
+      .sec-label.visible { opacity: 1; transform: translateY(0) scale(1); }
+      .feat-block { opacity: 0; transform: translateY(18px); transition: opacity 380ms ease, transform 380ms ease; }
+      .feat-block.visible { opacity: 1; transform: translateY(0); }
+      .feat-block.visible:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(27,108,168,.14); transition: transform 180ms ease, box-shadow 180ms ease; }
+      .polar { transition: opacity 400ms ease; }
+      .polar.p-hidden { opacity: 0 !important; animation: none !important; }
+      @keyframes float { 0%,100%{transform:rotate(var(--r,0deg)) translateY(0)} 50%{transform:rotate(var(--r,0deg)) translateY(-4px)} }
+      .polar:nth-child(1){animation:float 3.2s ease-in-out infinite}
+      .polar:nth-child(2){animation:float 3.8s ease-in-out infinite 0.5s}
+      .polar:nth-child(3){animation:float 3.5s ease-in-out infinite 0.2s}
+      .polar:nth-child(4){animation:float 4.0s ease-in-out infinite 0.8s}
+      .polar:nth-child(5){animation:float 3.3s ease-in-out infinite 0.3s}
+      .polar:nth-child(6){animation:float 3.7s ease-in-out infinite 0.6s}
+      .sec-fade { opacity: 0; transform: translateY(12px); transition: opacity 550ms ease, transform 550ms ease; }
+      .sec-fade.in-view { opacity: 1; transform: translateY(0); }
+      @keyframes cdPulse { 0%{transform:scale(1)} 50%{transform:scale(1.08)} 100%{transform:scale(1)} }
+      .cd-n.pulse { animation: cdPulse 580ms ease-out; }
+    }
+    @media (max-width: 960px) {
+      .session-panel { opacity: 1; transform: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="siteNav">
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <span class="bh">ב"ה</span>
+      <div class="nav-logo-badge" aria-hidden="true">🏖️</div>
+      <span><em>Kosher Camp</em> Southern Delaware</span>
+    </div>
+    <button class="nav-menu-btn" id="navMenuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="photos.html">Photos</a>
+      <a href="#sessions">Register</a>
+      <a href="#location">Location</a>
+      <a href="#faq">FAQ</a>
+      <a href="register.html" class="tally-link nav-reg">Enroll Now →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track">
+    <span>Cook</span><span class="sep">◆</span>
+    <span>Create</span><span class="sep">◆</span>
+    <span>Explore</span><span class="sep">◆</span>
+    <span>One Week Only</span><span class="sep">◆</span>
+    <span>Jewish Pride</span><span class="sep">◆</span>
+    <span>Shore Adventures</span><span class="sep">◆</span>
+    <span>Challah Fridays</span><span class="sep">◆</span>
+    <span>Ages 3–12</span><span class="sep">◆</span>
+    <span>Southern Delaware</span><span class="sep">◆</span>
+    <span>Aug 17–21, 2025</span><span class="sep">◆</span>
+    <span>Enroll Now</span><span class="sep">◆</span>
+    <span>Cook</span><span class="sep">◆</span>
+    <span>Create</span><span class="sep">◆</span>
+    <span>Explore</span><span class="sep">◆</span>
+    <span>One Week Only</span><span class="sep">◆</span>
+    <span>Jewish Pride</span><span class="sep">◆</span>
+    <span>Shore Adventures</span><span class="sep">◆</span>
+    <span>Challah Fridays</span><span class="sep">◆</span>
+    <span>Ages 3–12</span><span class="sep">◆</span>
+    <span>Southern Delaware</span><span class="sep">◆</span>
+    <span>Aug 17–21, 2025</span><span class="sep">◆</span>
+    <span>Enroll Now</span><span class="sep">◆</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-left">
+    <div class="hero-tag"><span class="star">★</span> <span class="hero-tag-text">Chabad of Southern Delaware · Summer 2025</span></div>
+    <h1 class="hero-h1">
+      Splash.
+      <span class="line2">Create.</span>
+      <span class="line3">Celebrate.</span>
+    </h1>
+    <p class="hero-sub" id="heroSub">One incredible week of hands-on kosher cooking, baking, beach-town adventures, Jewish pride, and the best summer energy for kids ages 3–12.</p>
+    <div class="hero-facts" aria-label="Camp details" id="heroFacts">
+      <div class="hero-fact"><strong>Aug 17–21</strong>One week only</div>
+      <div class="hero-fact"><strong>9am–3pm</strong>Daily hours</div>
+      <div class="hero-fact"><strong>$300</strong>Per child</div>
+      <div class="hero-fact"><strong>Southern DE</strong>Shore country</div>
+    </div>
+    <div class="hero-btns">
+      <a href="register.html" class="tally-link btn btn-ocean">Enroll Now →</a>
+      <a href="#sessions" class="btn btn-ghost">See Details</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <!--
+      HERO IMAGE PLACEHOLDER
+      Suggested filename: uploads/hero-banner.jpg
+      AI gen OK — camp atmosphere, kids cooking outdoors or at a table, summer/beach-town vibes, bright & energetic
+      Recommended: 1200×900px or wider, warm natural light
+    -->
+    <div class="hero-ph">
+      <div class="hero-ph-label">
+        Messy Aprons.<br><em>Big Smiles.</em>
+      </div>
+      <div class="hero-ph-note">
+        [HERO IMAGE — AI gen ok, camp atmosphere]<br>
+        Suggested: uploads/hero-banner.jpg
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats" id="statsBar">
+  <div class="wrap">
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-n">Aug 17–21</div>
+        <div class="stat-l">Five unforgettable days, Summer 2025</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">Ages 3–12</div>
+        <div class="stat-l">hands-on camp adapted for every age</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">$300</div>
+        <div class="stat-l">lunch, activities &amp; adventures included</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT THEY'LL DO -->
+<section class="features" id="about">
+  <div class="wrap">
+    <div class="features-top">
+      <div>
+        <p class="sec-label">What They'll Do</p>
+        <h2 class="sec-h">Everything a great<br>summer should <em>feel like.</em></h2>
+        <p class="sec-body">Kosher Camp Southern Delaware packs real cooking, Delaware shore adventures, Jewish pride, sports, friendships, and confidence into every single day. One week only — August 17–21, 2025 — under the warm direction of Rabbi Sholom Vogel.</p>
+        <div style="margin-top:18px;display:inline-flex;align-items:center;gap:8px;background:var(--sky);border:1.5px solid var(--border);padding:9px 16px;border-radius:100px;font-size:12px;font-weight:800;color:var(--ocean);letter-spacing:.06em;text-transform:uppercase;">
+          <span>Also on the menu:</span><strong>art, sports &amp; outdoor play</strong>
+        </div>
+      </div>
+      <div class="features-tally">
+        <div class="ft-item">
+          <span class="ft-num">Hot Lunches</span>
+          <span class="ft-label">included daily with camp tuition</span>
+        </div>
+        <div class="ft-item">
+          <span class="ft-num">Shore Trips</span>
+          <span class="ft-label">admission and transport included</span>
+        </div>
+        <div class="ft-item">
+          <span class="ft-num">Camp Shirt</span>
+          <span class="ft-label">included for every camper</span>
+        </div>
+        <div class="ft-item">
+          <span class="ft-num">100% Kosher</span>
+          <span class="ft-label">meals and kitchen activities</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat-grid">
+      <div class="feat-block c-ocean">
+        <div class="feat-icon">🍳</div>
+        <div class="feat-title">Culinary Workshops</div>
+        <div class="feat-desc">Real recipes, real kitchens, real results. Campers cook from scratch every day — and eat what they make.</div>
+      </div>
+      <div class="feat-block c-sky">
+        <div class="feat-icon">🏖️</div>
+        <div class="feat-title">Shore Adventures</div>
+        <div class="feat-desc">Southern Delaware is summer-destination country. We take full advantage — day trips into the heart of beach-town life and beyond.</div>
+      </div>
+      <div class="feat-block c-navy">
+        <div class="feat-icon">✡️</div>
+        <div class="feat-title">Jewish Pride</div>
+        <div class="feat-desc">Challah every Friday. Jewish stories woven into every recipe. Culture and tradition built right into the fun.</div>
+      </div>
+      <div class="feat-block c-gold">
+        <div class="feat-icon">⚽</div>
+        <div class="feat-title">Sports &amp; Play</div>
+        <div class="feat-desc">Between the kitchen and the trips, campers play, move, and let loose. A full camp experience — not just cooking.</div>
+      </div>
+      <div class="feat-block c-sky">
+        <div class="feat-icon">👫</div>
+        <div class="feat-title">Real Friendships</div>
+        <div class="feat-desc">Five days together builds something real. Campers leave with new friendships — and memories — that last well past summer.</div>
+      </div>
+      <div class="feat-block c-ocean">
+        <div class="feat-icon">🌟</div>
+        <div class="feat-title">Confidence &amp; Pride</div>
+        <div class="feat-desc">From their first dish to their Friday challah, campers discover what they're capable of. That confidence follows them home.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ONE WEEK EXCLUSIVE -->
+<section class="exclusive">
+  <div class="wrap">
+    <div class="exclusive-inner">
+      <div class="exclusive-badge">
+        <span class="exclusive-badge-big">1</span>
+        <div class="exclusive-badge-label">Week Only — August 17–21, 2025</div>
+      </div>
+      <div>
+        <p class="sec-label">Exclusive by Design</p>
+        <h2 class="sec-h">One week.<br><em>All the magic.</em></h2>
+        <p class="sec-body">We don't believe in filler. One focused, unforgettable week means every single day is packed with the best activities, the best trips, and the best Jewish summer energy. No dilution. No rushing. Just five days of pure camp joy in the heart of summer Delaware.</p>
+        <div class="exclusive-tagline">This is your family's summer destination moment.</div>
+        <div style="margin-top:24px;">
+          <a href="register.html" class="tally-link btn btn-ocean">Reserve Your Spot →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY MEMORIES -->
+<section class="polars" id="polars">
+  <div class="wrap">
+    <div class="polars-hd">
+      <div>
+        <p class="sec-label">From Our Community</p>
+        <h2 class="sec-h">Jewish Summer<br><em>Joy.</em></h2>
+      </div>
+      <div class="polars-quote">
+        <p class="polars-q-line">Real camp days from<br><strong>Chabad of Southern Delaware.</strong></p>
+        <p class="polars-q-line">Kitchen tables, shore trips,<br>outdoor play, and summer friends.</p>
+        <p class="polars-q-line">One week. <strong>Unforgettable.</strong></p>
+      </div>
+    </div>
+  </div>
+  <div class="polar-scroll-outer" id="polarScroll">
+    <div class="polar-track" id="polarTrack">
+      <!--
+        POLAROID PLACEHOLDERS
+        DO NOT use real photos of kids. These slots are for future camp photos once available.
+        When images are ready, replace the .polar-img-ph divs with <img> tags.
+        Suggested filenames: uploads/camp-memory-01.jpg through uploads/camp-memory-06.jpg
+      -->
+      <div class="polar">
+        <div class="polar-img-ph">🍳</div>
+        <div class="polar-cap">
+          [PHOTO COMING SOON]<br>uploads/camp-memory-01.jpg
+        </div>
+      </div>
+      <div class="polar">
+        <div class="polar-img-ph">🏖️</div>
+        <div class="polar-cap">
+          [PHOTO COMING SOON]<br>uploads/camp-memory-02.jpg
+        </div>
+      </div>
+      <div class="polar">
+        <div class="polar-img-ph">✡️</div>
+        <div class="polar-cap">
+          [PHOTO COMING SOON]<br>uploads/camp-memory-03.jpg
+        </div>
+      </div>
+      <div class="polar">
+        <div class="polar-img-ph">🎨</div>
+        <div class="polar-cap">
+          [PHOTO COMING SOON]<br>uploads/camp-memory-04.jpg
+        </div>
+      </div>
+      <div class="polar">
+        <div class="polar-img-ph">🍞</div>
+        <div class="polar-cap">
+          [PHOTO COMING SOON]<br>uploads/camp-memory-05.jpg
+        </div>
+      </div>
+      <div class="polar">
+        <div class="polar-img-ph">⚽</div>
+        <div class="polar-cap">
+          [PHOTO COMING SOON]<br>uploads/camp-memory-06.jpg
+        </div>
+      </div>
+    </div>
+    <button class="polar-arrow polar-arrow-l hidden" id="polarLeft" type="button" aria-label="Previous">←</button>
+    <button class="polar-arrow polar-arrow-r" id="polarRight" type="button" aria-label="Next">→</button>
+  </div>
+</section>
+
+<!-- SESSION / ENROLLMENT -->
+<section class="sessions" id="sessions">
+  <div class="wrap">
+    <p class="sec-label">Enrollment</p>
+
+    <!-- THE WEEK -->
+    <div class="session-panel" id="s1">
+      <div class="sess-info">
+        <svg class="session-illo" width="42" height="42" viewBox="0 0 42 42" fill="none" aria-hidden="true" style="display:block;margin-bottom:12px;opacity:.55;color:var(--ocean);">
+          <!-- Stylized wave + star -->
+          <path d="M4 28C8 22 14 20 21 20C28 20 34 22 38 28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <path d="M4 34C8 28 14 26 21 26C28 26 34 28 38 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+          <path d="M21 4L22.8 10H29L23.6 13.6L25.4 20L21 16.4L16.6 20L18.4 13.6L13 10H19.2Z" fill="currentColor"/>
+        </svg>
+        <span class="ep-label">Camp Week 2025</span>
+        <h2 class="session-h">One<br><em>Week.</em></h2>
+        <div class="session-rule"></div>
+        <p class="recipe-meta">YIELDS: 1 unforgettable summer week · SERVES: ages 3–12</p>
+        <div class="session-dates">
+          <div><div class="sd-label">Start</div><div class="sd-val" id="sessionStart">Aug 17, 2025</div></div>
+          <div><div class="sd-label">End</div><div class="sd-val" id="sessionEnd">Aug 21, 2025</div></div>
+        </div>
+        <div class="session-dates" style="margin-top:0;">
+          <div><div class="sd-label">Hours</div><div class="sd-val">9:00 AM – 3:00 PM</div></div>
+          <div><div class="sd-label">Ages</div><div class="sd-val">3 – 12</div></div>
+        </div>
+        <p class="session-desc">Five full days of chopping, mixing, baking, tasting, shore-town trips, sports, and Jewish summer magic. One exclusive week — and it's all you need.</p>
+        <div>
+          <div class="price-row">
+            <div><div class="price-tier">Tuition per child</div><div class="price-note">Lunch included daily</div></div>
+            <div class="price-amt" id="weeklyPrice">$300</div>
+          </div>
+          <div class="price-row">
+            <div><div class="price-tier">Before &amp; After Care</div><div class="price-note">Optional · 8:30 AM &amp; until 3:30 PM</div></div>
+            <div class="price-amt" id="carePrice">+$75</div>
+          </div>
+        </div>
+        <div style="margin-top:22px;">
+          <a href="register.html" class="tally-link btn btn-ocean">Enroll for Camp Week →</a>
+        </div>
+      </div>
+      <div class="sess-media">
+        <div class="session-img">
+          <!--
+            ACTIVITY IMAGE PLACEHOLDER
+            AI gen OK — kids cooking at a camp table, bright and energetic
+            Suggested filename: uploads/activity-cooking.jpg
+          -->
+          <div class="session-img-ph">
+            <div class="session-img-ph-label">🍳 Cooking Workshop</div>
+            <div class="session-img-ph-note">
+              [ACTIVITY IMAGE — AI gen ok]<br>
+              uploads/activity-cooking.jpg
+            </div>
+          </div>
+        </div>
+        <div class="session-perks">
+          <div class="perk">Culinary workshops every single day</div>
+          <div class="perk">Shore trip or adventure most days</div>
+          <div class="perk">Friday Challah bake — take your loaf home for Shabbos</div>
+          <div class="perk">Sports &amp; outdoor activities</div>
+          <div class="perk">Creative arts projects</div>
+          <div class="perk">Lunch served daily</div>
+          <div class="perk">Camp T-shirt included</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<div class="countdown">
+  <div class="wrap">
+    <div class="cd-inner">
+      <div class="cd-label">
+        <span>🌊</span>
+        <span>Camp starts August 17 — don't miss it</span>
+      </div>
+      <div class="cd-units">
+        <div class="cd-unit"><div class="cd-n" id="cdD">—</div><div class="cd-l">Days</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-n" id="cdH">—</div><div class="cd-l">Hours</div></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><div class="cd-n" id="cdM">—</div><div class="cd-l">Minutes</div></div>
+      </div>
+      <div>
+        <a href="register.html" class="tally-link btn btn-gold">Secure Your Spot →</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="gallery-hd">
+      <div>
+        <p class="sec-label">Camp Life</p>
+        <h2 class="sec-h">See The Magic<br><em>For Yourself.</em></h2>
+        <p class="sec-body">From flour-covered smiles to unforgettable shore trips — every day is packed with energy, excitement, and joy.</p>
+      </div>
+      <div class="gallery-rolls">
+        <p class="gallery-roll">Cook. Create. Explore.</p>
+        <p class="gallery-roll">Challah every Friday.</p>
+        <p class="gallery-roll">Shore trips. <em>All week long.</em></p>
+        <p class="gallery-roll">Sports, arts &amp; adventure.</p>
+        <p class="gallery-roll gallery-roll-small">— Summer 2025, Southern Delaware</p>
+      </div>
+    </div>
+  </div>
+  <div class="gallery-scroll-outer">
+    <div class="gallery-scroll-track" id="galleryTrack">
+      <!--
+        GALLERY IMAGE PLACEHOLDERS
+        AI gen OK for activity/atmosphere shots (no real kids or staff photos)
+        Replace .gs-ph divs with <img> tags when images are available
+      -->
+      <div class="gs">
+        <div class="gs-ph">
+          <div class="gs-ph-icon">🍳</div>
+          <div class="gs-ph-note">[ACTIVITY IMAGE — AI gen ok]<br>uploads/gallery-cooking.jpg</div>
+        </div>
+        <div class="gs-label">Cooking Workshop</div>
+      </div>
+      <div class="gs">
+        <div class="gs-ph">
+          <div class="gs-ph-icon">🏖️</div>
+          <div class="gs-ph-note">[ACTIVITY IMAGE — AI gen ok]<br>uploads/gallery-shore-trip.jpg</div>
+        </div>
+        <div class="gs-label">Shore Trip Day</div>
+      </div>
+      <div class="gs">
+        <div class="gs-ph">
+          <div class="gs-ph-icon">🍞</div>
+          <div class="gs-ph-note">[ACTIVITY IMAGE — AI gen ok]<br>uploads/gallery-challah.jpg</div>
+        </div>
+        <div class="gs-label">Challah Friday</div>
+      </div>
+      <div class="gs">
+        <div class="gs-ph">
+          <div class="gs-ph-icon">🎨</div>
+          <div class="gs-ph-note">[ACTIVITY IMAGE — AI gen ok]<br>uploads/gallery-arts.jpg</div>
+        </div>
+        <div class="gs-label">Arts &amp; Crafts</div>
+      </div>
+      <div class="gs">
+        <div class="gs-ph">
+          <div class="gs-ph-icon">⚽</div>
+          <div class="gs-ph-note">[ACTIVITY IMAGE — AI gen ok]<br>uploads/gallery-sports.jpg</div>
+        </div>
+        <div class="gs-label">Sports &amp; Play</div>
+      </div>
+      <!-- Comp card always last -->
+      <div class="gs comp-block">
+        <div>
+          <div class="comp-eyebrow">Summer 2025</div>
+          <div class="comp-h">The Best<br><em>Week of Summer</em></div>
+          <div class="comp-body">Real cooking. Shore adventures. Jewish pride. Friendships that last. This is what summer is supposed to feel like.</div>
+        </div>
+        <a href="register.html" class="tally-link comp-link">Enroll Now →</a>
+      </div>
+    </div>
+    <button class="gallery-arrow gallery-arrow-l hidden" id="galleryLeft" aria-label="Previous">←</button>
+    <button class="gallery-arrow gallery-arrow-r" id="galleryRight" aria-label="Next">→</button>
+  </div>
+</section>
+
+<!-- SOCIAL / PHOTOS SECTION -->
+<section class="social-feed" id="latest">
+  <div class="wrap">
+    <div class="social-feed-grid">
+      <div>
+        <p class="sec-label social-feed-label">Latest From Camp</p>
+        <h2 class="sec-h social-feed-headline">Camp photos<br><em>coming soon.</em></h2>
+        <p class="sec-body social-feed-body">Once camp begins, this section will feature fresh moments from the kitchen, trips, activities, and all the smiles in between.</p>
+        <div class="social-feed-actions">
+          <a href="photos.html" class="btn btn-ocean">View Photo Albums</a>
+          <a href="https://www.instagram.com/chabadsoutherndelaware/" class="btn btn-ocean social-instagram" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/chabadsoutherndelaware/" class="btn btn-ghost social-facebook" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="photo-callout">
+        <div class="photo-callout-icon" aria-hidden="true">📸</div>
+        <div>
+          <div class="photo-callout-title">Photo albums live here.</div>
+          <p class="photo-callout-text">During camp, new albums can be added for each day, trip, or special activity.</p>
+        </div>
+        <a href="photos.html" class="btn btn-ocean">Open Albums →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRIPS CALLOUT -->
+<section class="trips">
+  <div class="wrap">
+    <div class="trips-inner">
+      <div>
+        <p class="sec-label" style="color:rgba(255,255,255,.8);">Beyond the Kitchen</p>
+        <h2 class="trips-h">Shore trips.<br>Big adventures.<br><em>All week.</em></h2>
+        <p class="trips-body">We're in Southern Delaware — summer-destination country. We don't stay inside. Campers board the bus and head out on real adventures through the best of what this region has to offer: beaches, farms, local markets, and more.</p>
+        <p class="trips-tagline">"The kind of day they'll talk about at the dinner table all year."</p>
+      </div>
+      <div class="trips-right">
+        <div class="trips-badge">
+          <div class="trips-badge-big">Shore Bound</div>
+          <div class="trips-badge-label">Trips &amp; adventures most days</div>
+        </div>
+        <p class="trips-note">Every trip is part of the experience. Campers discover their region, explore its food and culture, and bring it all back to the kitchen. Delaware never felt so delicious.</p>
+        <div style="margin-top:18px;">
+          <a href="register.html" class="tally-link btn btn-gold">Enroll Now →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS — hidden until real quotes are collected -->
+<section class="testimonials" id="testimonials" style="display:none;">
+  <!-- CLIENT NOTE: Uncomment this section and add real parent quotes once collected and approved -->
+  <div class="wrap">
+    <p class="sec-label">What Parents Say</p>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="testi-q">"</div>
+        <p class="testi-text">Parent testimonials will be added here after real quotes are collected and approved.</p>
+        <div class="testi-rule"></div>
+        <div class="testi-by">Awaiting approved parent quote</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="wrap">
+    <div class="loc-grid">
+      <div>
+        <p class="sec-label">The Venue</p>
+        <h2 class="sec-h">Right in the<br>heart of <em>Southern Delaware.</em></h2>
+        <p class="loc-body">Camp is held at Chabad of Southern Delaware, under the warm direction of Rabbi Sholom Vogel. Southern Delaware is one of the great summer destinations on the East Coast — and camp puts your child right in the middle of it all.</p>
+        <div class="loc-addr">
+          Chabad of Southern Delaware<br>
+          <!-- CLIENT INPUT NEEDED: Confirm exact venue address -->
+          <span style="font-size:14px;color:var(--muted);font-family:var(--font-b);">[VENUE ADDRESS — confirm with Rabbi Vogel]</span>
+        </div>
+        <p style="margin-top:14px;font-size:13px;color:var(--muted);line-height:1.65;">
+          Drop-off: 9:00 AM · Pickup: 3:00 PM<br>
+          Under the direction of <strong style="color:var(--text);">Rabbi Sholom Vogel</strong>, Chabad of Southern Delaware
+        </p>
+      </div>
+      <div class="loc-photo">
+        <!--
+          VENUE PHOTO PLACEHOLDER
+          DO NOT use a real photo of kids or staff. Use a location/building/exterior shot.
+          Suggested filename: uploads/venue-photo.jpg
+          Or leave as-is (placeholder) — no AI gen needed here, just a real photo of the space when available
+        -->
+        <div class="loc-photo-ph">
+          <div class="loc-photo-ph-icon">📍</div>
+          <div class="loc-photo-ph-label">Chabad of Southern Delaware</div>
+          <div class="loc-photo-ph-note">
+            [VENUE PHOTO]<br>
+            uploads/venue-photo.jpg<br>
+            (exterior or interior, no kids/staff needed)
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="faq-grid">
+      <div>
+        <p class="sec-label">Questions</p>
+        <h2 class="sec-h">Real questions.<br>Straight<br><em>answers.</em></h2>
+        <p class="faq-sidebar-body">Can't find what you're looking for? Reach out and we'll get back to you within 24 hours.</p>
+        <a href="mailto:rabbi@jewishpedro.org" class="btn btn-ghost">Contact Us</a>
+      </div>
+      <div id="faqList">
+        <div class="faq-item">
+          <div class="faq-q" tabindex="0"><span class="faq-qt">What ages is camp for?</span><span class="faq-tog">+</span></div>
+          <div class="faq-ans"><div class="faq-ans-in">Camp welcomes kids ages 3–12. Activities and cooking stations are adapted by age so every camper can fully participate and succeed.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" tabindex="0"><span class="faq-qt">What are the camp hours?</span><span class="faq-tog">+</span></div>
+          <div class="faq-ans"><div class="faq-ans-in">Camp runs 9:00 AM – 3:00 PM daily. Optional Before &amp; After Care extends the day from 8:30 AM until 3:30 PM.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" tabindex="0"><span class="faq-qt">Why only one week?</span><span class="faq-tog">+</span></div>
+          <div class="faq-ans"><div class="faq-ans-in">One week is exactly enough to make it magical. We pack everything — cooking, trips, Jewish pride, friendships — into five unforgettable days. Exclusive by design.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" tabindex="0"><span class="faq-qt">How does drop-off and pickup work?</span><span class="faq-tog">+</span></div>
+          <div class="faq-ans"><div class="faq-ans-in">When you arrive, a staff member will greet your child. At pickup, only individuals listed on your registration form are authorized to collect your camper — please have ID ready.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" tabindex="0"><span class="faq-qt">Will there be security on site?</span><span class="faq-tog">+</span></div>
+          <div class="faq-ans"><div class="faq-ans-in">Yes. Camp will have security presence during camp hours, along with staff-supervised drop-off, pickup, and all activities.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" tabindex="0"><span class="faq-qt">What should my child bring?</span><span class="faq-tog">+</span></div>
+          <div class="faq-ans"><div class="faq-ans-in">Comfortable clothes they don't mind getting messy (aprons are provided), a water bottle, sunscreen, any allergy medications, and a great appetite. We take care of everything else.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" tabindex="0"><span class="faq-qt">My child has food allergies — is camp safe?</span><span class="faq-tog">+</span></div>
+          <div class="faq-ans"><div class="faq-ans-in">We take allergies seriously. Note all allergies during registration. Our staff reviews every camper's needs. For severe allergies, we'll speak with you directly before camp begins.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" tabindex="0"><span class="faq-qt">Are scholarships available?</span><span class="faq-tog">+</span></div>
+          <div class="faq-ans"><div class="faq-ans-in">We believe every Jewish child deserves this experience. Limited scholarship assistance is available on a first-come, first-served basis. Contact <a href="mailto:rabbi@jewishpedro.org" style="color:var(--ocean);font-weight:700;">rabbi@jewishpedro.org</a> before registering to apply.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SAFETY -->
+<div class="safety">
+  <div class="wrap">
+    <div class="safety-in">
+      <span>🔒</span>
+      <span>Camper Safety: Only individuals listed on your registration form are authorized for pickup.</span>
+    </div>
+  </div>
+</div>
+
+<!-- REGISTER -->
+<section class="register" id="register">
+  <div class="wrap">
+    <div class="reg-grid">
+      <div>
+        <p class="sec-label">Tuition</p>
+        <h2 class="sec-h">Clear pricing.<br><em>No surprises.</em></h2>
+        <div class="pricing-table">
+          <div class="pt-row hd"><span>Session</span><span>Per Child</span></div>
+          <div class="pt-row">
+            <div><div class="pt-tier">Camp Week (Aug 17–21)</div><div class="pt-note">Lunch included daily</div></div>
+            <div class="pt-price">$300</div>
+          </div>
+          <div class="pt-row" style="grid-template-columns:1fr;background:var(--sky);">
+            <div class="pt-note"><strong>Optional Before &amp; After Care</strong> · +$75 · 8:30 AM – 3:30 PM</div>
+          </div>
+        </div>
+        <div class="scholarship">
+          <!-- CLIENT INPUT: Confirm scholarship availability and contact/process -->
+          <strong>Need financial assistance?</strong> We believe every Jewish child deserves this experience. Limited scholarships are available. Reach out to us before registering.
+        </div>
+      </div>
+      <div>
+        <p class="sec-label">Enroll Now</p>
+        <h2 class="sec-h">Reserve your<br>spot for<br><em>Summer 2025.</em></h2>
+        <p class="reg-cta-body">Spots are limited — this is one exclusive week and we fill up fast. Register early to secure your family's place.</p>
+        <div class="reg-actions">
+          <!-- CLIENT INPUT NEEDED: Replace the Tally form URL in register.html with the correct registration link -->
+          <a href="register.html" class="tally-link btn btn-ocean">Register Now →</a>
+          <a href="mailto:rabbi@jewishpedro.org" class="btn btn-ghost">Ask a Question</a>
+        </div>
+        <p class="reg-note">Questions? Email <a href="mailto:rabbi@jewishpedro.org" style="color:var(--ocean);font-weight:700;">rabbi@jewishpedro.org</a> or reach out through Chabad of Southern Delaware.</p>
+        <p class="reg-note" style="margin-top:6px;font-size:11px;color:var(--muted);">🔒 Authorized pickup only. Individuals collecting your child must be listed on the registration form.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><span class="bh">ב"ה</span><em>Kosher Camp</em> Southern Delaware</div>
+        <p class="footer-tag">One exclusive week of Jewish summer magic. Real cooking, shore adventures, and friendships that last all year.</p>
+        <p class="footer-dir">Under the direction of <strong>Rabbi Sholom Vogel</strong><br>Chabad of Southern Delaware</p>
+      </div>
+      <div>
+        <div class="footer-col-title">The Camp</div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#sessions">Sessions &amp; Pricing</a>
+          <a href="#gallery">Gallery</a>
+          <a href="photos.html">Photo Albums</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <div class="footer-links">
+          <a href="mailto:rabbi@jewishpedro.org">Email Us</a>
+          <a href="https://www.jewishpedro.org" target="_blank" rel="noopener">Chabad of Southern Delaware</a>
+          <a href="register.html" class="tally-link">Register</a>
+          <a href="https://www.instagram.com/chabadsoutherndelaware/" class="ig-link" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.facebook.com/chabadsoutherndelaware/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-legal">© 2025 Kosher Camp Southern Delaware · Chabad of Southern Delaware · rabbi@jewishpedro.org</div>
+      <a href="mailto:rabbi@jewishpedro.org" class="footer-email">rabbi@jewishpedro.org</a>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<a href="register.html" class="tally-link float-cta btn btn-ocean" id="floatCta">Enroll Now →</a>
+
+<script>
+// ── FAQ ──────────────────────────────────────────────────────────
+function initFAQ() {
+  document.querySelectorAll('.faq-item').forEach(function(item) {
+    var q = item.querySelector('.faq-q');
+    var a = item.querySelector('.faq-ans');
+    function toggle() {
+      var open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(o) {
+        o.classList.remove('open');
+        o.querySelector('.faq-ans').style.maxHeight = null;
+      });
+      if (!open) { item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+    }
+    q.addEventListener('click', toggle);
+    q.addEventListener('keydown', function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+  });
+}
+initFAQ();
+
+// ── CMS CONTENT LOADER ─────────────────────────────────────────
+(function() {
+  function text(sel, value) {
+    if (value === undefined || value === null) return;
+    document.querySelectorAll(sel).forEach(function(el) { el.textContent = value; });
+  }
+  function html(sel, value) {
+    if (value === undefined || value === null) return;
+    document.querySelectorAll(sel).forEach(function(el) { el.innerHTML = value; });
+  }
+  function href(sel, value) {
+    if (!value) return;
+    document.querySelectorAll(sel).forEach(function(el) { el.href = value; });
+  }
+  function mail(sel, email) {
+    if (!email) return;
+    document.querySelectorAll(sel).forEach(function(el) { el.href = 'mailto:' + email; });
+  }
+  function esc(v) {
+    return String(v||'').replace(/[&<>"']/g,function(c){return({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c];});
+  }
+  function renderFAQ(items) {
+    var list = document.getElementById('faqList');
+    if (!list || !Array.isArray(items)) return;
+    list.innerHTML = '';
+    items.forEach(function(item) {
+      if (!item.question || !item.answer) return;
+      var wrap = document.createElement('div');
+      wrap.className = 'faq-item';
+      wrap.innerHTML =
+        '<div class="faq-q" tabindex="0"><span class="faq-qt"></span><span class="faq-tog">+</span></div>' +
+        '<div class="faq-ans"><div class="faq-ans-in"></div></div>';
+      wrap.querySelector('.faq-qt').textContent = item.question;
+      wrap.querySelector('.faq-ans-in').textContent = item.answer;
+      list.appendChild(wrap);
+    });
+    initFAQ();
+  }
+
+  fetch('content/site.json')
+    .then(function(r){ return r.json(); })
+    .then(function(site) {
+      var hero = site.hero || {};
+      text('.hero-tag-text', hero.eyebrow);
+      if (hero.headline_1 && hero.headline_2 && hero.headline_3) {
+        document.querySelector('.hero-h1').innerHTML =
+          esc(hero.headline_1) +
+          '<span class="line2">' + esc(hero.headline_2) + '</span>' +
+          '<span class="line3">' + esc(hero.headline_3) + '</span>';
+      }
+      text('#heroSub', hero.subtitle);
+      var facts = document.querySelectorAll('.hero-fact');
+      [
+        [hero.fact_1_value, hero.fact_1_label],
+        [hero.fact_2_value, hero.fact_2_label],
+        [hero.fact_3_value, hero.fact_3_label],
+        [hero.fact_4_value, hero.fact_4_label]
+      ].forEach(function(pair, i) {
+        if (facts[i] && pair[0] && pair[1]) {
+          facts[i].innerHTML = '<strong>' + esc(pair[0]) + '</strong>' + esc(pair[1]);
+        }
+      });
+
+      var sess = site.sessions || {};
+      text('#sessionStart', sess.session_start);
+      text('#sessionEnd', sess.session_end);
+      text('#weeklyPrice', sess.weekly_price);
+      text('#carePrice', sess.care_price);
+
+      var photos = site.photos || {};
+      text('.social-feed-label', photos.eyebrow);
+      html('.social-feed-headline', esc(photos.headline || 'Camp photos') + '<br><em>' + esc(photos.headline_emphasis || 'coming soon.') + '</em>');
+      text('.social-feed-body', photos.body);
+      text('.photo-callout-title', photos.callout_title);
+      text('.photo-callout-text', photos.callout_body);
+
+      var contact = site.contact || {};
+      href('.social-instagram, .ig-link', contact.instagram);
+      href('.social-facebook, a[href*="facebook.com"]', contact.facebook);
+      mail('a[href^="mailto:"]', contact.email);
+
+      renderFAQ(site.faq);
+    })
+    .catch(function(){});
+})();
+
+// ── FLOAT CTA ─────────────────────────────────────────────────
+new IntersectionObserver(function(en) {
+  document.getElementById('floatCta').classList.toggle('show', !en[0].isIntersecting);
+}, {threshold:0}).observe(document.getElementById('hero'));
+
+// ── COUNTDOWN ─────────────────────────────────────────────────
+var campDate = new Date('2025-08-17T09:00:00');
+function tick() {
+  var d = campDate - Date.now();
+  if (d <= 0) {
+    ['cdD','cdH','cdM'].forEach(function(id){document.getElementById(id).textContent='00';});
+    return;
+  }
+  document.getElementById('cdD').textContent = String(Math.floor(d/86400000)).padStart(2,'0');
+  document.getElementById('cdH').textContent = String(Math.floor(d%86400000/3600000)).padStart(2,'0');
+  document.getElementById('cdM').textContent = String(Math.floor(d%3600000/60000)).padStart(2,'0');
+}
+tick(); setInterval(tick, 30000);
+
+// ── NAV COMPACT ON SCROLL ──────────────────────────────────────
+(function() {
+  var nav = document.querySelector('.nav');
+  if (!nav) return;
+  window.addEventListener('scroll', function() { nav.classList.toggle('scrolled', window.scrollY > 80); }, {passive:true});
+})();
+
+// ── MOBILE NAV ────────────────────────────────────────────────
+(function() {
+  var nav = document.getElementById('siteNav');
+  var btn = document.getElementById('navMenuBtn');
+  var links = document.getElementById('navLinks');
+  if (!nav || !btn || !links) return;
+  function setOpen(open) {
+    nav.classList.toggle('nav-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  btn.addEventListener('click', function(){ setOpen(!nav.classList.contains('nav-open')); });
+  links.querySelectorAll('a').forEach(function(l){ l.addEventListener('click', function(){ setOpen(false); }); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') setOpen(false); });
+  window.addEventListener('resize', function(){ if(window.innerWidth>960) setOpen(false); });
+})();
+
+// ── GALLERY ARROWS + DRAG ─────────────────────────────────────
+(function() {
+  var track = document.getElementById('galleryTrack');
+  var btnL = document.getElementById('galleryLeft');
+  var btnR = document.getElementById('galleryRight');
+  if (!track||!btnL||!btnR) return;
+  function step() {
+    var c = track.querySelector('.gs'); if (!c) return 300;
+    return c.getBoundingClientRect().width + (parseFloat(getComputedStyle(track).gap)||0);
+  }
+  function updateArrows() {
+    btnL.classList.toggle('hidden', track.scrollLeft < 10);
+    btnR.classList.toggle('hidden', track.scrollLeft >= track.scrollWidth - track.clientWidth - 10);
+  }
+  btnL.addEventListener('click', function(e){ e.preventDefault(); track.scrollBy({left:-step(),behavior:'smooth'}); });
+  btnR.addEventListener('click', function(e){ e.preventDefault(); track.scrollBy({left:step(),behavior:'smooth'}); });
+  track.addEventListener('scroll', updateArrows, {passive:true});
+  window.addEventListener('resize', updateArrows);
+  updateArrows();
+  var drag=false, sx, sl;
+  track.addEventListener('mousedown', function(e){ drag=true; sx=e.pageX-track.offsetLeft; sl=track.scrollLeft; });
+  window.addEventListener('mouseup', function(){ drag=false; });
+  track.addEventListener('mousemove', function(e){ if(!drag)return; e.preventDefault(); track.scrollLeft=sl-(e.pageX-track.offsetLeft-sx)*1.2; });
+})();
+
+// ── POLAROID DRAG + ARROWS ────────────────────────────────────
+(function() {
+  var tr = document.getElementById('polarTrack');
+  var btnL = document.getElementById('polarLeft');
+  var btnR = document.getElementById('polarRight');
+  if (!tr) return;
+  var drag=false, sx, sl;
+  tr.addEventListener('mousedown', function(e){ drag=true; tr.style.cursor='grabbing'; sx=e.pageX-tr.offsetLeft; sl=tr.scrollLeft; });
+  window.addEventListener('mouseup', function(){ drag=false; tr.style.cursor='grab'; });
+  tr.addEventListener('mousemove', function(e){ if(!drag)return; e.preventDefault(); tr.scrollLeft=sl-(e.pageX-tr.offsetLeft-sx)*1.2; });
+  if (btnL && btnR) {
+    function stepSize() { var c=tr.querySelector('.polar'); if(!c) return 200; return c.getBoundingClientRect().width+(parseFloat(getComputedStyle(tr).gap)||0); }
+    btnL.addEventListener('click', function(e){ e.preventDefault(); tr.scrollBy({left:-stepSize(),behavior:'smooth'}); });
+    btnR.addEventListener('click', function(e){ e.preventDefault(); tr.scrollBy({left:stepSize(),behavior:'smooth'}); });
+  }
+})();
+
+// ── SCROLL ANIMATIONS ─────────────────────────────────────────
+(function() {
+  if (!window.matchMedia || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  // Hero entrance
+  [
+    {sel:'.hero-tag',  delay:0},
+    {sel:'.hero-h1',   delay:130},
+    {sel:'.hero-sub',  delay:290},
+    {sel:'.hero-btns', delay:430},
+    {sel:'.hero-right',delay:60}
+  ].forEach(function(item) {
+    var el=document.querySelector(item.sel); if(!el)return;
+    el.classList.add('hero-enter');
+    setTimeout(function(){ el.classList.add('hero-go'); }, item.delay+50);
+  });
+
+  // Session slide-in
+  document.querySelectorAll('.session-panel').forEach(function(panel) {
+    new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) entries[0].target.classList.add('sp-in');
+    },{threshold:0.1}).observe(panel);
+  });
+
+  // Polaroid stagger
+  var polarsSection = document.querySelector('.polars');
+  if (polarsSection) {
+    var polarsDone=false;
+    document.querySelectorAll('.polar').forEach(function(p){ p.classList.add('p-hidden'); });
+    new IntersectionObserver(function(entries) {
+      if (!entries[0].isIntersecting||polarsDone) return;
+      polarsDone=true;
+      document.querySelectorAll('.polar').forEach(function(p,i){ setTimeout(function(){ p.classList.remove('p-hidden'); },i*100); });
+    },{threshold:0.1}).observe(polarsSection);
+  }
+
+  // Headline + label reveals
+  document.querySelectorAll('.sec-h, .session-h, .trips-h').forEach(function(el){ el.classList.add('reveal-ready'); });
+  var revObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      var el=entry.target;
+      if (el.classList.contains('sec-label')) {
+        el.classList.add('visible');
+        var sib=el.nextElementSibling;
+        if (sib&&sib.classList.contains('reveal-ready')) setTimeout(function(){ sib.classList.add('visible'); },140);
+      } else { el.classList.add('visible'); }
+      revObs.unobserve(el);
+    });
+  },{threshold:0.18});
+  document.querySelectorAll('.reveal-ready, .sec-label').forEach(function(el){ revObs.observe(el); });
+
+  // Feature card entrance
+  var featGrid=document.querySelector('.feat-grid');
+  if (featGrid) {
+    var featDone=false;
+    new IntersectionObserver(function(entries) {
+      if (!entries[0].isIntersecting||featDone) return;
+      featDone=true;
+      document.querySelectorAll('.feat-block').forEach(function(card,i){ setTimeout(function(){ card.classList.add('visible'); },i*70); });
+    },{threshold:0.12}).observe(featGrid);
+  }
+
+  // Section fade
+  document.querySelectorAll('section:not(#hero):not(.polars), .stats, .countdown, .safety').forEach(function(el){ el.classList.add('sec-fade'); });
+  var fadeObs=new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) { entry.target.classList.add('in-view'); fadeObs.unobserve(entry.target); }
+    });
+  },{threshold:0.07});
+  document.querySelectorAll('.sec-fade').forEach(function(el){ fadeObs.observe(el); });
+
+  // Countdown pulse
+  var cdSec=document.querySelector('.countdown');
+  if (cdSec) {
+    var cdDone=false;
+    new IntersectionObserver(function(entries) {
+      if (!entries[0].isIntersecting||cdDone) return;
+      cdDone=true;
+      document.querySelectorAll('.cd-n').forEach(function(n,i){ setTimeout(function(){ n.classList.add('pulse'); },i*90); });
+    },{threshold:0.5}).observe(cdSec);
+  }
+})();
+</script>
+</body>
+</html>
