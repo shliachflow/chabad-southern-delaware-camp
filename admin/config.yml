@@ -14,9 +14,11 @@
 #   3. Visit /admin to manage content
 # ============================================================
 
+site_url: https://shliachflow.github.io/chabad-southern-delaware-camp
+
 backend:
   name: github
-  repo: shliachflow/chabad-southern-delaware-camp   # UPDATE: change to your actual GitHub username/repo
+  repo: shliachflow/chabad-southern-delaware-camp
   branch: main
 
 # Where uploaded images are stored

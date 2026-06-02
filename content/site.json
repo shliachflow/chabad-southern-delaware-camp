@@ -5,7 +5,7 @@
     "headline_2": "Bake.",
     "headline_3": "Have fun.",
     "subtitle": "One week of kosher cooking, baking, trips, water play, and Jewish values.",
-    "fact_1_value": "Aug 3-7",
+    "fact_1_value": "Aug 17-21",
     "fact_1_label": "One week only",
     "fact_2_value": "9 AM-3 PM",
     "fact_2_label": "Monday-Friday",
@@ -15,8 +15,8 @@
     "fact_4_label": "Regular price"
   },
   "camp_details": {
-    "start_date": "August 3, 2026",
-    "end_date": "August 7, 2026",
+    "start_date": "August 17, 2026",
+    "end_date": "August 21, 2026",
     "daily_start_time": "9:00 AM",
     "daily_end_time": "3:00 PM",
     "days": "Monday-Friday",
@@ -66,7 +66,7 @@
   "faq": [
     {
       "question": "What are the camp dates and hours?",
-      "answer": "Camp runs Monday-Friday, August 3-7, 2026, from 9:00 AM to 3:00 PM."
+      "answer": "Camp runs Monday-Friday, August 17-21, 2026, from 9:00 AM to 3:00 PM."
     },
     {
       "question": "What will the kids do?",
@@ -75,6 +75,10 @@
     {
       "question": "How do I register?",
       "answer": "The online form is coming soon. For now, contact Rabbi Sholom at (302) 377-1162 or Rabbi@JewishSouthernDelaware.com."
+    },
+    {
+      "question": "What is the cost?",
+      "answer": "Early bird registration is $250 per child. Regular price is $300. Register early to save!"
     }
   ]
 }
