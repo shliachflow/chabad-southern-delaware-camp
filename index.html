@@ -1926,6 +1926,602 @@
       .feat-block { min-height: 138px; transform: none !important; }
       .session-dates { grid-template-columns: 1fr; }
     }
+
+    /* ── FINAL CAMP POSTER PASS ────────────────────────────────
+       Pulls the page back from "design portfolio" into warm, kid-facing camp energy. */
+    :root {
+      --ocean: #087C8F;
+      --ocean-dk: #075A68;
+      --gold: #FFC845;
+      --gold-lt: #FFF0B8;
+      --sky: #DDF7FF;
+      --sky-mid: #A9E9F7;
+      --sand: #FFF6DE;
+      --bg: #FFFDF5;
+      --text: #21364B;
+      --muted: #536B7A;
+      --border: #B8E4EE;
+      --raspberry: #F24B6A;
+      --lime: #8ED34F;
+      --purple: #6E5AE8;
+    }
+    body {
+      background:
+        radial-gradient(circle at 12% 18%, rgba(255,200,69,.22) 0 9%, transparent 9.3%),
+        radial-gradient(circle at 88% 34%, rgba(142,211,79,.13) 0 8%, transparent 8.3%),
+        linear-gradient(180deg, #fffdf5 0%, #f0fbff 52%, #fff7df 100%);
+    }
+    body::before { display: none; }
+    .nav {
+      height: 60px;
+      background: #fff;
+      border-bottom: 4px solid var(--gold);
+      box-shadow: 0 5px 0 rgba(8,124,143,.15);
+    }
+    .nav-logo { color: var(--text); }
+    .nav-logo em { color: var(--ocean); }
+    .nav-logo-badge {
+      background: var(--gold);
+      color: var(--text);
+      border-radius: 18px;
+      transform: rotate(-6deg);
+      box-shadow: 3px 3px 0 var(--raspberry);
+    }
+    .nav-links a { color: var(--text); }
+    .nav-reg {
+      background: var(--raspberry);
+      color: #fff !important;
+      border: 2px solid var(--text);
+      box-shadow: 3px 3px 0 var(--gold);
+    }
+
+    .camp-ribbon {
+      height: 36px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background: var(--ocean);
+      border-bottom: 3px solid var(--text);
+    }
+    .camp-ribbon-track {
+      display: flex;
+      min-width: max-content;
+      animation: ribbonMove 24s linear infinite;
+    }
+    .camp-ribbon span {
+      position: relative;
+      padding: 0 24px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .camp-ribbon span::after {
+      content: '';
+      position: absolute;
+      right: -5px;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gold);
+      transform: translateY(-50%);
+    }
+    @keyframes ribbonMove { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    .hero {
+      min-height: 0 !important;
+      grid-template-columns: minmax(330px, .82fr) minmax(420px, 1fr);
+      align-items: center;
+      gap: clamp(18px, 3vw, 36px);
+      padding: clamp(22px, 3vw, 42px) var(--px) clamp(28px, 4vw, 52px);
+      background:
+        radial-gradient(circle at 8% 14%, rgba(255,200,69,.48) 0 13%, transparent 13.5%),
+        radial-gradient(circle at 42% 80%, rgba(242,75,106,.11) 0 11%, transparent 11.5%),
+        linear-gradient(112deg, #fff4c6 0 45%, #dff8ff 45.2% 100%);
+      overflow: hidden;
+    }
+    .hero::before {
+      height: 18px;
+      background: repeating-linear-gradient(90deg, var(--raspberry) 0 22px, var(--gold) 22px 44px, var(--ocean) 44px 66px);
+      clip-path: none;
+      opacity: 1;
+      bottom: 0;
+    }
+    .hero::after {
+      width: 170px;
+      height: 170px;
+      right: 22px;
+      top: 20px;
+      background: radial-gradient(circle, rgba(255,255,255,.7) 0 36%, rgba(142,211,79,.25) 37% 60%, transparent 61%);
+    }
+    .hero-left {
+      width: auto !important;
+      max-width: 560px;
+      padding: 0 !important;
+      justify-content: center;
+      z-index: 5;
+    }
+    .hero-tag,
+    .hero-h1,
+    .hero-sub,
+    .hero-btns { margin-left: 0 !important; }
+    .hero-tag {
+      background: #fff;
+      color: var(--ocean);
+      border: 3px solid var(--text);
+      border-radius: 18px;
+      padding: 8px 13px;
+      margin: 0 0 12px;
+      box-shadow: 5px 5px 0 var(--gold);
+      font-size: 10px;
+      letter-spacing: .1em;
+    }
+    .hero-tag .star {
+      width: 18px;
+      height: 18px;
+      border-radius: 7px;
+      background: var(--raspberry);
+      color: #fff;
+      transform: rotate(-8deg);
+    }
+    .hero-h1 {
+      font-size: clamp(58px, 7vw, 102px) !important;
+      line-height: .82;
+      margin-bottom: 14px;
+      color: var(--ocean);
+      text-shadow: 4px 4px 0 #fff, 7px 7px 0 rgba(242,75,106,.22);
+    }
+    .hero-h1 .line2 {
+      color: var(--text);
+      margin-left: .12em;
+    }
+    .hero-h1 .line3 {
+      background: var(--gold);
+      color: var(--text);
+      border: 4px solid var(--text);
+      border-radius: 22px;
+      box-shadow: 6px 6px 0 var(--raspberry);
+      padding: .03em .22em .09em;
+      transform: rotate(-3deg);
+    }
+    .hero-sub {
+      max-width: 500px;
+      margin-bottom: 14px;
+      padding: 13px 16px;
+      border: 3px solid var(--border);
+      border-radius: 22px;
+      background: rgba(255,255,255,.86);
+      box-shadow: 7px 7px 0 rgba(8,124,143,.13);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .hero-facts {
+      width: min(100%, 510px) !important;
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+      gap: 9px;
+      margin-bottom: 15px !important;
+    }
+    .hero-fact {
+      min-height: 70px;
+      border: 3px solid var(--text);
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 4px 4px 0 rgba(33,54,75,.15);
+      padding: 9px 10px;
+      clip-path: none !important;
+    }
+    .hero-fact:nth-child(2) { background: var(--sky); }
+    .hero-fact:nth-child(3) { background: var(--gold-lt); }
+    .hero-fact:nth-child(4) { background: #E9FFD9; }
+    .hero-fact strong {
+      color: var(--ocean);
+      font-size: clamp(17px, 2vw, 24px);
+    }
+    .hero-btns {
+      padding: 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+    }
+    .btn {
+      border: 3px solid var(--text);
+      border-radius: 18px;
+      font-weight: 900;
+    }
+    .btn-ocean {
+      background: var(--raspberry);
+      box-shadow: 0 6px 0 #B42F48, 7px 7px 0 rgba(255,200,69,.42);
+    }
+    .btn-ocean:hover { background: #d83f5a; }
+    .btn-ghost {
+      background: #fff;
+      color: var(--ocean);
+      border-color: var(--text);
+    }
+
+    .hero-right {
+      position: relative !important;
+      inset: auto !important;
+      width: 100% !important;
+      min-height: 0 !important;
+      height: clamp(360px, 36vw, 520px);
+      margin: 0 !important;
+      border: 6px solid #fff;
+      border-radius: 36px 36px 36px 10px;
+      clip-path: none !important;
+      box-shadow: -10px 10px 0 var(--gold), -20px 20px 0 var(--ocean);
+      overflow: hidden;
+      transform: rotate(1deg);
+    }
+    .hero-right::before {
+      content: 'Camp kitchen energy';
+      inset: auto 16px 16px auto;
+      z-index: 5;
+      background: var(--gold);
+      color: var(--text);
+      border: 3px solid var(--text);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      width: auto;
+      height: auto;
+      clip-path: none;
+    }
+    .hero-right::after {
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.24), transparent 34%),
+        radial-gradient(circle at 88% 16%, rgba(255,200,69,.28) 0 11%, transparent 11.5%);
+    }
+
+    .features,
+    .camp-gallery,
+    .sessions,
+    .faq,
+    .register { padding-block: clamp(42px, 5.4vw, 70px); }
+    .features {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(255,200,69,.28) 0 8%, transparent 8.4%),
+        linear-gradient(176deg, var(--bg) 0 64%, var(--sky) 64.2% 100%);
+    }
+    .features-hd { max-width: 760px; margin-bottom: 26px; }
+    .sec-label {
+      display: inline-flex;
+      color: var(--ocean);
+      background: #fff;
+      border: 2px solid var(--border);
+      border-radius: 999px;
+      padding: 5px 10px;
+      letter-spacing: .11em;
+      margin-bottom: 12px;
+    }
+    .sec-h {
+      color: var(--text);
+      font-size: clamp(34px, 4.2vw, 58px);
+      line-height: .95;
+    }
+    .sec-h em {
+      color: var(--raspberry);
+      text-shadow: 2px 2px 0 rgba(255,200,69,.5);
+    }
+    .feat-grid {
+      grid-template-columns: repeat(4, minmax(0,1fr)) !important;
+      gap: 16px;
+    }
+    .feat-block {
+      border-radius: 30px 30px 30px 10px !important;
+      border: 4px solid var(--text);
+      clip-path: none !important;
+      min-height: 176px;
+      padding: 46px 22px 22px !important;
+      box-shadow: 7px 7px 0 rgba(33,54,75,.16);
+      transform: rotate(var(--tilt,0deg)) !important;
+    }
+    .feat-block.c-ocean { background: var(--ocean); }
+    .feat-block.c-navy { background: var(--text); }
+    .feat-block.c-gold { background: var(--gold-lt); }
+    .feat-block.c-sky { background: var(--sky); }
+    .feat-block:nth-child(1) { --tilt: -1.5deg; }
+    .feat-block:nth-child(2) { --tilt: 1deg; }
+    .feat-block:nth-child(3) { --tilt: -1deg; }
+    .feat-block:nth-child(4) { --tilt: 1.4deg; }
+    .feat-title { font-size: clamp(21px, 2.1vw, 29px); }
+    .feat-title::before {
+      top: 14px;
+      left: 16px;
+      border: 2px solid var(--text);
+      background: #fff;
+      color: var(--raspberry);
+      border-radius: 999px;
+    }
+
+    .camp-gallery {
+      background:
+        radial-gradient(circle at 82% 18%, rgba(142,211,79,.24) 0 8%, transparent 8.4%),
+        linear-gradient(180deg, var(--sky) 0%, var(--sand) 100%);
+    }
+    .camp-gallery-head {
+      grid-template-columns: minmax(0, .78fr) minmax(260px, .5fr);
+      align-items: end;
+    }
+    .camp-gallery-note {
+      border: 3px solid var(--border);
+      border-radius: 24px 24px 8px 24px;
+      background: #fff;
+      box-shadow: 5px 5px 0 rgba(8,124,143,.12);
+    }
+    .camp-shot {
+      border: 4px solid var(--text);
+      border-radius: 26px 26px 26px 8px;
+      box-shadow: 6px 6px 0 rgba(33,54,75,.16);
+      background: #fff;
+    }
+    .camp-shot figcaption {
+      color: var(--ocean);
+      font-size: 18px;
+      padding: 10px 13px 13px;
+    }
+
+    .session-panel {
+      border: 4px solid var(--text);
+      border-radius: 34px !important;
+      box-shadow: 0 0 0 8px rgba(255,200,69,.22), 10px 10px 0 rgba(8,124,143,.14);
+      background:
+        linear-gradient(90deg, rgba(8,124,143,.08) 1px, transparent 1px) 0 0 / 28px 28px,
+        #fff;
+    }
+    .session-img {
+      border-radius: 28px 28px 28px 8px;
+      border: 3px solid var(--text);
+    }
+    .perk::before { background: var(--raspberry); }
+    .faq-item,
+    .pricing-table,
+    .scholarship {
+      border-radius: 24px !important;
+      clip-path: none !important;
+      border-color: var(--border);
+    }
+    .footer {
+      background: var(--ocean-dk);
+      border-top: 7px solid var(--gold);
+    }
+
+    @media (max-width: 960px) {
+      .camp-ribbon { height: 32px; }
+      .camp-ribbon span { font-size: 10px; padding: 0 18px; }
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 18px var(--px) 34px;
+        gap: 20px;
+        background:
+          radial-gradient(circle at 6% 12%, rgba(255,200,69,.4) 0 14%, transparent 14.5%),
+          linear-gradient(180deg, #fff4c6 0 60%, #dff8ff 60.2% 100%);
+      }
+      .hero-left { max-width: none; }
+      .hero-h1 {
+        font-size: clamp(54px, 17vw, 82px) !important;
+        margin-bottom: 10px;
+      }
+      .hero-sub {
+        max-width: none;
+        font-size: 14px;
+        padding: 11px 13px;
+      }
+      .hero-facts {
+        grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+      }
+      .hero-right {
+        height: clamp(230px, 64vw, 340px);
+        transform: none;
+        box-shadow: 0 8px 0 var(--gold), 0 15px 0 var(--ocean);
+      }
+      .feat-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+      .camp-gallery-head { grid-template-columns: 1fr; }
+      .camp-gallery-track {
+        display: flex;
+        overflow-x: auto;
+        gap: 12px;
+        padding: 4px 4px 16px;
+        scroll-snap-type: x mandatory;
+      }
+      .camp-shot {
+        flex: 0 0 min(72vw, 270px);
+        scroll-snap-align: start;
+      }
+    }
+    @media (max-width: 600px) {
+      .nav-logo { font-size: 14px; }
+      .nav-logo-badge { width: 30px; height: 30px; font-size: 11px; }
+      .hero { padding-top: 14px; }
+      .hero-tag { font-size: 8px; padding: 6px 9px; }
+      .hero-h1 { font-size: clamp(50px, 16vw, 72px) !important; }
+      .hero-fact {
+        min-height: 62px;
+        font-size: 8px;
+        padding: 8px;
+      }
+      .hero-fact strong { font-size: 17px; }
+      .feat-grid { grid-template-columns: 1fr !important; }
+      .feat-block {
+        min-height: 138px;
+        transform: none !important;
+      }
+      .session-dates { grid-template-columns: 1fr; }
+    }
+
+    /* ── HERO REFOCUS: the photo is the camp energy ─────────── */
+    .hero {
+      display: block !important;
+      position: relative;
+      min-height: clamp(560px, 72vh, 720px) !important;
+      padding: 0 !important;
+      overflow: hidden;
+      background: var(--ocean-dk);
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      height: auto;
+      z-index: 2;
+      background:
+        linear-gradient(90deg, rgba(8,37,52,.88) 0%, rgba(8,37,52,.55) 36%, rgba(8,37,52,.1) 68%, rgba(8,37,52,.38) 100%),
+        radial-gradient(circle at 18% 20%, rgba(255,200,69,.36) 0 14%, transparent 14.5%);
+      clip-path: none;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      z-index: 3;
+      left: -42px;
+      bottom: -54px;
+      width: min(54vw, 560px);
+      height: min(54vw, 560px);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,200,69,.9) 0 26%, rgba(255,200,69,.18) 27% 54%, transparent 55%);
+      opacity: .8;
+      pointer-events: none;
+    }
+    .hero-right {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 0 !important;
+      margin: 0 !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      transform: none !important;
+      z-index: 1;
+    }
+    .hero-right-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 58% center;
+      filter: saturate(1.08) contrast(1.03);
+    }
+    .hero-right::before,
+    .hero-right::after { display: none; }
+    .hero-left {
+      position: relative;
+      z-index: 4;
+      min-height: clamp(560px, 72vh, 720px);
+      width: min(760px, 78vw) !important;
+      max-width: none;
+      padding: clamp(38px, 6vw, 76px) var(--px) clamp(24px, 4vw, 44px) !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .hero-tag {
+      background: var(--gold);
+      color: var(--text);
+      border: 3px solid #fff;
+      box-shadow: 5px 5px 0 var(--raspberry);
+      margin-bottom: 16px;
+    }
+    .hero-tag .star { background: var(--raspberry); color: #fff; }
+    .hero-h1 {
+      max-width: 620px;
+      color: #fff;
+      font-size: clamp(72px, 10vw, 150px) !important;
+      line-height: .78;
+      letter-spacing: .01em;
+      margin-bottom: 18px;
+      text-shadow: 5px 5px 0 var(--raspberry), 10px 10px 0 rgba(0,0,0,.22);
+    }
+    .hero-h1 .line2 {
+      color: var(--gold);
+      margin-left: .18em;
+    }
+    .hero-h1 .line3 {
+      background: #fff;
+      color: var(--ocean);
+      border-color: var(--gold);
+      box-shadow: 6px 6px 0 var(--raspberry);
+      font-size: .5em;
+      margin-top: .08em;
+    }
+    .hero-sub {
+      max-width: 520px;
+      color: var(--text);
+      background: rgba(255,255,255,.94);
+      border: 4px solid var(--gold);
+      box-shadow: 8px 8px 0 rgba(0,0,0,.18);
+      margin-bottom: 16px;
+    }
+    .hero-facts {
+      width: min(100%, 590px) !important;
+      max-width: 590px;
+      grid-template-columns: repeat(4, minmax(0,1fr)) !important;
+      margin-bottom: 18px !important;
+    }
+    .hero-fact {
+      border-color: #fff;
+      box-shadow: 4px 4px 0 rgba(0,0,0,.24);
+      background: rgba(255,255,255,.94);
+    }
+    .hero-fact:nth-child(2),
+    .hero-fact:nth-child(3),
+    .hero-fact:nth-child(4) { background: rgba(255,248,214,.95); }
+    .hero-btns .btn-ocean {
+      background: var(--raspberry);
+      border-color: #fff;
+      color: #fff;
+      box-shadow: 0 7px 0 #9e263d, 8px 8px 0 rgba(255,200,69,.55);
+    }
+
+    @media (max-width: 960px) {
+      .hero {
+        min-height: 720px !important;
+      }
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(8,37,52,.78) 0%, rgba(8,37,52,.42) 42%, rgba(8,37,52,.68) 100%),
+          radial-gradient(circle at 18% 12%, rgba(255,200,69,.32) 0 18%, transparent 18.5%);
+      }
+      .hero-left {
+        min-height: 720px;
+        width: 100% !important;
+        justify-content: flex-start;
+        padding: 26px var(--px) 24px !important;
+      }
+      .hero-h1 {
+        font-size: clamp(64px, 19vw, 92px) !important;
+        max-width: 340px;
+      }
+      .hero-sub {
+        max-width: 330px;
+        margin-top: auto;
+        margin-bottom: 12px;
+      }
+      .hero-facts {
+        grid-template-columns: 1fr 1fr !important;
+        max-width: 330px;
+      }
+      .hero-right-img {
+        object-position: 55% center;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero { min-height: 700px !important; }
+      .hero-left { min-height: 700px; }
+      .hero-tag { max-width: 100%; }
+      .hero-h1 { font-size: clamp(58px, 18vw, 82px) !important; }
+      .hero-sub { font-size: 14px; }
+    }
   </style>
 </head>
 <body>
@@ -1951,6 +2547,13 @@
     </div>
   </div>
 </nav>
+
+<div class="camp-ribbon" aria-hidden="true">
+  <div class="camp-ribbon-track">
+    <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+    <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="hero" id="hero">
@@ -2019,23 +2622,23 @@
     </div>
     <div class="camp-gallery-track" aria-label="Camp activity images">
       <figure class="camp-shot">
-        <img src="uploads/gallery-cooking.webp" alt="Children cooking together at Kosher Culinary Camp" loading="lazy">
+        <img src="uploads/gallery-cooking.webp" alt="Children cooking together at Kosher Culinary Camp" loading="eager">
         <figcaption>Cooking</figcaption>
       </figure>
       <figure class="camp-shot">
-        <img src="uploads/gallery-challah.webp" alt="Children brushing challah at Kosher Culinary Camp" loading="lazy">
+        <img src="uploads/gallery-challah.webp" alt="Children brushing challah at Kosher Culinary Camp" loading="eager">
         <figcaption>Baking</figcaption>
       </figure>
       <figure class="camp-shot">
-        <img src="uploads/gallery-arts.webp" alt="Children doing crafts at Kosher Culinary Camp" loading="lazy">
+        <img src="uploads/gallery-arts.webp" alt="Children doing crafts at Kosher Culinary Camp" loading="eager">
         <figcaption>Crafts</figcaption>
       </figure>
       <figure class="camp-shot">
-        <img src="uploads/gallery-sports.webp" alt="Children playing water games outside at camp" loading="lazy">
+        <img src="uploads/gallery-sports.webp" alt="Children playing water games outside at camp" loading="eager">
         <figcaption>Water play</figcaption>
       </figure>
       <figure class="camp-shot">
-        <img src="uploads/gallery-shore-trip.webp" alt="Children on a local camp outing in Southern Delaware" loading="lazy">
+        <img src="uploads/gallery-shore-trip.webp" alt="Children on a local camp outing in Southern Delaware" loading="eager">
         <figcaption>Trips</figcaption>
       </figure>
     </div>
