@@ -924,7 +924,7 @@
     }
     .hero-left {
       width: min(760px, 58vw);
-      padding: clamp(28px, 3vw, 44px) var(--px) clamp(120px, 11vw, 148px);
+      padding: clamp(28px, 3vw, 44px) var(--px) clamp(40px, 4vw, 56px);
       margin-left: max(0px, calc((100vw - var(--max-w)) / 2));
       justify-content: flex-start;
     }
@@ -968,24 +968,22 @@
       font-size: clamp(17px, 1.5vw, 20px);
     }
     .hero-facts {
-      position: absolute;
-      right: clamp(20px, 7vw, 110px);
-      bottom: clamp(26px, 7vw, 92px);
-      width: min(520px, 42vw);
+      position: static;
+      width: min(500px, 56vw);
       max-width: none;
       grid-template-columns: repeat(4, minmax(0,1fr));
       gap: 0;
-      transform: rotate(-2deg);
-      z-index: 5;
+      transform: rotate(-1deg);
+      margin-top: 20px;
     }
     .hero-fact {
       border-radius: 0;
       border: 2px solid var(--text);
       margin-left: -2px;
-      padding: 16px 14px;
+      padding: 14px 12px;
       box-shadow: 6px 8px 0 rgba(0,0,0,.12);
     }
-    .hero-fact:nth-child(even) { transform: translateY(18px); background: var(--gold-lt); }
+    .hero-fact:nth-child(even) { transform: translateY(12px); background: var(--gold-lt); }
     .hero-fact strong { color: var(--text); font-size: clamp(18px, 2vw, 25px); }
     .hero-right {
       position: absolute;
@@ -1510,7 +1508,7 @@
         var(--white);
     }
     .session-panel::after {
-      content: 'recipe card';
+      content: none;
       position: absolute;
       right: 28px;
       top: 30px;
