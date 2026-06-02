@@ -9,7 +9,7 @@
 #      OR
 #      - backend: name: github
 #        repo: YOUR_GITHUB_USERNAME/chabad-southern-delaware-camp
-#        branch: main
+#        branch: master
 #   2. Set media_folder to where uploads should go
 #   3. Visit /admin to manage content
 # ============================================================
@@ -19,7 +19,7 @@ site_url: https://shliachflow.github.io/chabad-southern-delaware-camp
 backend:
   name: github
   repo: shliachflow/chabad-southern-delaware-camp
-  branch: main
+  branch: master
 
 # Where uploaded images are stored
 media_folder: "uploads"
@@ -55,6 +55,8 @@ collections:
                   hint: "Second word, e.g. 'Bake.'" }
               - { label: "Headline Line 3 (accent color)", name: "headline_3", widget: "string",
                   hint: "Third phrase shown in gold, e.g. 'Have fun.'" }
+              - { label: "Hero Image", name: "image", widget: "image",
+                  hint: "Main banner image used behind the hero text." }
               - { label: "Subtitle / Description", name: "subtitle", widget: "text",
                   hint: "The paragraph under the headline." }
               - label: "Fact Box 1"
@@ -97,6 +99,8 @@ collections:
                   hint: "e.g. '$300'" }
               - { label: "Location", name: "location", widget: "string",
                   hint: "e.g. 'Chabad of Southern Delaware, Lewes, DE'" }
+              - { label: "Camp Details Image", name: "session_image", widget: "image",
+                  hint: "Image shown in the Camp Details section." }
 
           # ── ACTIVITY CARDS ─────────────────────────────────
           - label: "What Happens At Camp"
@@ -106,6 +110,10 @@ collections:
             hint: "Use only confirmed activities."
             fields:
               - { label: "Activity Title", name: "title", widget: "string" }
+              - { label: "Short Badge", name: "badge", widget: "string", required: false,
+                  hint: "Small label on the card, e.g. Mix, Bake, Play, Grow." }
+              - { label: "Activity Image", name: "image", widget: "image", required: false,
+                  hint: "Photo shown on this activity card." }
               - { label: "Activity Description", name: "description", widget: "text" }
 
           # ── PHOTOS SECTION ────────────────────────────────
@@ -183,3 +191,11 @@ collections:
                   required: false, hint: "e.g. 24 — shown as '24 photos' under the title" }
               - { label: "Album Description (optional)", name: "description", widget: "text",
                   required: false }
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                required: false
+                hint: "Upload photos for this album. The cover photo is used if no photos are added."
+                fields:
+                  - { label: "Photo", name: "image", widget: "image" }
+                  - { label: "Caption", name: "caption", widget: "string", required: false }

@@ -101,6 +101,20 @@
     .album-info { padding: 16px; }
     .album-title { font-family: var(--font-h); font-size: 18px; color: var(--ocean); margin-bottom: 4px; }
     .album-meta { font-size: 12px; color: var(--muted); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .album-thumbs {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 6px;
+      padding: 0 16px 16px;
+    }
+    .album-thumb {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid rgba(27,108,168,.16);
+      cursor: pointer;
+    }
 
     /* Lightbox */
     .lb { display: none; position: fixed; inset: 0; background: rgba(28,28,46,.92); z-index: 9000; align-items: center; justify-content: center; padding: 24px; }
@@ -175,21 +189,41 @@ fetch('content/gallery.json')
     albums.forEach(function(album) {
       var card = document.createElement('div');
       card.className = 'album-card';
-      var coverHtml = album.cover
-        ? '<img class="album-cover" src="' + album.cover + '" alt="' + (album.title||'Album') + ' cover" loading="lazy">'
+      var photos = Array.isArray(album.photos) ? album.photos.filter(function(photo) { return photo && photo.image; }) : [];
+      var cover = album.cover || (photos[0] && photos[0].image);
+      var photoCount = album.count || photos.length;
+      var coverHtml = cover
+        ? '<img class="album-cover" src="' + cover + '" alt="' + (album.title||'Album') + ' cover" loading="lazy">'
         : '<div class="album-cover-ph">📷</div>';
       card.innerHTML = coverHtml +
         '<div class="album-info">' +
           '<div class="album-title">' + (album.title||'Album') + '</div>' +
-          '<div class="album-meta">' + (album.date||'') + (album.count ? ' · ' + album.count + ' photos' : '') + '</div>' +
-        '</div>';
-      if (album.cover) {
+          '<div class="album-meta">' + (album.date||'') + (photoCount ? ' · ' + photoCount + ' photos' : '') + '</div>' +
+        '</div>' +
+        '<div class="album-thumbs"></div>';
+      if (cover) {
         card.querySelector('.album-cover').addEventListener('click', function() {
-          document.getElementById('lbImg').src = album.cover;
-          document.getElementById('lbImg').alt = album.title||'Camp photo';
+          var first = photos[0] || { image: cover, caption: album.title || 'Camp photo' };
+          document.getElementById('lbImg').src = first.image;
+          document.getElementById('lbImg').alt = first.caption || album.title || 'Camp photo';
           document.getElementById('lb').classList.add('open');
         });
       }
+      var thumbs = card.querySelector('.album-thumbs');
+      photos.slice(0, 8).forEach(function(photo) {
+        var thumb = document.createElement('img');
+        thumb.className = 'album-thumb';
+        thumb.src = photo.image;
+        thumb.alt = photo.caption || album.title || 'Camp photo';
+        thumb.loading = 'lazy';
+        thumb.addEventListener('click', function() {
+          document.getElementById('lbImg').src = photo.image;
+          document.getElementById('lbImg').alt = photo.caption || album.title || 'Camp photo';
+          document.getElementById('lb').classList.add('open');
+        });
+        thumbs.appendChild(thumb);
+      });
+      if (!photos.length) thumbs.style.display = 'none';
       grid.appendChild(card);
     });
   })

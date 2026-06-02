@@ -3108,9 +3108,9 @@ initFAQ();
       card.innerHTML =
         '<div class="feat-photo"><img src="" alt="" loading="eager"></div>' +
         '<div class="feat-copy"><div class="feat-badge"></div><div class="feat-title"></div><div class="feat-desc"></div></div>';
-      card.querySelector('img').src = images[i][0];
+      card.querySelector('img').src = item.image || images[i][0];
       card.querySelector('img').alt = images[i][1];
-      card.querySelector('.feat-badge').textContent = badges[i];
+      card.querySelector('.feat-badge').textContent = item.badge || badges[i];
       card.querySelector('.feat-title').textContent = item.title;
       card.querySelector('.feat-desc').textContent = item.description;
       list.appendChild(card);
@@ -3129,6 +3129,9 @@ initFAQ();
           '<span class="line3">' + esc(hero.headline_3) + '</span>';
       }
       text('#heroSub', hero.subtitle);
+      if (hero.image) {
+        document.querySelectorAll('.hero-right-img').forEach(function(img) { img.src = hero.image; });
+      }
       var facts = document.querySelectorAll('.hero-fact');
       [
         [hero.fact_1_value, hero.fact_1_label],
@@ -3150,6 +3153,9 @@ initFAQ();
       text('#campLocation', details.location);
       text('#earlyBirdPrice, #pricingEarlyBird', details.early_bird_price);
       text('#regularPrice, #pricingRegular', details.regular_price);
+      if (details.session_image) {
+        document.querySelectorAll('.session-img img').forEach(function(img) { img.src = details.session_image; });
+      }
       renderActivities(site.activities);
 
       var photos = site.photos || {};
