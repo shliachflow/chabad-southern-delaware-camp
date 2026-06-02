@@ -203,7 +203,7 @@
 
     /* ── HERO ────────────────────────────────────────────────── */
     .hero {
-      min-height: calc(100vh - 62px - 40px);
+      min-height: auto;
       display: grid;
       grid-template-columns: minmax(420px, .75fr) minmax(0, 1.25fr);
       background: linear-gradient(135deg, var(--sky) 0%, #d0ecf9 40%, var(--sky-mid) 100%);
@@ -341,7 +341,7 @@
     /* ── FEATURES ────────────────────────────────────────────── */
     .features {
       background: var(--bg);
-      padding: 80px 0 96px;
+      padding: 48px 0 56px;
       position: relative; z-index: 2;
     }
     .features-top { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; margin-bottom: 48px; }
@@ -431,7 +431,7 @@
 
     /* ── SESSION PANEL ───────────────────────────────────────── */
     .sessions {
-      padding: 80px 0 96px;
+      padding: 48px 0 56px;
       background: var(--bg);
     }
     .sessions > .wrap { display: flex; flex-direction: column; gap: 24px; }
@@ -680,7 +680,7 @@
     .testi-by { font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.55); }
 
     /* ── LOCATION ────────────────────────────────────────────── */
-    .location { background: var(--bg); padding: 96px 0; }
+    .location { background: var(--bg); padding: 48px 0 56px; }
     .loc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
     .loc-body { font-size: 15px; color: var(--muted); line-height: 1.75; margin-top: 14px; }
     .loc-addr { font-family: var(--font-h); font-size: 18px; color: var(--text); line-height: 1.45; margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--border); }
@@ -701,7 +701,7 @@
     .loc-photo-ph-note { font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: rgba(255,255,255,.7); border: 1.5px dashed var(--border); border-radius: 8px; padding: 8px 14px; }
 
     /* ── FAQ ─────────────────────────────────────────────────── */
-    .faq { padding: 88px 0; background: var(--sand); }
+    .faq { padding: 48px 0 56px; background: var(--sand); }
     .faq-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 56px; align-items: start; }
     .faq-sidebar-body { font-size: 15px; color: var(--muted); line-height: 1.7; margin-top: 14px; margin-bottom: 22px; }
     .faq-item { border-bottom: 1px solid var(--border); transition: background 150ms; }
@@ -719,7 +719,7 @@
     .safety-in { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 13px; font-weight: 700; color: rgba(255,255,255,.8); text-align: center; }
 
     /* ── REGISTER ────────────────────────────────────────────── */
-    .register { padding: 88px 0; background: var(--gold-lt); }
+    .register { padding: 48px 0 56px; background: var(--gold-lt); }
     .reg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
     .pricing-table { margin-top: 20px; border: 2px solid var(--border); border-radius: 14px; overflow: hidden; }
     .pt-row { display: grid; grid-template-columns: 1fr auto; padding: 13px 14px; border-bottom: 1px solid var(--border); align-items: baseline; gap: 14px; }
@@ -897,7 +897,7 @@
     .mq-track span.sep { color: var(--gold); }
 
     .hero {
-      min-height: calc(100vh - 68px - 34px);
+      min-height: auto;
       grid-template-columns: minmax(0,1fr);
       isolation: isolate;
       background:
@@ -923,7 +923,7 @@
     }
     .hero-left {
       width: min(760px, 58vw);
-      padding: clamp(54px, 7vw, 96px) var(--px) clamp(96px, 10vw, 132px);
+      padding: clamp(32px, 3.5vw, 56px) var(--px) clamp(40px, 4vw, 60px);
       margin-left: max(0px, calc((100vw - var(--max-w)) / 2));
       justify-content: flex-start;
     }
@@ -937,7 +937,7 @@
       margin-bottom: 28px;
     }
     .hero-h1 {
-      font-size: clamp(58px, 8.4vw, 122px);
+      font-size: clamp(48px, 6vw, 88px);
       line-height: .82;
       color: var(--text);
       text-shadow: none;
@@ -1035,7 +1035,7 @@
     .sec-h { font-size: clamp(32px,4.9vw,64px); line-height: .96; }
     .sec-h em { color: var(--gold); text-shadow: 2px 2px 0 rgba(27,108,168,.14); }
     .features {
-      padding: 96px 0 112px;
+      padding: 56px 0 64px;
       background:
         linear-gradient(174deg, var(--bg) 0 72%, var(--sky) 72.2% 100%);
     }
@@ -1107,7 +1107,7 @@
     .polar { border-radius: 18px 18px 3px 3px; box-shadow: 0 16px 0 rgba(0,0,0,.18); }
 
     .sessions {
-      padding: 94px 0 110px;
+      padding: 48px 0 56px;
       background: linear-gradient(180deg, var(--sky) 0%, var(--bg) 100%);
     }
     .session-panel {
@@ -1204,7 +1204,7 @@
 
     .faq {
       background: var(--white);
-      padding: 104px 0;
+      padding: 48px 0 56px;
     }
     .faq-grid { grid-template-columns: minmax(220px,.7fr) minmax(0,1.3fr); }
     .faq-item {
@@ -1228,7 +1228,7 @@
     .safety { background: var(--gold); }
     .safety-in { color: var(--text); }
     .register {
-      padding: 108px 0;
+      padding: 48px 0 56px;
       background:
         linear-gradient(90deg, rgba(27,108,168,.08) 1px, transparent 1px) 0 0 / 28px 28px,
         var(--gold-lt);
