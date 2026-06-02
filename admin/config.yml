@@ -3,22 +3,17 @@
 # Kosher Camp Southern Delaware
 # Admin panel: /admin
 # ============================================================
-# SETUP REQUIRED:
-#   1. Set your backend. For GitHub Pages / Netlify:
-#      - backend: name: git-gateway  (Netlify Identity)
-#      OR
-#      - backend: name: github
-#        repo: YOUR_GITHUB_USERNAME/chabad-southern-delaware-camp
-#        branch: master
-#   2. Set media_folder to where uploads should go
-#   3. Visit /admin to manage content
+# Netlify setup:
+#   1. Enable Identity.
+#   2. Enable Git Gateway.
+#   3. Invite users from the Netlify Identity dashboard.
+#   4. Visit /admin to manage content.
 # ============================================================
 
-site_url: https://shliachflow.github.io/chabad-southern-delaware-camp
+site_url: https://sodelawareculinary.netlify.app
 
 backend:
-  name: github
-  repo: shliachflow/chabad-southern-delaware-camp
+  name: git-gateway
   branch: master
 
 # Where uploaded images are stored
