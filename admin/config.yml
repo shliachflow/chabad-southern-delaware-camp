@@ -37,6 +37,20 @@ collections:
         format: json
         fields:
 
+          # ── SEO / SHARING ─────────────────────────────────
+          - label: "SEO & Sharing"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Site Title", name: "site_title", widget: "string" }
+              - { label: "Meta Description", name: "site_description", widget: "text" }
+              - { label: "Photos Page Title", name: "photos_title", widget: "string" }
+              - { label: "Photos Page Description", name: "photos_description", widget: "text" }
+              - { label: "Registration Page Title", name: "registration_title", widget: "string" }
+              - { label: "Registration Page Description", name: "registration_description", widget: "text" }
+              - { label: "Share Image", name: "share_image", widget: "image" }
+              - { label: "Public Site URL", name: "site_url", widget: "string" }
+
           # ── HERO SECTION ──────────────────────────────────
           - label: "Hero Section"
             name: "hero"
@@ -98,6 +112,48 @@ collections:
                   hint: "Image shown in the Camp Details section." }
               - { label: "Countdown Target", name: "countdown_target", widget: "string",
                   hint: "ISO date/time for countdown, e.g. 2026-08-03T09:00:00-04:00" }
+              - { label: "Countdown Heading", name: "countdown_heading", widget: "string",
+                  hint: "e.g. Camp starts in" }
+              - { label: "Countdown Date Label", name: "countdown_date_label", widget: "string",
+                  hint: "e.g. August 3, 2026" }
+
+          # ── BUTTONS / LINKS ────────────────────────────────
+          - label: "Buttons & Links"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Hero Button Text", name: "hero_button_text", widget: "string" }
+              - { label: "Hero Button URL", name: "hero_button_url", widget: "string" }
+              - { label: "Floating Button Text", name: "floating_button_text", widget: "string" }
+              - { label: "Floating Button URL", name: "floating_button_url", widget: "string" }
+              - { label: "Registration Section Button Text", name: "registration_button_text", widget: "string" }
+              - { label: "Registration Section Button URL", name: "registration_button_url", widget: "string" }
+
+          # ── SECTION VISIBILITY ─────────────────────────────
+          - label: "Show / Hide Sections"
+            name: "visibility"
+            widget: "object"
+            fields:
+              - { label: "Show Countdown", name: "show_countdown", widget: "boolean", default: true }
+              - { label: "Show Activities", name: "show_activities", widget: "boolean", default: true }
+              - { label: "Show Camp Details", name: "show_camp_details", widget: "boolean", default: true }
+              - { label: "Show FAQ", name: "show_faq", widget: "boolean", default: true }
+              - { label: "Show Registration Section", name: "show_registration", widget: "boolean", default: true }
+              - { label: "Show Floating Button", name: "show_floating_button", widget: "boolean", default: true }
+
+          # ── REGISTRATION PAGE ──────────────────────────────
+          - label: "Registration Page"
+            name: "registration"
+            widget: "object"
+            fields:
+              - { label: "Top Notice", name: "notice", widget: "text" }
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Message", name: "message", widget: "text" }
+              - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Button URL", name: "button_url", widget: "string" }
+              - { label: "Cognito Embed Code", name: "embed_code", widget: "text", required: false,
+                  hint: "Paste the Cognito Forms embed code here." }
+              - { label: "Admin Note", name: "admin_note", widget: "string", required: false }
 
           # ── ACTIVITY CARDS ─────────────────────────────────
           - label: "What Happens At Camp"

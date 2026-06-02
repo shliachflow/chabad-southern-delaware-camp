@@ -5,6 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <title>Kosher Culinary Camp — Registration 2026</title>
   <meta name="description" content="Registration for Kosher Culinary Camp at Chabad of Southern Delaware, August 3-7, 2026, 9:00 AM-3:00 PM.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://sodelawareculinary.netlify.app/register.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kosher Culinary Camp — Registration 2026">
+  <meta property="og:description" content="Registration for Kosher Culinary Camp at Chabad of Southern Delaware, August 3-7, 2026, 9:00 AM-3:00 PM.">
+  <meta property="og:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp">
+  <meta property="og:image:alt" content="Kosher Culinary Camp registration">
+  <meta property="og:url" content="https://sodelawareculinary.netlify.app/register.html">
+  <meta property="og:site_name" content="Kosher Culinary Camp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kosher Culinary Camp — Registration 2026">
+  <meta name="twitter:description" content="Registration for Kosher Culinary Camp at Chabad of Southern Delaware, August 3-7, 2026, 9:00 AM-3:00 PM.">
+  <meta name="twitter:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
@@ -12,22 +25,25 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --ocean: #1B6CA8; --muted: #5D7A8A; --gold: #F4A01C; }
-    html { height: 100%; overflow: auto; }
-    body { margin: 0; height: 100%; display: flex; flex-direction: column; font-family: 'Nunito', system-ui, sans-serif; background: #E8F4FD; }
+    html { height: 100%; overflow: auto; overflow-x: hidden; }
+    body { margin: 0; height: 100%; display: flex; flex-direction: column; font-family: 'Nunito', system-ui, sans-serif; background: #E8F4FD; overflow-x: hidden; }
     a { color: inherit; text-decoration: none; }
 
     .topbar {
       flex-shrink: 0;
+      width: 100vw;
       height: 58px;
       display: flex; align-items: center; justify-content: space-between; gap: 14px;
       padding: 0 clamp(16px, 4vw, 36px);
       background: #1B6CA8;
       color: #fff;
       box-shadow: 0 2px 12px rgba(27,108,168,.3);
+      max-width: 100vw; overflow: hidden;
     }
     .brand {
       font-family: 'Fredoka One', sans-serif; font-size: 18px;
       color: #fff; display: flex; align-items: center; gap: 8px;
+      min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
     }
     .brand em { color: #F4A01C; font-style: normal; }
     .back {
@@ -39,17 +55,21 @@
       color: #fff; font-size: 12px; font-weight: 800;
       letter-spacing: .06em; text-transform: uppercase;
       transition: background 150ms;
+      white-space: nowrap;
     }
     .back:hover { background: rgba(255,255,255,.25); }
 
     .reg-wrap {
       flex: 1; overflow: hidden; display: flex; flex-direction: column;
+      width: 100vw; max-width: 100vw;
     }
     .reg-notice {
       background: #FEF3DC; border-bottom: 2px solid #F4A01C;
       padding: 12px clamp(16px,4vw,36px);
       font-size: 13px; font-weight: 700; color: #2C3E50; line-height: 1.5;
       text-align: center;
+      overflow-wrap: anywhere; word-break: break-word;
+      width: 100vw; max-width: 100vw;
     }
     .reg-notice strong { color: #1B6CA8; }
 
@@ -58,12 +78,17 @@
       align-items: center; justify-content: center; gap: 24px;
       padding: 40px 24px; text-align: center;
       background: #E8F4FD;
+      width: 100vw; max-width: 100vw; overflow: hidden;
     }
     .reg-fallback-title {
       font-family: 'Fredoka One', sans-serif; font-size: clamp(28px,5vw,42px);
-      color: #1B6CA8; line-height: 1.1;
+      color: #1B6CA8; line-height: 1.1; max-width: min(100%, 520px); overflow-wrap: anywhere; word-break: break-word;
     }
     .reg-fallback-body { font-size: 16px; color: #5D7A8A; line-height: 1.65; max-width: 480px; }
+    .reg-fallback a,
+    .reg-fallback p,
+    .reg-fallback-body,
+    .reg-fallback-note { overflow-wrap: anywhere; word-break: break-word; max-width: 100%; }
     .reg-fallback-note {
       font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase;
       color: #5D7A8A; background: rgba(255,255,255,.8);
@@ -78,6 +103,28 @@
       box-shadow: 0 5px 0 #145484; transition: all 150ms;
     }
     .reg-btn:hover { background: #145484; transform: translateY(-2px); }
+    @media (max-width: 520px) {
+      .topbar { padding-inline: 14px; }
+      .brand { font-size: 16px; max-width: calc(100vw - 104px); }
+      .back { min-height: 34px; padding: 7px 12px; font-size: 0; }
+      .back::before { content: 'Back'; font-size: 11px; }
+      .reg-notice { display: none; }
+      .reg-fallback { padding-inline: 18px; }
+      .reg-fallback-title,
+      .reg-fallback-body,
+      .reg-fallback p,
+      .reg-fallback-note { max-width: calc(100vw - 36px) !important; }
+      .reg-fallback-title { font-size: clamp(27px, 8vw, 34px); max-width: 320px !important; }
+      .reg-fallback-body { max-width: 320px !important; }
+      .reg-fallback-note { max-width: 320px !important; }
+      .reg-fallback p a {
+        display: inline-block;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+      .reg-fallback p { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -87,31 +134,73 @@
   </div>
 
   <div class="reg-wrap">
-    <div class="reg-notice">
+    <div class="reg-notice" id="registrationNotice">
       <strong>Kosher Culinary Camp 2026</strong> · August 3-7 · 9:00 AM - 3:00 PM · $250 early bird / $300 regular
     </div>
 
     <!-- REGISTRATION FORM: Replace this comment with Cognito Form embed code.
          Cognito Forms is the client's existing tool. -->
 
-    <div class="reg-fallback">
-      <div class="reg-fallback-title">Registration Form Coming Soon</div>
-      <div class="reg-fallback-body">
+    <div class="reg-fallback" id="registrationFallback">
+      <div class="reg-fallback-title" id="registrationHeading">Registration Form Coming Soon</div>
+      <div class="reg-fallback-body" id="registrationMessage">
         Registration form coming soon — contact Rabbi Sholom at (302) 377-1162 or Rabbi@JewishSouthernDelaware.com to register.
       </div>
-      <a href="mailto:Rabbi@JewishSouthernDelaware.com" class="reg-btn">Email Rabbi Sholom</a>
+      <div id="registrationEmbed"></div>
+      <a href="mailto:Rabbi@JewishSouthernDelaware.com" class="reg-btn" id="registrationButton">Email Rabbi Sholom</a>
       <p style="margin-top:14px;font-size:13px;color:var(--muted);line-height:1.6;">
         Rabbi Sholom: <a href="tel:+13023771162" style="color:var(--ocean);font-weight:800;">(302) 377-1162</a> ·
         <a href="mailto:Rabbi@JewishSouthernDelaware.com" style="color:var(--ocean);font-weight:800;">Rabbi@JewishSouthernDelaware.com</a><br>
         Chanale: <a href="tel:+17184736570" style="color:var(--ocean);font-weight:800;">718-473-6570</a> ·
         <a href="mailto:Chanale@JewishSouthernDelaware.com" style="color:var(--ocean);font-weight:800;">Chanale@JewishSouthernDelaware.com</a>
       </p>
-      <div class="reg-fallback-note">
+      <div class="reg-fallback-note" id="registrationNote">
         Add Cognito Forms embed code here when ready.
       </div>
     </div>
   </div>
 <script>
+fetch('content/site.json')
+  .then(function(r){ return r.json(); })
+  .then(function(site) {
+    var seo = site.seo || {};
+    var siteUrl = (seo.site_url || window.location.origin).replace(/\/$/, '');
+    var shareImage = seo.share_image || 'uploads/hero-banner.webp';
+    if (!/^https?:\/\//i.test(shareImage)) shareImage = siteUrl + '/' + shareImage.replace(/^\//, '');
+    if (seo.registration_title) document.title = seo.registration_title;
+    document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach(function(el) {
+      if (seo.registration_title) el.setAttribute('content', seo.registration_title);
+    });
+    document.querySelectorAll('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]').forEach(function(el) {
+      if (seo.registration_description) el.setAttribute('content', seo.registration_description);
+    });
+    document.querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]').forEach(function(el) {
+      el.setAttribute('content', shareImage);
+    });
+    var reg = site.registration || {};
+    function text(id, value) {
+      if (!value) return;
+      var el = document.getElementById(id);
+      if (el) el.textContent = value;
+    }
+    text('registrationNotice', reg.notice);
+    text('registrationHeading', reg.heading);
+    text('registrationMessage', reg.message);
+    text('registrationNote', reg.admin_note);
+    var btn = document.getElementById('registrationButton');
+    if (btn) {
+      if (reg.button_text) btn.textContent = reg.button_text;
+      if (reg.button_url) btn.href = reg.button_url;
+    }
+    var embed = document.getElementById('registrationEmbed');
+    if (embed && reg.embed_code) {
+      embed.innerHTML = reg.embed_code;
+      embed.style.width = '100%';
+      embed.style.maxWidth = '760px';
+    }
+  })
+  .catch(function(){});
+
 if (window.netlifyIdentity) {
   window.netlifyIdentity.on('init', function(user) {
     if (!user) {

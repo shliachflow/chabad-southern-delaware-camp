@@ -6,11 +6,18 @@
   <title>Kosher Culinary Camp — Photo Albums</title>
   <meta name="description" content="Photo albums for Kosher Culinary Camp at Chabad of Southern Delaware.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://www.jewishsoutherndelaware.com/photos.html">
+  <link rel="canonical" href="https://sodelawareculinary.netlify.app/photos.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kosher Culinary Camp — Photo Albums">
   <meta property="og:description" content="Photo albums for Kosher Culinary Camp at Chabad of Southern Delaware.">
-  <meta property="og:url" content="https://www.jewishsoutherndelaware.com/photos.html">
+  <meta property="og:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp">
+  <meta property="og:image:alt" content="Kosher Culinary Camp photo albums">
+  <meta property="og:url" content="https://sodelawareculinary.netlify.app/photos.html">
+  <meta property="og:site_name" content="Kosher Culinary Camp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kosher Culinary Camp — Photo Albums">
+  <meta name="twitter:description" content="Photo albums for Kosher Culinary Camp at Chabad of Southern Delaware.">
+  <meta name="twitter:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,400;0,700;0,800;1,700&display=swap" rel="stylesheet" />
@@ -226,6 +233,26 @@ fetch('content/gallery.json')
       });
       if (!photos.length) thumbs.style.display = 'none';
       grid.appendChild(card);
+    });
+  })
+  .catch(function(){});
+
+fetch('content/site.json')
+  .then(function(r){ return r.json(); })
+  .then(function(site) {
+    var seo = site.seo || {};
+    var siteUrl = (seo.site_url || window.location.origin).replace(/\/$/, '');
+    var shareImage = seo.share_image || 'uploads/hero-banner.webp';
+    if (!/^https?:\/\//i.test(shareImage)) shareImage = siteUrl + '/' + shareImage.replace(/^\//, '');
+    if (seo.photos_title) document.title = seo.photos_title;
+    document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach(function(el) {
+      if (seo.photos_title) el.setAttribute('content', seo.photos_title);
+    });
+    document.querySelectorAll('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]').forEach(function(el) {
+      if (seo.photos_description) el.setAttribute('content', seo.photos_description);
+    });
+    document.querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]').forEach(function(el) {
+      el.setAttribute('content', shareImage);
     });
   })
   .catch(function(){});

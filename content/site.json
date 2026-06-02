@@ -1,4 +1,14 @@
 {
+  "seo": {
+    "site_title": "Kosher Culinary Camp 2026 — Chabad of Southern Delaware",
+    "site_description": "Kosher Culinary Camp at Chabad of Southern Delaware. August 3-7, 2026, 9:00 AM-3:00 PM. Cooking, baking, trips, water play, and Jewish values.",
+    "photos_title": "Kosher Culinary Camp — Photo Albums",
+    "photos_description": "Photo albums for Kosher Culinary Camp at Chabad of Southern Delaware.",
+    "registration_title": "Kosher Culinary Camp — Registration 2026",
+    "registration_description": "Registration for Kosher Culinary Camp at Chabad of Southern Delaware, August 3-7, 2026, 9:00 AM-3:00 PM.",
+    "share_image": "uploads/hero-banner.webp",
+    "site_url": "https://sodelawareculinary.netlify.app"
+  },
   "hero": {
     "eyebrow": "Chabad of Southern Delaware · Summer 2026",
     "headline_1": "Cook.",
@@ -25,7 +35,34 @@
     "regular_price": "$300",
     "location": "Chabad of Southern Delaware, Lewes, DE",
     "session_image": "uploads/activity-cooking.webp",
-    "countdown_target": "2026-08-03T09:00:00-04:00"
+    "countdown_target": "2026-08-03T09:00:00-04:00",
+    "countdown_heading": "Camp starts in",
+    "countdown_date_label": "August 3, 2026"
+  },
+  "cta": {
+    "hero_button_text": "Register Now",
+    "hero_button_url": "register.html",
+    "floating_button_text": "Register Now",
+    "floating_button_url": "register.html",
+    "registration_button_text": "Registration Page",
+    "registration_button_url": "register.html"
+  },
+  "visibility": {
+    "show_countdown": true,
+    "show_activities": true,
+    "show_camp_details": true,
+    "show_faq": true,
+    "show_registration": true,
+    "show_floating_button": true
+  },
+  "registration": {
+    "notice": "Kosher Culinary Camp 2026 · August 3-7 · 9:00 AM - 3:00 PM · $250 early bird / $300 regular",
+    "heading": "Registration Form Coming Soon",
+    "message": "Registration form coming soon — contact Rabbi Sholom at (302) 377-1162 or Rabbi@JewishSouthernDelaware.com to register.",
+    "button_text": "Email Rabbi Sholom",
+    "button_url": "mailto:Rabbi@JewishSouthernDelaware.com",
+    "embed_code": "",
+    "admin_note": "Add Cognito Forms embed code here when ready."
   },
   "activities": [
     {
