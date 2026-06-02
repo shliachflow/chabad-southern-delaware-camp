@@ -1986,7 +1986,12 @@
     .camp-ribbon-track {
       display: flex;
       min-width: max-content;
-      animation: ribbonMove 24s linear infinite;
+      animation: ribbonMove 32s linear infinite;
+      will-change: transform;
+    }
+    .camp-ribbon-set {
+      display: flex;
+      flex: 0 0 auto;
     }
     .camp-ribbon span {
       position: relative;
@@ -2010,6 +2015,67 @@
       transform: translateY(-50%);
     }
     @keyframes ribbonMove { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    .camp-countdown {
+      position: relative;
+      z-index: 6;
+      padding: clamp(14px, 2.5vw, 24px) var(--px);
+      background:
+        radial-gradient(circle at 12% 20%, rgba(255,200,69,.22) 0 8%, transparent 8.5%),
+        linear-gradient(90deg, var(--raspberry) 0%, #ff6f86 34%, var(--gold) 34.2%, var(--gold) 100%);
+      border-block: 4px solid var(--text);
+    }
+    .countdown-card {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(210px, .7fr) minmax(0, 1fr);
+      align-items: center;
+      gap: clamp(14px, 3vw, 34px);
+    }
+    .countdown-title {
+      font-family: var(--font-h);
+      color: #fff;
+      font-size: clamp(28px, 3.8vw, 48px);
+      line-height: .9;
+      text-shadow: 3px 3px 0 var(--text);
+    }
+    .countdown-title span {
+      display: block;
+      color: var(--text);
+      text-shadow: 2px 2px 0 rgba(255,255,255,.55);
+      font-size: .62em;
+      margin-top: 6px;
+    }
+    .countdown-units {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(8px, 1.4vw, 14px);
+    }
+    .countdown-unit {
+      min-height: 86px;
+      display: grid;
+      place-items: center;
+      align-content: center;
+      background: rgba(255,255,255,.94);
+      border: 3px solid var(--text);
+      border-radius: 24px 24px 24px 8px;
+      box-shadow: 6px 6px 0 rgba(33,54,75,.18);
+    }
+    .countdown-num {
+      font-family: var(--font-h);
+      color: var(--ocean);
+      font-size: clamp(28px, 4vw, 54px);
+      line-height: .8;
+    }
+    .countdown-label {
+      margin-top: 7px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      color: var(--text);
+    }
 
     .hero {
       min-height: 0 !important;
@@ -2295,6 +2361,13 @@
     @media (max-width: 960px) {
       .camp-ribbon { height: 32px; }
       .camp-ribbon span { font-size: 10px; padding: 0 18px; }
+      .countdown-card {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .countdown-title {
+        font-size: clamp(28px, 8vw, 42px);
+      }
       .hero {
         grid-template-columns: 1fr;
         padding: 18px var(--px) 34px;
@@ -2521,6 +2594,26 @@
       .hero-tag { max-width: 100%; }
       .hero-h1 { font-size: clamp(54px, 17vw, 78px) !important; }
       .hero-sub { font-size: 14px; }
+      .camp-countdown {
+        padding: 12px 16px 16px;
+      }
+      .countdown-units {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+      .countdown-unit {
+        min-height: 60px;
+        border-width: 2px;
+        border-radius: 16px 16px 16px 6px;
+        box-shadow: 4px 4px 0 rgba(33,54,75,.18);
+      }
+      .countdown-num {
+        font-size: clamp(22px, 9vw, 34px);
+      }
+      .countdown-label {
+        font-size: 8px;
+        letter-spacing: .06em;
+      }
     }
 
     /* ── ACTIVITY PHOTOS: one section, no duplicate gallery ─── */
@@ -2663,8 +2756,18 @@
 
 <div class="camp-ribbon" aria-hidden="true">
   <div class="camp-ribbon-track">
-    <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
-    <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+    <div class="camp-ribbon-set">
+      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+    </div>
+    <div class="camp-ribbon-set" aria-hidden="true">
+      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+    </div>
   </div>
 </div>
 
@@ -2690,6 +2793,19 @@
   </div>
   <div class="hero-right">
     <img class="hero-right-img" src="uploads/hero-banner.webp" alt="Children baking together at Kosher Culinary Camp" loading="eager">
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section class="camp-countdown" aria-label="Countdown to camp">
+  <div class="countdown-card">
+    <h2 class="countdown-title">Camp starts in<span>August 3, 2026</span></h2>
+    <div class="countdown-units" data-countdown-target="2026-08-03T09:00:00-04:00">
+      <div class="countdown-unit"><div class="countdown-num" data-countdown-days>--</div><div class="countdown-label">Days</div></div>
+      <div class="countdown-unit"><div class="countdown-num" data-countdown-hours>--</div><div class="countdown-label">Hours</div></div>
+      <div class="countdown-unit"><div class="countdown-num" data-countdown-mins>--</div><div class="countdown-label">Mins</div></div>
+      <div class="countdown-unit"><div class="countdown-num" data-countdown-secs>--</div><div class="countdown-label">Secs</div></div>
+    </div>
   </div>
 </section>
 
@@ -2902,6 +3018,41 @@ function initFAQ() {
   });
 }
 initFAQ();
+
+// ── COUNTDOWN ───────────────────────────────────────────────────
+(function() {
+  var wrap = document.querySelector('[data-countdown-target]');
+  if (!wrap) return;
+  var target = new Date(wrap.getAttribute('data-countdown-target')).getTime();
+  var days = document.querySelector('[data-countdown-days]');
+  var hours = document.querySelector('[data-countdown-hours]');
+  var mins = document.querySelector('[data-countdown-mins]');
+  var secs = document.querySelector('[data-countdown-secs]');
+  var title = document.querySelector('.countdown-title');
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    var diff = target - Date.now();
+    if (diff <= 0) {
+      if (title) title.innerHTML = 'Camp starts<span>August 3, 2026</span>';
+      if (days) days.textContent = '0';
+      if (hours) hours.textContent = '00';
+      if (mins) mins.textContent = '00';
+      if (secs) secs.textContent = '00';
+      return;
+    }
+    var total = Math.floor(diff / 1000);
+    var d = Math.floor(total / 86400);
+    var h = Math.floor((total % 86400) / 3600);
+    var m = Math.floor((total % 3600) / 60);
+    var s = total % 60;
+    if (days) days.textContent = String(d);
+    if (hours) hours.textContent = pad(h);
+    if (mins) mins.textContent = pad(m);
+    if (secs) secs.textContent = pad(s);
+  }
+  tick();
+  window.setInterval(tick, 1000);
+})();
 
 // ── CMS CONTENT LOADER ─────────────────────────────────────────
 (function() {
