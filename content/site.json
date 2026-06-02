@@ -24,7 +24,8 @@
     "early_bird_price": "$250",
     "regular_price": "$300",
     "location": "Chabad of Southern Delaware, Lewes, DE",
-    "session_image": "uploads/activity-cooking.webp"
+    "session_image": "uploads/activity-cooking.webp",
+    "countdown_target": "2026-08-03T09:00:00-04:00"
   },
   "activities": [
     {

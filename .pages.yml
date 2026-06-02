@@ -43,6 +43,7 @@ content:
           - { name: regular_price, label: Regular Price, type: string }
           - { name: location, label: Public Location, type: string }
           - { name: session_image, label: Camp Details Image, type: image }
+          - { name: countdown_target, label: Countdown Target, type: string }
 
       - name: activities
         label: What Happens At Camp

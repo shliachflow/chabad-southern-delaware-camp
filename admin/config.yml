@@ -101,6 +101,8 @@ collections:
                   hint: "e.g. 'Chabad of Southern Delaware, Lewes, DE'" }
               - { label: "Camp Details Image", name: "session_image", widget: "image",
                   hint: "Image shown in the Camp Details section." }
+              - { label: "Countdown Target", name: "countdown_target", widget: "string",
+                  hint: "ISO date/time for countdown, e.g. 2026-08-03T09:00:00-04:00" }
 
           # ── ACTIVITY CARDS ─────────────────────────────────
           - label: "What Happens At Camp"

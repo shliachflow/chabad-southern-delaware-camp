@@ -3020,14 +3020,18 @@ initFAQ();
 (function() {
   var wrap = document.querySelector('[data-countdown-target]');
   if (!wrap) return;
-  var target = new Date(wrap.getAttribute('data-countdown-target')).getTime();
+  var target = 0;
   var days = document.querySelector('[data-countdown-days]');
   var hours = document.querySelector('[data-countdown-hours]');
   var mins = document.querySelector('[data-countdown-mins]');
   var secs = document.querySelector('[data-countdown-secs]');
   var title = document.querySelector('.countdown-title');
   function pad(n) { return String(n).padStart(2, '0'); }
+  function setTarget() {
+    target = new Date(wrap.getAttribute('data-countdown-target')).getTime();
+  }
   function tick() {
+    if (!target) setTarget();
     var diff = target - Date.now();
     if (diff <= 0) {
       if (title) title.innerHTML = 'Camp starts<span>August 3, 2026</span>';
@@ -3047,6 +3051,10 @@ initFAQ();
     if (mins) mins.textContent = pad(m);
     if (secs) secs.textContent = pad(s);
   }
+  window.updateCampCountdown = function() {
+    setTarget();
+    tick();
+  };
   tick();
   window.setInterval(tick, 1000);
 })();
@@ -3153,6 +3161,12 @@ initFAQ();
       text('#campLocation', details.location);
       text('#earlyBirdPrice, #pricingEarlyBird', details.early_bird_price);
       text('#regularPrice, #pricingRegular', details.regular_price);
+      if (details.countdown_target) {
+        document.querySelectorAll('[data-countdown-target]').forEach(function(el) {
+          el.setAttribute('data-countdown-target', details.countdown_target);
+        });
+        if (window.updateCampCountdown) window.updateCampCountdown();
+      }
       if (details.session_image) {
         document.querySelectorAll('.session-img img').forEach(function(img) { img.src = details.session_image; });
       }
