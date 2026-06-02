@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://camp.jewishpedro.org/sitemap.xml
+Sitemap: https://www.jewishsoutherndelaware.com/sitemap.xml
