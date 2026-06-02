@@ -1608,6 +1608,324 @@
       .features-top { grid-template-columns: 1fr !important; }
       .features-top .sec-body { max-width: none; }
     }
+
+    /* ── CAMP ENERGY PASS: compact, playful, still distinct ───── */
+    body::before { opacity: .025; }
+    .nav { height: 58px; }
+    .nav-logo { font-size: clamp(16px, 2vw, 21px); }
+    .nav-logo-badge {
+      width: 34px; height: 34px;
+      border-radius: 12px 50% 50% 50%;
+      transform: rotate(-8deg);
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .hero {
+      min-height: 0 !important;
+      grid-template-columns: minmax(360px, .78fr) minmax(420px, 1fr);
+      align-items: stretch;
+      overflow: visible;
+      background:
+        radial-gradient(circle at 8% 16%, rgba(244,160,28,.32) 0 9%, transparent 9.4%),
+        radial-gradient(circle at 37% 72%, rgba(255,255,255,.5) 0 8%, transparent 8.4%),
+        linear-gradient(118deg, #fff8df 0 45%, #dcf5ff 45.2% 64%, #176ca5 64.2% 100%);
+    }
+    .hero::before { height: 28px; opacity: .85; }
+    .hero::after { width: 180px; height: 180px; right: 18px; top: 22px; opacity: .9; }
+    .hero-left {
+      width: auto !important;
+      min-height: 0;
+      justify-content: flex-start;
+      padding: clamp(24px, 3vw, 42px) clamp(22px, 4vw, 56px) clamp(26px, 4vw, 52px) !important;
+    }
+    .hero-left::before,
+    .hero-left::after { display: none !important; }
+    .hero-tag,
+    .hero-h1,
+    .hero-sub,
+    .hero-btns { margin-left: 0 !important; }
+    .hero-tag {
+      margin-bottom: 12px;
+      border: 2px solid var(--ocean-dk);
+      background: var(--white);
+      color: var(--ocean);
+      box-shadow: 0 4px 0 var(--gold);
+      border-radius: 999px 999px 999px 8px;
+      letter-spacing: .11em;
+    }
+    .hero-tag .star {
+      width: 18px; height: 18px;
+      display: inline-grid; place-items: center;
+      border-radius: 50%;
+      background: var(--gold);
+      color: var(--text);
+    }
+    .hero-h1 {
+      font-size: clamp(50px, 5.6vw, 84px) !important;
+      line-height: .9;
+      margin-bottom: 12px;
+      color: var(--ocean);
+      text-shadow: 3px 3px 0 rgba(244,160,28,.28);
+    }
+    .hero-h1 .line2 {
+      color: #25384a;
+      transform: rotate(-1deg);
+      transform-origin: left center;
+    }
+    .hero-h1 .line3 {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--text);
+      border: 3px solid var(--text);
+      border-radius: 18px;
+      padding: .02em .2em .08em;
+      box-shadow: 5px 5px 0 rgba(27,108,168,.2);
+      transform: rotate(-2deg);
+      font-size: .62em;
+    }
+    .hero-sub {
+      max-width: 520px;
+      margin-bottom: 12px;
+      padding: 12px 16px;
+      border: 2px solid rgba(27,108,168,.28);
+      border-radius: 18px 18px 18px 4px;
+      box-shadow: 5px 5px 0 rgba(27,108,168,.12);
+      font-size: 16px;
+      line-height: 1.48;
+    }
+    .hero-facts {
+      position: static !important;
+      width: min(100%, 520px) !important;
+      max-width: 520px;
+      margin: 0 0 16px !important;
+      transform: none !important;
+      gap: 8px;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+    }
+    .hero-fact {
+      min-height: 68px;
+      padding: 10px 11px;
+      border: 2px solid #12476f;
+      border-radius: 18px;
+      clip-path: none;
+      background: var(--white);
+      box-shadow: 4px 4px 0 rgba(18,71,111,.18);
+    }
+    .hero-fact:nth-child(2),
+    .hero-fact:nth-child(4) { background: var(--gold-lt); }
+    .hero-fact strong { font-size: clamp(16px, 1.7vw, 22px); }
+    .hero-btns {
+      margin-top: 0 !important;
+      padding: 0 !important;
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+    }
+    .btn {
+      border-radius: 18px;
+      border: 2px solid rgba(44,62,80,.28);
+      letter-spacing: .04em;
+      font-size: 13px;
+    }
+    .btn-ocean {
+      box-shadow: 0 6px 0 #0d3f64, 8px 8px 0 rgba(244,160,28,.28);
+    }
+
+    .hero-right {
+      position: relative !important;
+      inset: auto !important;
+      width: auto !important;
+      height: auto;
+      min-height: 430px;
+      margin: clamp(22px, 3vw, 38px) clamp(20px, 4vw, 46px) clamp(28px, 4vw, 54px) 0;
+      border: 5px solid var(--white);
+      border-radius: 28px 28px 28px 8px;
+      clip-path: none !important;
+      box-shadow: -12px 12px 0 var(--gold), -22px 22px 0 rgba(44,62,80,.12);
+      overflow: hidden;
+    }
+    .hero-right::before {
+      content: 'hands-on camp fun';
+      inset: auto 16px 16px auto;
+      width: auto; height: auto;
+      border: 0;
+      clip-path: none;
+      background: var(--gold);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero-right::after {
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.32) 0 18%, transparent 44%),
+        radial-gradient(circle at 82% 18%, rgba(244,160,28,.24) 0 12%, transparent 12.4%);
+    }
+
+    .features {
+      padding: clamp(46px, 6vw, 68px) 0 clamp(34px, 5vw, 56px);
+      background:
+        radial-gradient(circle at 10% 18%, rgba(244,160,28,.18) 0 7%, transparent 7.4%),
+        linear-gradient(174deg, #fffdfa 0 68%, #e8f4fd 68.2% 100%);
+    }
+    .features-hd { margin-bottom: 24px; }
+    .sec-label {
+      color: var(--ocean);
+      letter-spacing: .14em;
+    }
+    .sec-h {
+      font-size: clamp(32px, 4vw, 54px);
+      line-height: .98;
+    }
+    .sec-h em { color: var(--gold); }
+    .feat-grid {
+      grid-template-columns: repeat(4, minmax(0,1fr)) !important;
+      gap: 14px;
+    }
+    .feat-block {
+      grid-column: span 1 !important;
+      min-height: 170px;
+      border: 3px solid var(--text);
+      border-radius: 28px 28px 28px 8px !important;
+      clip-path: none !important;
+      padding: 44px 22px 22px !important;
+      position: relative;
+      transform: rotate(var(--tilt, 0deg)) !important;
+      box-shadow: 7px 7px 0 rgba(27,108,168,.14);
+    }
+    .feat-block:nth-child(1) { --tilt: -1.5deg; }
+    .feat-block:nth-child(2) { --tilt: 1.2deg; }
+    .feat-block:nth-child(3) { --tilt: -0.8deg; }
+    .feat-block:nth-child(4) { --tilt: 1.5deg; }
+    .feat-title::before {
+      position: absolute;
+      top: 14px; left: 18px;
+      min-width: 44px;
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: var(--white);
+      border: 2px solid rgba(44,62,80,.28);
+      font-family: var(--font-b);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ocean);
+    }
+    .feat-block:nth-child(1) .feat-title::before { content: 'Mix'; }
+    .feat-block:nth-child(2) .feat-title::before { content: 'Bake'; }
+    .feat-block:nth-child(3) .feat-title::before { content: 'Play'; }
+    .feat-block:nth-child(4) .feat-title::before { content: 'Grow'; }
+
+    .camp-gallery {
+      padding: clamp(38px, 5vw, 58px) 0;
+      background:
+        linear-gradient(180deg, var(--sky) 0%, #fff7df 100%);
+      overflow: hidden;
+    }
+    .camp-gallery-head {
+      display: grid;
+      grid-template-columns: minmax(0, .8fr) minmax(260px, .55fr);
+      gap: 24px;
+      align-items: end;
+      margin-bottom: 18px;
+    }
+    .camp-gallery-note {
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.55;
+      background: rgba(255,255,255,.72);
+      border: 2px solid rgba(27,108,168,.18);
+      border-radius: 20px 20px 6px 20px;
+      padding: 14px 16px;
+    }
+    .camp-gallery-track {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(180px, 1fr));
+      gap: 14px;
+    }
+    .camp-shot {
+      margin: 0;
+      background: var(--white);
+      border: 3px solid var(--text);
+      border-radius: 24px 24px 24px 8px;
+      overflow: hidden;
+      box-shadow: 6px 6px 0 rgba(27,108,168,.15);
+      transform: rotate(var(--shot-tilt, 0deg));
+    }
+    .camp-shot:nth-child(1) { --shot-tilt: -1deg; }
+    .camp-shot:nth-child(2) { --shot-tilt: 1deg; }
+    .camp-shot:nth-child(3) { --shot-tilt: -1.4deg; }
+    .camp-shot:nth-child(4) { --shot-tilt: 1.2deg; }
+    .camp-shot:nth-child(5) { --shot-tilt: -.7deg; }
+    .camp-shot img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+    }
+    .camp-shot figcaption {
+      padding: 10px 12px 12px;
+      font-family: var(--font-h);
+      font-size: 17px;
+      color: var(--ocean);
+    }
+
+    .sessions { padding: clamp(42px, 6vw, 64px) 0; }
+    .session-panel {
+      border-radius: 28px !important;
+      clip-path: none !important;
+      box-shadow: 0 0 0 8px rgba(244,160,28,.16), 10px 10px 0 rgba(27,108,168,.12);
+    }
+    .session-img { border-radius: 24px 24px 24px 8px; }
+    .faq { padding: clamp(42px, 6vw, 64px) 0; }
+    .register { padding: clamp(42px, 6vw, 64px) 0; }
+
+    @media (max-width: 960px) {
+      .hero {
+        grid-template-columns: 1fr;
+        background:
+          radial-gradient(circle at 8% 14%, rgba(244,160,28,.28) 0 12%, transparent 12.5%),
+          linear-gradient(180deg, #fff8df 0 62%, #176ca5 62.2% 100%);
+      }
+      .hero-left { padding: 18px var(--px) 24px !important; }
+      .hero-tag { margin-bottom: 8px; font-size: 9px; padding: 6px 10px; }
+      .hero-h1 { font-size: clamp(48px, 14vw, 68px) !important; margin-bottom: 8px; }
+      .hero-sub { margin-bottom: 10px; padding: 10px 12px; font-size: 14px; }
+      .hero-facts {
+        grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+        margin-bottom: 12px !important;
+      }
+      .hero-fact { min-height: 58px; padding: 8px 9px; font-size: 9px; }
+      .hero-right {
+        min-height: 0 !important;
+        height: clamp(210px, 58vw, 330px);
+        margin: 0 var(--px) 28px;
+      }
+      .feat-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+      .camp-gallery-head { grid-template-columns: 1fr; }
+      .camp-gallery-track {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        padding: 4px 2px 16px;
+        scroll-snap-type: x mandatory;
+      }
+      .camp-shot {
+        flex: 0 0 min(72vw, 260px);
+        scroll-snap-align: start;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero-left { padding-top: 14px !important; }
+      .hero-facts { grid-template-columns: 1fr 1fr !important; }
+      .feat-grid { grid-template-columns: 1fr !important; }
+      .feat-block { min-height: 138px; transform: none !important; }
+      .session-dates { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -1625,6 +1943,7 @@
     </button>
     <div class="nav-links" id="navLinks">
       <a href="#about">Activities</a>
+      <a href="#camp-gallery">Pictures</a>
       <a href="#sessions">Details</a>
       <a href="#faq">FAQ</a>
       <a href="#register">Contact</a>
@@ -1684,6 +2003,41 @@
         <div class="feat-title">Jewish values</div>
         <div class="feat-desc">Jewish values are woven into the activities in a warm Chabad setting.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITY SNAPSHOTS -->
+<section class="camp-gallery" id="camp-gallery">
+  <div class="wrap">
+    <div class="camp-gallery-head">
+      <div>
+        <p class="sec-label">Camp Snapshots</p>
+        <h2 class="sec-h">A little more<br><em>camp life.</em></h2>
+      </div>
+      <p class="camp-gallery-note">Cooking, baking, crafts, trips, and water play are all part of the week.</p>
+    </div>
+    <div class="camp-gallery-track" aria-label="Camp activity images">
+      <figure class="camp-shot">
+        <img src="uploads/gallery-cooking.webp" alt="Children cooking together at Kosher Culinary Camp" loading="lazy">
+        <figcaption>Cooking</figcaption>
+      </figure>
+      <figure class="camp-shot">
+        <img src="uploads/gallery-challah.webp" alt="Children brushing challah at Kosher Culinary Camp" loading="lazy">
+        <figcaption>Baking</figcaption>
+      </figure>
+      <figure class="camp-shot">
+        <img src="uploads/gallery-arts.webp" alt="Children doing crafts at Kosher Culinary Camp" loading="lazy">
+        <figcaption>Crafts</figcaption>
+      </figure>
+      <figure class="camp-shot">
+        <img src="uploads/gallery-sports.webp" alt="Children playing water games outside at camp" loading="lazy">
+        <figcaption>Water play</figcaption>
+      </figure>
+      <figure class="camp-shot">
+        <img src="uploads/gallery-shore-trip.webp" alt="Children on a local camp outing in Southern Delaware" loading="lazy">
+        <figcaption>Trips</figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -1788,33 +2142,6 @@
           <a href="mailto:Rabbi@JewishSouthernDelaware.com" class="btn btn-ghost">Email Rabbi Sholom</a>
         </div>
         <p class="reg-note">You can also reach Chanale at <a href="mailto:Chanale@JewishSouthernDelaware.com" style="color:var(--ocean);font-weight:700;">Chanale@JewishSouthernDelaware.com</a> or <a href="tel:+17184736570" style="color:var(--ocean);font-weight:700;">718-473-6570</a>.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- LOCATION -->
-<section class="location" id="location">
-  <div class="wrap">
-    <div class="loc-grid">
-      <div>
-        <p class="sec-label">Where We Are</p>
-        <h2 class="sec-h">Find Us in<br><em>Southern Delaware</em></h2>
-        <p class="loc-body">Kosher Culinary Camp takes place at Chabad of Southern Delaware in Lewes, DE.</p>
-        <div class="loc-addr">
-          17032 Minos Conaway Rd<br>
-          Lewes, DE 19958<br><br>
-          <strong>Rabbi Sholom Vogel</strong><br>
-          <a href="tel:+13023771162" style="color:var(--ocean);font-weight:700;">(302) 377-1162</a> ·
-          <a href="mailto:Rabbi@JewishSouthernDelaware.com" style="color:var(--ocean);font-weight:700;">Rabbi@JewishSouthernDelaware.com</a>
-        </div>
-      </div>
-      <div class="loc-photo">
-        <div class="loc-photo-ph">
-          <div class="loc-photo-ph-icon">📍</div>
-          <div class="loc-photo-ph-label">Chabad of Southern Delaware</div>
-          <div class="loc-photo-ph-note">Add venue photo here</div>
-        </div>
       </div>
     </div>
   </div>
