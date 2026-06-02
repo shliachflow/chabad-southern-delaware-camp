@@ -1,0 +1,128 @@
+media:
+  input: uploads
+  output: uploads
+  rename: safe
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: site
+    label: Site Settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: hero
+        label: Hero Section
+        type: object
+        fields:
+          - { name: eyebrow, label: Eyebrow Text, type: string }
+          - { name: headline_1, label: Headline Line 1, type: string }
+          - { name: headline_2, label: Headline Line 2, type: string }
+          - { name: headline_3, label: Headline Line 3, type: string }
+          - { name: image, label: Hero Image, type: image }
+          - { name: subtitle, label: Subtitle, type: text }
+          - { name: fact_1_value, label: Fact Box 1 Value, type: string }
+          - { name: fact_1_label, label: Fact Box 1 Label, type: string }
+          - { name: fact_2_value, label: Fact Box 2 Value, type: string }
+          - { name: fact_2_label, label: Fact Box 2 Label, type: string }
+          - { name: fact_3_value, label: Fact Box 3 Value, type: string }
+          - { name: fact_3_label, label: Fact Box 3 Label, type: string }
+          - { name: fact_4_value, label: Fact Box 4 Value, type: string }
+          - { name: fact_4_label, label: Fact Box 4 Label, type: string }
+
+      - name: camp_details
+        label: Camp Dates, Times & Pricing
+        type: object
+        fields:
+          - { name: start_date, label: Camp Start Date, type: string }
+          - { name: end_date, label: Camp End Date, type: string }
+          - { name: daily_start_time, label: Daily Start Time, type: string }
+          - { name: daily_end_time, label: Daily End Time, type: string }
+          - { name: days, label: Days, type: string }
+          - { name: early_bird_price, label: Early Bird Price, type: string }
+          - { name: regular_price, label: Regular Price, type: string }
+          - { name: location, label: Public Location, type: string }
+          - { name: session_image, label: Camp Details Image, type: image }
+
+      - name: activities
+        label: What Happens At Camp
+        type: object
+        list:
+          max: 4
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: title, label: Activity Title, type: string }
+          - { name: badge, label: Short Badge, type: string }
+          - { name: image, label: Activity Image, type: image }
+          - { name: description, label: Activity Description, type: text }
+
+      - name: photos
+        label: Photos / Social Section
+        type: object
+        fields:
+          - { name: eyebrow, label: Section Eyebrow, type: string }
+          - { name: headline, label: Headline, type: string }
+          - { name: headline_emphasis, label: Headline Emphasis, type: string }
+          - { name: body, label: Body Text, type: text }
+          - { name: callout_title, label: Callout Title, type: string }
+          - { name: callout_body, label: Callout Body, type: text }
+
+      - name: contact
+        label: Contact & Social
+        type: object
+        fields:
+          - { name: email, label: Main Email Address, type: string }
+          - { name: phone, label: Main Phone, type: string }
+          - { name: address, label: Public Location, type: string }
+          - { name: rabbi_name, label: Rabbi Name, type: string }
+          - { name: rabbi_phone, label: Rabbi Phone, type: string }
+          - { name: rabbi_email, label: Rabbi Email, type: string }
+          - { name: chanale_name, label: Chanale Name, type: string }
+          - { name: chanale_phone, label: Chanale Phone, type: string }
+          - { name: chanale_email, label: Chanale Email, type: string }
+          - { name: instagram, label: Instagram URL, type: string }
+          - { name: facebook, label: Facebook URL, type: string }
+
+      - name: faq
+        label: FAQ Items
+        type: object
+        list:
+          max: 4
+          collapsible:
+            collapsed: true
+            summary: "{question}"
+        fields:
+          - { name: question, label: Question, type: string }
+          - { name: answer, label: Answer, type: text }
+
+  - name: gallery
+    label: Photo Albums
+    type: file
+    path: content/gallery.json
+    format: json
+    fields:
+      - name: albums
+        label: Albums
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - { name: title, label: Album Title, type: string }
+          - { name: date, label: Date, type: string }
+          - { name: cover, label: Cover Photo, type: image }
+          - { name: count, label: Photo Count, type: number }
+          - { name: description, label: Album Description, type: text }
+          - name: photos
+            label: Photos
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{caption}"
+            fields:
+              - { name: image, label: Photo, type: image }
+              - { name: caption, label: Caption, type: string }
