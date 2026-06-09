@@ -32,10 +32,10 @@ See full list in PLACEHOLDERS.md or the inline HTML comments.
 
 ## CMS
 
-Use Pages CMS with this GitHub repository to manage the main content and images. The optional `/admin` Decap setup is configured for GitHub, not Netlify.
+Use Pages CMS with this GitHub repository to manage the main content and images. The optional `/admin` Decap setup is configured with the GitHub backend.
 
 ## Design
 
-- Fonts: Fredoka One (headings) + Nunito (body) via Google Fonts
-- Colors: bright aqua/teal, sunny yellow, sky blue, and playful accent colors
-- Warm Chabad community camp aesthetic
+- Fonts: Barlow Condensed (headings) + Nunito (body) via Google Fonts
+- Colors: warm cream, saturated teal, gold accent, and deep navy
+- Bold warm camp aesthetic, visually aligned with the Troy camp design family without copying its exact palette

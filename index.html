@@ -81,10 +81,10 @@
   }
   </script>
 
-  <!-- Google Fonts: Fredoka One (headings) + Nunito (body) -->
+  <!-- Google Fonts: Barlow Condensed (headings) + Nunito (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -107,7 +107,7 @@
       --text:      #2C3E50;   /* main text */
       --muted:     #5D7A8A;   /* secondary text */
       --border:    #D5E8F2;   /* light blue border */
-      --font-h:    'Fredoka One', 'Trebuchet MS', sans-serif;
+      --font-h:    'Barlow Condensed', 'Arial Narrow', 'Impact', sans-serif;
       --font-b:    'Nunito', 'Segoe UI', system-ui, sans-serif;
       --max-w:     1200px;
       --px:        clamp(20px, 4vw, 48px);
@@ -2823,6 +2823,356 @@
       .hero-photo-callout strong { font-size: clamp(22px, 7vw, 32px); }
       .hero-photo-callout span { font-size: 10px; }
     }
+
+    /* ── TROY-FAMILY DESIGN LANGUAGE PASS ────────────────────── */
+    :root {
+      --cream: #FFFAEE;
+      --cream-dark: #FFF2DF;
+      --primary: #0E6F80;
+      --primary-dark: #0A3F50;
+      --secondary: #D99A1E;
+      --navy: #171C2E;
+      --white: #FFFFFF;
+      --text: #171C2E;
+      --muted: #6F6872;
+      --border: #E8DCC8;
+      --ocean: var(--primary);
+      --ocean-dk: var(--primary-dark);
+      --gold: var(--secondary);
+      --gold-lt: #FFF0C8;
+      --sky: #FFF7E8;
+      --sky-mid: #F4D596;
+      --sand: var(--cream-dark);
+      --bg: var(--cream);
+      --raspberry: #C64B35;
+      --lime: #8C9F35;
+      --font-h: 'Barlow Condensed', 'Arial Narrow', 'Impact', sans-serif;
+    }
+    body {
+      background: var(--cream) !important;
+      color: var(--text);
+    }
+    body::before { display: none !important; }
+    .nav {
+      background: var(--navy) !important;
+      border: 0 !important;
+      border-bottom: 4px solid var(--primary) !important;
+      box-shadow: none !important;
+    }
+    .nav-logo,
+    .nav-links a { color: var(--white) !important; }
+    .nav-logo em { color: var(--white) !important; }
+    .nav-logo-badge {
+      background: var(--primary) !important;
+      color: var(--white) !important;
+      border-radius: 4px !important;
+      box-shadow: none !important;
+      transform: none !important;
+    }
+    .nav-reg {
+      background: var(--primary) !important;
+      color: var(--white) !important;
+      border: 0 !important;
+      border-radius: 4px !important;
+      box-shadow: none !important;
+    }
+    .camp-ribbon {
+      background: var(--navy) !important;
+      border-bottom: 0 !important;
+      height: 44px !important;
+    }
+    .camp-ribbon span {
+      color: var(--cream) !important;
+      letter-spacing: .16em;
+    }
+    .camp-ribbon span::after {
+      width: 8px;
+      height: 8px;
+      background: var(--secondary) !important;
+      border-radius: 0;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    .hero {
+      min-height: calc(100vh - 104px) !important;
+      grid-template-columns: minmax(430px, .78fr) minmax(0, 1.22fr) !important;
+      background: var(--cream) !important;
+      border-bottom: 4px solid var(--navy);
+    }
+    .hero::before,
+    .hero::after { display: none !important; }
+    .hero-left {
+      min-height: calc(100vh - 104px) !important;
+      padding: clamp(38px, 5vw, 72px) clamp(24px, 4vw, 64px) !important;
+      justify-content: flex-start !important;
+      background:
+        linear-gradient(90deg, rgba(14,111,128,.05) 1px, transparent 1px) 0 0 / 42px 42px,
+        var(--cream) !important;
+    }
+    .hero-tag {
+      background: var(--navy) !important;
+      color: var(--white) !important;
+      border: 0 !important;
+      border-left: 5px solid var(--primary) !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      transform: none !important;
+      padding: 8px 14px !important;
+      letter-spacing: .18em;
+    }
+    .hero-tag .star {
+      background: none !important;
+      color: var(--secondary) !important;
+      width: auto !important;
+      height: auto !important;
+      transform: none !important;
+    }
+    .hero-h1 {
+      font-family: var(--font-h) !important;
+      font-size: clamp(98px, 11vw, 178px) !important;
+      font-weight: 900;
+      line-height: .76;
+      letter-spacing: .01em;
+      text-transform: uppercase;
+      color: var(--primary) !important;
+      text-shadow: 5px 5px 0 rgba(217,154,30,.36) !important;
+      margin-bottom: 24px;
+    }
+    .hero-h1 .line2 {
+      color: var(--navy) !important;
+      margin-left: 0 !important;
+    }
+    .hero-h1 .line3 {
+      display: block !important;
+      background: none !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      color: var(--secondary) !important;
+      font-size: .55em !important;
+      margin: .04em 0 0 !important;
+      padding: 0 !important;
+      transform: none !important;
+      text-shadow: 3px 3px 0 rgba(23,28,46,.14);
+    }
+    .hero-sub {
+      max-width: 570px;
+      background: rgba(255,255,255,.66) !important;
+      border: 2px solid var(--border) !important;
+      border-radius: 6px !important;
+      box-shadow: 8px 8px 0 rgba(14,111,128,.12) !important;
+      color: var(--text) !important;
+      font-size: 18px;
+    }
+    .hero-facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      max-width: 580px !important;
+      width: min(100%, 580px) !important;
+      gap: 10px !important;
+    }
+    .hero-fact,
+    .hero-fact:nth-child(2),
+    .hero-fact:nth-child(3),
+    .hero-fact:nth-child(4) {
+      min-height: 74px;
+      background: #FFF8E8 !important;
+      border: 2px solid rgba(23,28,46,.18) !important;
+      border-radius: 6px !important;
+      box-shadow: 4px 5px 0 rgba(23,28,46,.08) !important;
+      color: var(--navy) !important;
+    }
+    .hero-fact strong {
+      font-family: var(--font-h) !important;
+      font-size: clamp(28px, 3vw, 40px) !important;
+      font-weight: 900;
+      color: var(--primary) !important;
+      letter-spacing: .01em;
+    }
+    .btn,
+    .hero-btns .btn-ocean,
+    .btn-ocean,
+    .btn-ghost {
+      border-radius: 6px !important;
+      box-shadow: none !important;
+      font-weight: 900;
+      letter-spacing: .12em;
+    }
+    .btn-ocean,
+    .hero-btns .btn-ocean {
+      background: var(--primary) !important;
+      border: 2px solid var(--primary-dark) !important;
+      color: var(--white) !important;
+    }
+    .btn-ocean:hover,
+    .hero-btns .btn-ocean:hover { background: var(--primary-dark) !important; }
+    .btn-ghost {
+      background: transparent !important;
+      border: 2px solid var(--navy) !important;
+      color: var(--navy) !important;
+    }
+    .hero-right {
+      min-height: calc(100vh - 104px) !important;
+      border: 0 !important;
+      border-left: 4px solid var(--navy) !important;
+      background: var(--navy) !important;
+    }
+    .hero-right-img {
+      object-position: 52% center;
+      filter: saturate(1.04) contrast(1.02) brightness(1.02) !important;
+    }
+    .hero-photo-callout {
+      left: clamp(22px, 3vw, 48px);
+      right: clamp(22px, 4vw, 72px);
+      bottom: clamp(26px, 4vw, 58px);
+      padding: clamp(18px, 2vw, 26px) !important;
+      max-width: 620px;
+      background: #FFF8E8 !important;
+      border: 3px solid var(--navy) !important;
+      border-radius: 6px !important;
+      box-shadow: 9px 9px 0 rgba(14,111,128,.55) !important;
+      overflow: visible !important;
+    }
+    .hero-photo-callout strong {
+      font-family: var(--font-h) !important;
+      font-size: clamp(36px, 3.8vw, 62px) !important;
+      line-height: .86 !important;
+      color: var(--primary) !important;
+      letter-spacing: .01em;
+      overflow: visible;
+    }
+    .hero-photo-callout span {
+      color: var(--navy) !important;
+      letter-spacing: .08em;
+    }
+
+    .features,
+    .sessions,
+    .faq,
+    .register,
+    .location,
+    .social-feed {
+      background: var(--cream) !important;
+      background-image: none !important;
+    }
+    .features,
+    .sessions,
+    .faq,
+    .register {
+      padding-block: clamp(72px, 8vw, 112px) !important;
+    }
+    .features:nth-of-type(even),
+    .sessions,
+    .register {
+      background: var(--cream-dark) !important;
+    }
+    .sec-label {
+      color: var(--primary) !important;
+      background: transparent !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      letter-spacing: .18em;
+    }
+    .sec-h,
+    .session-h {
+      font-family: var(--font-h) !important;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .01em;
+      color: var(--navy) !important;
+      line-height: .9;
+    }
+    .sec-h em,
+    .session-h em {
+      color: var(--primary) !important;
+      text-shadow: none !important;
+      font-style: normal !important;
+    }
+    .sec-body,
+    .faq-sidebar-body,
+    .reg-cta-body,
+    .session-desc {
+      color: var(--muted) !important;
+    }
+    .activity-photo-grid {
+      gap: 18px !important;
+    }
+    .activity-photo-grid .feat-block {
+      border: 2px solid var(--navy) !important;
+      border-radius: 6px !important;
+      box-shadow: 8px 8px 0 rgba(23,28,46,.08) !important;
+      transform: none !important;
+      background: var(--white) !important;
+    }
+    .feat-photo {
+      border-bottom: 2px solid var(--navy) !important;
+      background: var(--cream-dark) !important;
+    }
+    .feat-badge {
+      background: var(--primary) !important;
+      color: var(--white) !important;
+      border: 0 !important;
+      border-radius: 4px !important;
+      letter-spacing: .12em;
+    }
+    .activity-photo-grid .feat-title {
+      font-family: var(--font-h) !important;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--navy) !important;
+      letter-spacing: .01em;
+    }
+    .session-panel,
+    .faq-item {
+      background: var(--white) !important;
+      border: 2px solid var(--navy) !important;
+      border-radius: 6px !important;
+      box-shadow: 8px 8px 0 rgba(23,28,46,.08) !important;
+    }
+    .session-img {
+      border: 2px solid var(--navy) !important;
+      border-radius: 6px !important;
+    }
+    .footer {
+      background: var(--navy) !important;
+      border-top: 5px solid var(--primary) !important;
+    }
+    @media (max-width: 960px) {
+      .hero {
+        grid-template-columns: 1fr !important;
+        min-height: 0 !important;
+      }
+      .hero-left {
+        min-height: auto !important;
+        padding: 34px var(--px) 28px !important;
+      }
+      .hero-h1 {
+        font-size: clamp(76px, 20vw, 124px) !important;
+      }
+      .hero-right {
+        min-height: clamp(390px, 70vw, 560px) !important;
+        border-left: 0 !important;
+        border-top: 4px solid var(--navy) !important;
+      }
+      .hero-photo-callout {
+        left: 16px;
+        right: 16px;
+        bottom: 18px;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero-h1 {
+        font-size: clamp(64px, 20vw, 92px) !important;
+      }
+      .hero-facts {
+        grid-template-columns: 1fr 1fr !important;
+      }
+      .hero-photo-callout strong {
+        font-size: clamp(30px, 10vw, 42px) !important;
+      }
+      .activity-photo-grid .feat-block {
+        border-radius: 6px !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -2888,8 +3238,8 @@
   <div class="hero-right">
     <img class="hero-right-img" src="uploads/hero-banner.webp" alt="Children baking together at Kosher Culinary Camp" loading="eager">
     <div class="hero-photo-callout" aria-hidden="true">
-      <strong>This is summer done right.</strong>
-      <span>Cooking · Baking · Almost Daily Trips · Water Play · Jewish Values</span>
+    <strong id="heroCalloutTitle">This is summer done right.</strong>
+    <span id="heroCalloutBody">Cooking · Baking · Almost Daily Trips · Water Play · Jewish Values</span>
     </div>
   </div>
 </section>
@@ -3186,6 +3536,8 @@ initFAQ();
           '<span class="line3">' + esc(hero.headline_3) + '</span>';
       }
       text('#heroSub', hero.subtitle);
+      text('#heroCalloutTitle', hero.callout_title);
+      text('#heroCalloutBody', hero.callout_body);
       if (hero.image) {
         document.querySelectorAll('.hero-right-img').forEach(function(img) { img.src = hero.image; });
       }

@@ -3,11 +3,10 @@
 # Kosher Camp Southern Delaware
 # Admin panel: /admin
 # ============================================================
-# Netlify setup:
-#   1. Enable Identity.
-#   2. Enable Git Gateway.
-#   3. Invite users from the Netlify Identity dashboard.
-#   4. Visit /admin to manage content.
+# GitHub setup:
+#   1. Authorize the CMS with GitHub.
+#   2. Make edits from /admin or use Pages CMS.
+#   3. Changes commit back to this repository.
 # ============================================================
 
 site_url: https://shliachflow.github.io/chabad-southern-delaware-camp
@@ -69,6 +68,10 @@ collections:
                   hint: "Main banner image used behind the hero text." }
               - { label: "Subtitle / Description", name: "subtitle", widget: "text",
                   hint: "The paragraph under the headline." }
+              - { label: "Hero Photo Callout Title", name: "callout_title", widget: "string",
+                  hint: "Text in the overlay on top of the hero photo." }
+              - { label: "Hero Photo Callout Body", name: "callout_body", widget: "string",
+                  hint: "Small line in the hero photo overlay." }
               - label: "Fact Box 1"
                 name: "fact_1_value"
                 widget: "string"

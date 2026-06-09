@@ -34,6 +34,8 @@ content:
           - { name: headline_3, label: Headline Line 3, type: string }
           - { name: image, label: Hero Image, type: image }
           - { name: subtitle, label: Subtitle, type: text }
+          - { name: callout_title, label: Hero Photo Callout Title, type: string }
+          - { name: callout_body, label: Hero Photo Callout Body, type: string }
           - { name: fact_1_value, label: Fact Box 1 Value, type: string }
           - { name: fact_1_label, label: Fact Box 1 Label, type: string }
           - { name: fact_2_value, label: Fact Box 2 Value, type: string }
