@@ -2617,6 +2617,212 @@
         display: none;
       }
     }
+
+    /* ── CLIENT HERO ENERGY PASS ───────────────────────────────
+       Split hero: warm/light text side, action photo side, no dark wash. */
+    .hero {
+      display: grid !important;
+      grid-template-columns: minmax(360px, .86fr) minmax(420px, 1.14fr) !important;
+      gap: 0 !important;
+      min-height: clamp(560px, 72vh, 720px) !important;
+      padding: 0 !important;
+      background:
+        radial-gradient(circle at 10% 12%, rgba(255,200,69,.42) 0 12%, transparent 12.4%),
+        radial-gradient(circle at 42% 88%, rgba(242,75,106,.10) 0 11%, transparent 11.5%),
+        linear-gradient(118deg, #fff8dc 0%, #fffdf4 48%, #ddf7ff 48.2%, #c7f1fb 100%) !important;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: auto;
+      height: 18px;
+      z-index: 5;
+      background: repeating-linear-gradient(90deg, var(--raspberry) 0 22px, var(--gold) 22px 44px, var(--ocean) 44px 66px);
+      opacity: 1;
+      clip-path: none;
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      left: -70px;
+      bottom: -90px;
+      width: min(42vw, 430px);
+      height: min(42vw, 430px);
+      z-index: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,200,69,.55) 0 32%, rgba(255,200,69,.14) 33% 58%, transparent 59%);
+      pointer-events: none;
+    }
+    .hero-left {
+      min-height: clamp(560px, 72vh, 720px) !important;
+      width: 100% !important;
+      max-width: none !important;
+      padding: clamp(42px, 6vw, 86px) clamp(22px, 4vw, 58px) clamp(34px, 4vw, 54px) !important;
+      justify-content: center !important;
+      position: relative;
+      z-index: 4;
+    }
+    .hero-tag {
+      background: #fff;
+      color: var(--ocean);
+      border-color: var(--text);
+      box-shadow: 5px 5px 0 var(--gold);
+      margin-bottom: 18px;
+    }
+    .hero-h1 {
+      color: var(--ocean);
+      font-size: clamp(88px, 11.4vw, 178px) !important;
+      line-height: .76;
+      letter-spacing: 0;
+      max-width: 620px;
+      margin-bottom: clamp(18px, 2.6vw, 30px);
+      text-shadow: 5px 5px 0 #fff, 10px 10px 0 rgba(242,75,106,.22);
+    }
+    .hero-h1 .line2 {
+      color: var(--text);
+      margin-left: .08em;
+    }
+    .hero-h1 .line3 {
+      display: inline-block;
+      color: var(--text);
+      background: var(--gold);
+      border-color: var(--text);
+      box-shadow: 7px 7px 0 var(--raspberry);
+      font-size: .48em;
+      margin-left: .02em;
+      margin-top: .1em;
+    }
+    .hero-sub {
+      max-width: 550px;
+      color: var(--text);
+      background: rgba(255,255,255,.88);
+      border-color: var(--gold);
+      box-shadow: 8px 8px 0 rgba(8,124,143,.16);
+    }
+    .hero-facts {
+      max-width: 610px !important;
+      width: min(100%, 610px) !important;
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+    .hero-fact {
+      background: #fff !important;
+      border-color: var(--text);
+      box-shadow: 4px 4px 0 rgba(33,54,75,.16);
+    }
+    .hero-fact:nth-child(2) { background: var(--sky) !important; }
+    .hero-fact:nth-child(3) { background: var(--gold-lt) !important; }
+    .hero-fact:nth-child(4) { background: #E9FFD9 !important; }
+    .hero-btns .btn-ocean {
+      border-color: var(--text);
+      box-shadow: 0 7px 0 #9e263d, 8px 8px 0 rgba(255,200,69,.45);
+    }
+    .hero-right {
+      position: relative !important;
+      inset: auto !important;
+      width: 100% !important;
+      height: auto !important;
+      min-height: clamp(560px, 72vh, 720px) !important;
+      border: 0 !important;
+      border-left: 6px solid var(--text) !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      transform: none !important;
+      z-index: 2;
+      overflow: hidden;
+    }
+    .hero-right-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 54% center;
+      filter: saturate(1.1) contrast(1.03) brightness(1.04);
+      transform: none !important;
+    }
+    .hero-right::before,
+    .hero-right::after { display: none !important; }
+    .hero-photo-callout {
+      position: absolute;
+      z-index: 6;
+      left: clamp(18px, 3vw, 42px);
+      right: clamp(18px, 4vw, 68px);
+      bottom: clamp(22px, 4vw, 54px);
+      max-width: 560px;
+      padding: clamp(16px, 2vw, 24px);
+      background: rgba(255,255,255,.94);
+      border: 4px solid var(--text);
+      border-radius: 28px 28px 28px 8px;
+      box-shadow: 8px 8px 0 rgba(255,200,69,.78), 15px 15px 0 rgba(8,124,143,.22);
+    }
+    .hero-photo-callout strong {
+      display: block;
+      font-family: var(--font-h);
+      font-size: clamp(27px, 3vw, 46px);
+      line-height: .9;
+      color: var(--ocean);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .hero-photo-callout span {
+      display: block;
+      font-size: clamp(12px, 1.2vw, 15px);
+      font-weight: 900;
+      line-height: 1.45;
+      color: var(--text);
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 960px) {
+      .hero {
+        grid-template-columns: 1fr !important;
+        min-height: 0 !important;
+        background: linear-gradient(180deg, #fff8dc 0%, #fffdf4 48%, #ddf7ff 48.2%, #c7f1fb 100%) !important;
+      }
+      .hero-left {
+        min-height: auto !important;
+        padding: 28px var(--px) 22px !important;
+      }
+      .hero-h1 {
+        max-width: none;
+        font-size: clamp(66px, 18vw, 104px) !important;
+      }
+      .hero-sub { max-width: none; }
+      .hero-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        max-width: none !important;
+      }
+      .hero-right {
+        min-height: clamp(360px, 70vw, 520px) !important;
+        border-left: 0 !important;
+        border-top: 6px solid var(--text) !important;
+      }
+      .hero-right-img { object-position: 52% center; }
+      .hero-photo-callout {
+        left: 16px;
+        right: 16px;
+        bottom: 18px;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero-h1 { font-size: clamp(58px, 17vw, 86px) !important; }
+      .hero-right { min-height: 390px !important; }
+      .hero-right-img {
+        object-position: 50% center;
+        transform: scale(1.04) !important;
+      }
+      .hero-photo-callout {
+        padding: 13px 14px;
+        border-width: 3px;
+      }
+      .hero-photo-callout strong { font-size: clamp(22px, 7vw, 32px); }
+      .hero-photo-callout span { font-size: 10px; }
+    }
   </style>
 </head>
 <body>
@@ -2681,6 +2887,10 @@
   </div>
   <div class="hero-right">
     <img class="hero-right-img" src="uploads/hero-banner.webp" alt="Children baking together at Kosher Culinary Camp" loading="eager">
+    <div class="hero-photo-callout" aria-hidden="true">
+      <strong>This is summer done right.</strong>
+      <span>Cooking · Baking · Almost Daily Trips · Water Play · Jewish Values</span>
+    </div>
   </div>
 </section>
 
