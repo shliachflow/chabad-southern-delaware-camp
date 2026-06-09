@@ -6,34 +6,33 @@
   <title>Kosher Culinary Camp — Photo Albums</title>
   <meta name="description" content="Photo albums for Kosher Culinary Camp at Chabad of Southern Delaware.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://sodelawareculinary.netlify.app/photos.html">
+  <link rel="canonical" href="https://shliachflow.github.io/chabad-southern-delaware-camp/photos.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kosher Culinary Camp — Photo Albums">
   <meta property="og:description" content="Photo albums for Kosher Culinary Camp at Chabad of Southern Delaware.">
-  <meta property="og:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp">
+  <meta property="og:image" content="https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/hero-banner.webp">
   <meta property="og:image:alt" content="Kosher Culinary Camp photo albums">
-  <meta property="og:url" content="https://sodelawareculinary.netlify.app/photos.html">
+  <meta property="og:url" content="https://shliachflow.github.io/chabad-southern-delaware-camp/photos.html">
   <meta property="og:site_name" content="Kosher Culinary Camp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kosher Culinary Camp — Photo Albums">
   <meta name="twitter:description" content="Photo albums for Kosher Culinary Camp at Chabad of Southern Delaware.">
-  <meta name="twitter:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp">
+  <meta name="twitter:image" content="https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/hero-banner.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,400;0,700;0,800;1,700&display=swap" rel="stylesheet" />
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     img { display: block; max-width: 100%; }
     a { color: inherit; text-decoration: none; }
     :root {
-      --ocean: #1B6CA8; --gold: #F4A01C; --sky: #E8F4FD;
-      --text: #2C3E50; --muted: #5D7A8A; --border: #D5E8F2;
+      --ocean: #087C8F; --gold: #FFC845; --sky: #DDF7FF;
+      --text: #21364B; --muted: #536B7A; --border: #B8E4EE; --raspberry: #F24B6A;
       --font-h: 'Fredoka One', sans-serif; --font-b: 'Nunito', system-ui, sans-serif;
       --px: clamp(16px, 4vw, 48px);
     }
     html { scroll-behavior: smooth; }
-    body { margin: 0; background: #FFFEF7; color: var(--text); font-family: var(--font-b); }
+    body { margin: 0; background: #FFFDF5; color: var(--text); font-family: var(--font-b); }
 
     /* TOPBAR */
     .topbar {
@@ -41,7 +40,7 @@
       min-height: 60px; display: flex; align-items: center;
       justify-content: space-between; gap: 14px;
       padding: 0 var(--px); background: var(--ocean);
-      box-shadow: 0 2px 14px rgba(27,108,168,.3);
+      box-shadow: 0 2px 14px rgba(8,124,143,.24);
     }
     .brand { font-family: var(--font-h); font-size: 20px; color: #fff; display: flex; align-items: center; gap: 8px; }
     .brand em { color: var(--gold); font-style: normal; }
@@ -83,7 +82,7 @@
       background: var(--ocean); color: #fff;
       box-shadow: 0 4px 0 #145484; transition: all 150ms;
     }
-    .btn:hover { background: #145484; transform: translateY(-2px); }
+    .btn:hover { background: #075A68; transform: translateY(-2px); }
 
     /* Album grid (shown when albums exist in gallery.json) */
     .album-grid {
@@ -267,17 +266,6 @@ document.getElementById('lb').addEventListener('click', function(e) {
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') document.getElementById('lb').classList.remove('open');
 });
-</script>
-<script>
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on('init', function(user) {
-    if (!user) {
-      window.netlifyIdentity.on('login', function() {
-        document.location.href = 'admin/';
-      });
-    }
-  });
-}
 </script>
 </body>
 </html>

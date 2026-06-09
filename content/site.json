@@ -7,7 +7,7 @@
     "registration_title": "Kosher Culinary Camp — Registration 2026",
     "registration_description": "Registration for Kosher Culinary Camp at Chabad of Southern Delaware, August 3-7, 2026, 9:00 AM-3:00 PM.",
     "share_image": "uploads/hero-banner.webp",
-    "site_url": "https://sodelawareculinary.netlify.app"
+    "site_url": "https://shliachflow.github.io/chabad-southern-delaware-camp"
   },
   "hero": {
     "eyebrow": "Chabad of Southern Delaware · Summer 2026",
@@ -15,29 +15,28 @@
     "headline_2": "Bake.",
     "headline_3": "Have fun.",
     "image": "uploads/hero-banner.webp",
-    "subtitle": "One week of kosher cooking, baking, trips, water play, and Jewish values.",
+    "subtitle": "One week of kosher cooking, baking, almost daily trips, water play, and Jewish values.",
     "fact_1_value": "Aug 3-7",
-    "fact_1_label": "One week only",
-    "fact_2_value": "9 AM-3 PM",
-    "fact_2_label": "Monday-Friday",
-    "fact_3_value": "$250",
-    "fact_3_label": "Early bird",
-    "fact_4_value": "$300",
-    "fact_4_label": "Regular price"
+    "fact_1_label": "One week",
+    "fact_2_value": "Ages 4-12",
+    "fact_2_label": "Boys & girls",
+    "fact_3_value": "9 AM-3 PM",
+    "fact_3_label": "Monday-Friday",
+    "fact_4_value": "$250/$300",
+    "fact_4_label": "Early bird / regular"
   },
   "camp_details": {
     "start_date": "August 3, 2026",
     "end_date": "August 7, 2026",
+    "age_range": "Ages 4-12",
     "daily_start_time": "9:00 AM",
     "daily_end_time": "3:00 PM",
     "days": "Monday-Friday",
     "early_bird_price": "$250",
     "regular_price": "$300",
     "location": "Chabad of Southern Delaware, Lewes, DE",
-    "session_image": "uploads/activity-cooking.webp",
-    "countdown_target": "2026-08-03T09:00:00-04:00",
-    "countdown_heading": "Camp starts in",
-    "countdown_date_label": "August 3, 2026"
+    "director_line": "Camp is directed by Chanale Vogel.",
+    "session_image": "uploads/activity-cooking.webp"
   },
   "cta": {
     "hero_button_text": "Register Now",
@@ -48,7 +47,6 @@
     "registration_button_url": "register.html"
   },
   "visibility": {
-    "show_countdown": true,
     "show_activities": true,
     "show_camp_details": true,
     "show_faq": true,
@@ -78,16 +76,16 @@
       "description": "Hands-on baking projects, including challah."
     },
     {
-      "title": "Trips and water play",
-      "badge": "Play",
-      "image": "uploads/gallery-sports.webp",
-      "description": "Fun trips and water play are part of the week."
+      "title": "Fun trips",
+      "badge": "Go",
+      "image": "uploads/gallery-shore-trip.webp",
+      "description": "Almost daily trips give campers something new to look forward to."
     },
     {
-      "title": "Jewish values",
-      "badge": "Grow",
-      "image": "uploads/gallery-arts.webp",
-      "description": "Jewish values are woven into the activities in a warm Chabad setting."
+      "title": "Water play",
+      "badge": "Splash",
+      "image": "uploads/gallery-water-play.webp",
+      "description": "Sprinklers, splashing, and outdoor summer fun."
     }
   ],
   "photos": {
@@ -118,7 +116,7 @@
     },
     {
       "question": "What will the kids do?",
-      "answer": "The week includes kosher cooking, baking, fun trips, water play, and Jewish values woven throughout."
+      "answer": "The week includes kosher cooking, baking, almost daily trips, water play, and Jewish values."
     },
     {
       "question": "How do I register?",

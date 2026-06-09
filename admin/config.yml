@@ -10,10 +10,11 @@
 #   4. Visit /admin to manage content.
 # ============================================================
 
-site_url: https://sodelawareculinary.netlify.app
+site_url: https://shliachflow.github.io/chabad-southern-delaware-camp
 
 backend:
-  name: git-gateway
+  name: github
+  repo: shliachflow/chabad-southern-delaware-camp
   branch: master
 
 # Where uploaded images are stored
@@ -96,6 +97,8 @@ collections:
                   hint: "e.g. 'August 3, 2026'" }
               - { label: "Camp End Date", name: "end_date", widget: "string",
                   hint: "e.g. 'August 7, 2026'" }
+              - { label: "Age Range", name: "age_range", widget: "string",
+                  hint: "e.g. 'Ages 4-12'" }
               - { label: "Daily Start Time", name: "daily_start_time", widget: "string",
                   hint: "e.g. '9:00 AM'" }
               - { label: "Daily End Time", name: "daily_end_time", widget: "string",
@@ -108,14 +111,10 @@ collections:
                   hint: "e.g. '$300'" }
               - { label: "Location", name: "location", widget: "string",
                   hint: "e.g. 'Chabad of Southern Delaware, Lewes, DE'" }
+              - { label: "Director Line", name: "director_line", widget: "string",
+                  hint: "e.g. 'Camp is directed by Chanale Vogel.'" }
               - { label: "Camp Details Image", name: "session_image", widget: "image",
                   hint: "Image shown in the Camp Details section." }
-              - { label: "Countdown Target", name: "countdown_target", widget: "string",
-                  hint: "ISO date/time for countdown, e.g. 2026-08-03T09:00:00-04:00" }
-              - { label: "Countdown Heading", name: "countdown_heading", widget: "string",
-                  hint: "e.g. Camp starts in" }
-              - { label: "Countdown Date Label", name: "countdown_date_label", widget: "string",
-                  hint: "e.g. August 3, 2026" }
 
           # ── BUTTONS / LINKS ────────────────────────────────
           - label: "Buttons & Links"
@@ -134,7 +133,6 @@ collections:
             name: "visibility"
             widget: "object"
             fields:
-              - { label: "Show Countdown", name: "show_countdown", widget: "boolean", default: true }
               - { label: "Show Activities", name: "show_activities", widget: "boolean", default: true }
               - { label: "Show Camp Details", name: "show_camp_details", widget: "boolean", default: true }
               - { label: "Show FAQ", name: "show_faq", widget: "boolean", default: true }

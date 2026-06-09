@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sodelawareculinary.netlify.app/sitemap.xml
+Sitemap: https://shliachflow.github.io/chabad-southern-delaware-camp/sitemap.xml

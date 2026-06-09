@@ -49,16 +49,15 @@ content:
         fields:
           - { name: start_date, label: Camp Start Date, type: string }
           - { name: end_date, label: Camp End Date, type: string }
+          - { name: age_range, label: Age Range, type: string }
           - { name: daily_start_time, label: Daily Start Time, type: string }
           - { name: daily_end_time, label: Daily End Time, type: string }
           - { name: days, label: Days, type: string }
           - { name: early_bird_price, label: Early Bird Price, type: string }
           - { name: regular_price, label: Regular Price, type: string }
           - { name: location, label: Public Location, type: string }
+          - { name: director_line, label: Director Line, type: string }
           - { name: session_image, label: Camp Details Image, type: image }
-          - { name: countdown_target, label: Countdown Target, type: string }
-          - { name: countdown_heading, label: Countdown Heading, type: string }
-          - { name: countdown_date_label, label: Countdown Date Label, type: string }
 
       - name: cta
         label: Buttons & Links
@@ -75,7 +74,6 @@ content:
         label: Show / Hide Sections
         type: object
         fields:
-          - { name: show_countdown, label: Show Countdown, type: boolean }
           - { name: show_activities, label: Show Activities, type: boolean }
           - { name: show_camp_details, label: Show Camp Details, type: boolean }
           - { name: show_faq, label: Show FAQ, type: boolean }

@@ -7,23 +7,23 @@
   <meta name="description" content="Kosher Culinary Camp at Chabad of Southern Delaware. August 3-7, 2026, 9:00 AM-3:00 PM. Cooking, baking, trips, water play, and Jewish values." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="author" content="Chabad of Southern Delaware" />
-  <meta name="theme-color" content="#1B6CA8" />
-  <link rel="canonical" href="https://sodelawareculinary.netlify.app/" />
+  <meta name="theme-color" content="#087C8F" />
+  <link rel="canonical" href="https://shliachflow.github.io/chabad-southern-delaware-camp/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Kosher Culinary Camp 2026" />
   <meta property="og:description" content="August 3-7, 2026 at Chabad of Southern Delaware. Cooking, baking, trips, water play, and Jewish values." />
-  <meta property="og:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp" />
+  <meta property="og:image" content="https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/hero-banner.webp" />
   <meta property="og:image:alt" content="Kosher Culinary Camp at Chabad of Southern Delaware" />
-  <meta property="og:url" content="https://sodelawareculinary.netlify.app/" />
+  <meta property="og:url" content="https://shliachflow.github.io/chabad-southern-delaware-camp/" />
   <meta property="og:site_name" content="Kosher Camp Southern Delaware" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Kosher Culinary Camp 2026" />
   <meta name="twitter:description" content="August 3-7, 2026 at Chabad of Southern Delaware." />
-  <meta name="twitter:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp" />
+  <meta name="twitter:image" content="https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/hero-banner.webp" />
 
   <!-- Schema -->
   <script type="application/ld+json">
@@ -50,7 +50,7 @@
         },
         "offers": {
           "@type": "Offer",
-          "url": "https://www.jewishsoutherndelaware.com/register.html",
+          "url": "https://shliachflow.github.io/chabad-southern-delaware-camp/register.html",
           "price": "300",
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock"
@@ -63,7 +63,7 @@
           {
             "@type": "Question",
             "name": "What ages is camp for?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Camp is open to children ages 5–12." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Camp is open to children ages 4–12." }
           },
           {
             "@type": "Question",
@@ -85,7 +85,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -493,19 +492,6 @@
       width: 20px; height: 20px; border-radius: 50%;
       background: var(--ocean); color: var(--white); font-size: 11px; font-weight: 900;
     }
-
-    /* ── COUNTDOWN ───────────────────────────────────────────── */
-    .countdown {
-      background: linear-gradient(135deg, var(--ocean) 0%, #145484 100%);
-      padding: 28px 0;
-    }
-    .cd-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .cd-label { font-family: var(--font-h); font-size: 20px; color: rgba(255,255,255,.9); display: flex; align-items: center; gap: 10px; }
-    .cd-units { display: flex; align-items: center; gap: 0; }
-    .cd-unit { text-align: center; padding: 0 16px; }
-    .cd-n { font-family: var(--font-h); font-size: 48px; color: var(--gold); line-height: 1; }
-    .cd-l { font-size: 9px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.55); margin-top: 2px; }
-    .cd-sep { font-family: var(--font-h); font-size: 32px; color: rgba(255,255,255,.3); margin-top: -4px; }
 
     /* ── GALLERY STRIP ───────────────────────────────────────── */
     .gallery {
@@ -1126,13 +1112,6 @@
     }
     .perk { break-inside: avoid; border-bottom: 1px dashed var(--border); }
 
-    .countdown {
-      background: var(--text);
-      border-block: 8px solid var(--gold);
-      transform: rotate(-1deg) scale(1.02);
-    }
-    .cd-inner { transform: rotate(1deg); }
-
     .gallery {
       padding: 108px 0 78px;
       background: var(--sand);
@@ -1257,9 +1236,7 @@
       .faq-grid,
       .reg-grid { grid-template-columns: 1fr; }
       .features-tally,
-      .trips-right,
-      .countdown { transform: none; }
-      .cd-inner { transform: none; }
+      .trips-right { transform: none; }
       .session-panel { grid-template-columns: 1fr; }
       .session-perks { columns: 1; }
       .feat-grid { grid-template-columns: 1fr 1fr; }
@@ -2010,70 +1987,6 @@
     }
     @keyframes ribbonMove { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    .camp-countdown {
-      position: relative;
-      z-index: 6;
-      padding: clamp(14px, 2.5vw, 24px) var(--px);
-      background:
-        radial-gradient(circle at 12% 20%, rgba(255,200,69,.22) 0 8%, transparent 8.5%),
-        linear-gradient(90deg, var(--raspberry) 0%, #ff6f86 34%, var(--gold) 34.2%, var(--gold) 100%);
-      border-block: 4px solid var(--text);
-    }
-    .countdown-card {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: minmax(210px, .7fr) minmax(0, 1fr);
-      align-items: center;
-      gap: clamp(14px, 3vw, 34px);
-    }
-    .countdown-title {
-      font-family: var(--font-h);
-      color: #fff;
-      font-size: clamp(28px, 3.8vw, 48px);
-      line-height: .9;
-      text-shadow: 3px 3px 0 var(--text);
-    }
-    .countdown-title .countdown-heading,
-    .countdown-title .countdown-date-label {
-      display: block;
-    }
-    .countdown-title .countdown-date-label {
-      color: var(--text);
-      text-shadow: 2px 2px 0 rgba(255,255,255,.55);
-      font-size: .62em;
-      margin-top: 6px;
-    }
-    .countdown-units {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: clamp(8px, 1.4vw, 14px);
-    }
-    .countdown-unit {
-      min-height: 86px;
-      display: grid;
-      place-items: center;
-      align-content: center;
-      background: rgba(255,255,255,.94);
-      border: 3px solid var(--text);
-      border-radius: 24px 24px 24px 8px;
-      box-shadow: 6px 6px 0 rgba(33,54,75,.18);
-    }
-    .countdown-num {
-      font-family: var(--font-h);
-      color: var(--ocean);
-      font-size: clamp(28px, 4vw, 54px);
-      line-height: .8;
-    }
-    .countdown-label {
-      margin-top: 7px;
-      font-size: 10px;
-      font-weight: 900;
-      letter-spacing: .09em;
-      text-transform: uppercase;
-      color: var(--text);
-    }
-
     .hero {
       min-height: 0 !important;
       grid-template-columns: minmax(330px, .82fr) minmax(420px, 1fr);
@@ -2358,13 +2271,6 @@
     @media (max-width: 960px) {
       .camp-ribbon { height: 32px; }
       .camp-ribbon span { font-size: 10px; padding: 0 18px; }
-      .countdown-card {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
-      .countdown-title {
-        font-size: clamp(28px, 8vw, 42px);
-      }
       .hero {
         grid-template-columns: 1fr;
         padding: 18px var(--px) 34px;
@@ -2596,26 +2502,6 @@
         object-position: 78% center;
         transform: scale(1.12);
       }
-      .camp-countdown {
-        padding: 12px 16px 16px;
-      }
-      .countdown-units {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 8px;
-      }
-      .countdown-unit {
-        min-height: 60px;
-        border-width: 2px;
-        border-radius: 16px 16px 16px 6px;
-        box-shadow: 4px 4px 0 rgba(33,54,75,.18);
-      }
-      .countdown-num {
-        font-size: clamp(22px, 9vw, 34px);
-      }
-      .countdown-label {
-        font-size: 8px;
-        letter-spacing: .06em;
-      }
     }
 
     /* ── ACTIVITY PHOTOS: one section, no duplicate gallery ─── */
@@ -2782,12 +2668,12 @@
       <span class="line2">Bake.</span>
       <span class="line3">Have fun.</span>
     </h1>
-    <p class="hero-sub" id="heroSub">One week of kosher cooking, baking, trips, water play, and Jewish values.</p>
+    <p class="hero-sub" id="heroSub">One week of kosher cooking, baking, almost daily trips, water play, and Jewish values.</p>
     <div class="hero-facts" aria-label="Camp details" id="heroFacts">
-      <div class="hero-fact"><strong>Aug 3-7</strong>One week only</div>
+      <div class="hero-fact"><strong>Aug 3-7</strong>One week</div>
+      <div class="hero-fact"><strong>Ages 4-12</strong>Boys &amp; girls</div>
       <div class="hero-fact"><strong>9 AM-3 PM</strong>Monday-Friday</div>
-      <div class="hero-fact"><strong>$250</strong>Early bird</div>
-      <div class="hero-fact"><strong>$300</strong>Regular price</div>
+      <div class="hero-fact"><strong>$250/$300</strong>Early bird / regular</div>
     </div>
     <div class="hero-btns">
       <a href="register.html" class="btn btn-ocean hero-cta">Register Now</a>
@@ -2798,26 +2684,13 @@
   </div>
 </section>
 
-<!-- COUNTDOWN -->
-<section class="camp-countdown" aria-label="Countdown to camp" data-section="countdown">
-  <div class="countdown-card">
-    <h2 class="countdown-title"><span class="countdown-heading">Camp starts in</span><span class="countdown-date-label">August 3, 2026</span></h2>
-    <div class="countdown-units" data-countdown-target="2026-08-03T09:00:00-04:00">
-      <div class="countdown-unit"><div class="countdown-num" data-countdown-days>--</div><div class="countdown-label">Days</div></div>
-      <div class="countdown-unit"><div class="countdown-num" data-countdown-hours>--</div><div class="countdown-label">Hours</div></div>
-      <div class="countdown-unit"><div class="countdown-num" data-countdown-mins>--</div><div class="countdown-label">Mins</div></div>
-      <div class="countdown-unit"><div class="countdown-num" data-countdown-secs>--</div><div class="countdown-label">Secs</div></div>
-    </div>
-  </div>
-</section>
-
 <!-- WHAT THEY'LL DO -->
 <section class="features" id="about" data-section="activities">
   <div class="wrap">
     <div class="features-hd">
       <p class="sec-label">What Happens At Camp</p>
       <h2 class="sec-h">Cooking, baking,<br><em>and camp fun.</em></h2>
-      <p class="sec-body">Camp runs August 3–7, 2026 at Chabad of Southern Delaware in Lewes.</p>
+      <p class="sec-body">Kids cook, bake, head out on almost daily trips, cool off with water play, and enjoy a camp week with a Jewish heart.</p>
     </div>
 
     <div class="feat-grid activity-photo-grid" id="activityList">
@@ -2838,19 +2711,19 @@
         </div>
       </div>
       <div class="feat-block c-gold">
-        <div class="feat-photo"><img src="uploads/gallery-sports.webp" alt="Children playing water games outside at camp" loading="eager"></div>
+        <div class="feat-photo"><img src="uploads/gallery-shore-trip.webp" alt="Children walking together on a summer camp trip" loading="eager"></div>
         <div class="feat-copy">
-          <div class="feat-badge">Play</div>
-          <div class="feat-title">Trips and water play</div>
-          <div class="feat-desc">Fun trips and water play are part of the week.</div>
+          <div class="feat-badge">Go</div>
+          <div class="feat-title">Fun trips</div>
+          <div class="feat-desc">Almost daily trips give campers something new to look forward to.</div>
         </div>
       </div>
       <div class="feat-block c-navy">
-        <div class="feat-photo"><img src="uploads/gallery-arts.webp" alt="Children doing crafts at Kosher Culinary Camp" loading="eager"></div>
+        <div class="feat-photo"><img src="uploads/gallery-water-play.webp" alt="Children running through a sprinkler at camp" loading="eager"></div>
         <div class="feat-copy">
-          <div class="feat-badge">Grow</div>
-          <div class="feat-title">Jewish values</div>
-          <div class="feat-desc">Jewish values are woven into the activities in a warm Chabad setting.</div>
+          <div class="feat-badge">Splash</div>
+          <div class="feat-title">Water play</div>
+          <div class="feat-desc">Sprinklers, splashing, and outdoor summer fun.</div>
         </div>
       </div>
     </div>
@@ -2863,8 +2736,8 @@
     <p class="sec-label">Camp Details</p>
     <div class="session-panel" id="s1">
       <div class="sess-info">
-        <span class="ep-label">One week only</span>
-        <h2 class="session-h">August<br><em>3-7, 2026</em></h2>
+        <span class="ep-label">Details</span>
+        <h2 class="session-h">Camp<br><em>at a glance.</em></h2>
         <div class="session-rule"></div>
         <div class="session-dates">
           <div><div class="sd-label">Dates</div><div class="sd-val"><span id="sessionStart">August 3, 2026</span> - <span id="sessionEnd">August 7, 2026</span></div></div>
@@ -2889,13 +2762,6 @@
         <div class="session-img">
           <img src="uploads/activity-cooking.webp" alt="Children baking challah at Kosher Culinary Camp" loading="eager">
         </div>
-        <div class="session-perks">
-          <div class="perk">Hands-on kosher cooking</div>
-          <div class="perk">Baking</div>
-          <div class="perk">Fun trips</div>
-          <div class="perk">Water play</div>
-          <div class="perk">Jewish values woven throughout</div>
-        </div>
       </div>
     </div>
   </div>
@@ -2918,7 +2784,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-q" tabindex="0"><span class="faq-qt">What will the kids do?</span><span class="faq-tog">+</span></div>
-          <div class="faq-ans"><div class="faq-ans-in">The week includes kosher cooking, baking, fun trips, water play, and Jewish values woven throughout.</div></div>
+          <div class="faq-ans"><div class="faq-ans-in">The week includes kosher cooking, baking, almost daily trips, water play, and Jewish values.</div></div>
         </div>
         <div class="faq-item">
           <div class="faq-q" tabindex="0"><span class="faq-qt">How do I register?</span><span class="faq-tog">+</span></div>
@@ -2933,21 +2799,6 @@
 <section class="register" id="register" data-section="registration">
   <div class="wrap">
     <div class="reg-grid">
-      <div>
-        <p class="sec-label">Pricing</p>
-        <h2 class="sec-h">Simple<br><em>camp pricing.</em></h2>
-        <div class="pricing-table">
-          <div class="pt-row hd"><span>Camp Week</span><span>Per Child</span></div>
-          <div class="pt-row">
-            <div><div class="pt-tier">Early bird</div><div class="pt-note">August 3-7, 2026</div></div>
-            <div class="pt-price" id="pricingEarlyBird">$250</div>
-          </div>
-          <div class="pt-row">
-            <div><div class="pt-tier">Regular price</div><div class="pt-note">August 3-7, 2026</div></div>
-            <div class="pt-price" id="pricingRegular">$300</div>
-          </div>
-        </div>
-      </div>
       <div>
         <p class="sec-label">Registration</p>
         <h2 class="sec-h">Registration form<br><em>coming soon.</em></h2>
@@ -2969,7 +2820,7 @@
       <div>
         <div class="footer-logo"><span class="bh">ב"ה</span><em>Kosher Culinary Camp</em></div>
         <p class="footer-tag">August 3–7, 2026 at Chabad of Southern Delaware.</p>
-        <p class="footer-dir">Under the direction of <strong>Rabbi Sholom</strong><br>Chabad of Southern Delaware, Lewes, DE</p>
+        <p class="footer-dir"><span id="directorLine">Camp is directed by Chanale Vogel.</span><br>Chabad of Southern Delaware, Lewes, DE</p>
       </div>
       <div>
         <div class="footer-col-title">Camp</div>
@@ -3020,48 +2871,6 @@ function initFAQ() {
   });
 }
 initFAQ();
-
-// ── COUNTDOWN ───────────────────────────────────────────────────
-(function() {
-  var wrap = document.querySelector('[data-countdown-target]');
-  if (!wrap) return;
-  var target = 0;
-  var days = document.querySelector('[data-countdown-days]');
-  var hours = document.querySelector('[data-countdown-hours]');
-  var mins = document.querySelector('[data-countdown-mins]');
-  var secs = document.querySelector('[data-countdown-secs]');
-  var title = document.querySelector('.countdown-title');
-  function pad(n) { return String(n).padStart(2, '0'); }
-  function setTarget() {
-    target = new Date(wrap.getAttribute('data-countdown-target')).getTime();
-  }
-  function tick() {
-    if (!target) setTarget();
-    var diff = target - Date.now();
-    if (diff <= 0) {
-      if (days) days.textContent = '0';
-      if (hours) hours.textContent = '00';
-      if (mins) mins.textContent = '00';
-      if (secs) secs.textContent = '00';
-      return;
-    }
-    var total = Math.floor(diff / 1000);
-    var d = Math.floor(total / 86400);
-    var h = Math.floor((total % 86400) / 3600);
-    var m = Math.floor((total % 3600) / 60);
-    var s = total % 60;
-    if (days) days.textContent = String(d);
-    if (hours) hours.textContent = pad(h);
-    if (mins) mins.textContent = pad(m);
-    if (secs) secs.textContent = pad(s);
-  }
-  window.updateCampCountdown = function() {
-    setTarget();
-    tick();
-  };
-  tick();
-  window.setInterval(tick, 1000);
-})();
 
 // ── CMS CONTENT LOADER ─────────────────────────────────────────
 (function() {
@@ -3127,8 +2936,8 @@ initFAQ();
     var images = [
       ['uploads/gallery-cooking.webp', 'Children cooking together at Kosher Culinary Camp'],
       ['uploads/gallery-challah.webp', 'Children baking challah at Kosher Culinary Camp'],
-      ['uploads/gallery-sports.webp', 'Children playing water games outside at camp'],
-      ['uploads/gallery-arts.webp', 'Children doing crafts at Kosher Culinary Camp']
+      ['uploads/gallery-shore-trip.webp', 'Children walking together on a summer camp trip'],
+      ['uploads/gallery-water-play.webp', 'Children running through a sprinkler at camp']
     ];
     list.innerHTML = '';
     items.slice(0, 4).forEach(function(item, i) {
@@ -3191,14 +3000,7 @@ initFAQ();
       text('#campLocation', details.location);
       text('#earlyBirdPrice, #pricingEarlyBird', details.early_bird_price);
       text('#regularPrice, #pricingRegular', details.regular_price);
-      text('.countdown-heading', details.countdown_heading);
-      text('.countdown-date-label', details.countdown_date_label);
-      if (details.countdown_target) {
-        document.querySelectorAll('[data-countdown-target]').forEach(function(el) {
-          el.setAttribute('data-countdown-target', details.countdown_target);
-        });
-        if (window.updateCampCountdown) window.updateCampCountdown();
-      }
+      text('#directorLine', details.director_line);
       if (details.session_image) {
         document.querySelectorAll('.session-img img').forEach(function(img) { img.src = details.session_image; });
       }
@@ -3213,7 +3015,6 @@ initFAQ();
       link('.registration-cta', cta.registration_button_url);
 
       var visibility = site.visibility || {};
-      showSection('countdown', visibility.show_countdown);
       showSection('activities', visibility.show_activities);
       showSection('camp-details', visibility.show_camp_details);
       showSection('faq', visibility.show_faq);
@@ -3321,7 +3122,7 @@ new IntersectionObserver(function(en) {
   }
 
   // Section fade
-  document.querySelectorAll('section:not(#hero):not(.polars), .stats, .countdown, .safety').forEach(function(el){ el.classList.add('sec-fade'); });
+  document.querySelectorAll('section:not(#hero):not(.polars), .stats, .safety').forEach(function(el){ el.classList.add('sec-fade'); });
   var fadeObs=new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) { entry.target.classList.add('in-view'); fadeObs.unobserve(entry.target); }
@@ -3330,17 +3131,6 @@ new IntersectionObserver(function(en) {
   document.querySelectorAll('.sec-fade').forEach(function(el){ fadeObs.observe(el); });
 
 })();
-</script>
-<script>
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on('init', function(user) {
-    if (!user) {
-      window.netlifyIdentity.on('login', function() {
-        document.location.href = 'admin/';
-      });
-    }
-  });
-}
 </script>
 </body>
 </html>

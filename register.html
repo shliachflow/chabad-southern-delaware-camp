@@ -6,27 +6,26 @@
   <title>Kosher Culinary Camp — Registration 2026</title>
   <meta name="description" content="Registration for Kosher Culinary Camp at Chabad of Southern Delaware, August 3-7, 2026, 9:00 AM-3:00 PM.">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://sodelawareculinary.netlify.app/register.html">
+  <link rel="canonical" href="https://shliachflow.github.io/chabad-southern-delaware-camp/register.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kosher Culinary Camp — Registration 2026">
   <meta property="og:description" content="Registration for Kosher Culinary Camp at Chabad of Southern Delaware, August 3-7, 2026, 9:00 AM-3:00 PM.">
-  <meta property="og:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp">
+  <meta property="og:image" content="https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/hero-banner.webp">
   <meta property="og:image:alt" content="Kosher Culinary Camp registration">
-  <meta property="og:url" content="https://sodelawareculinary.netlify.app/register.html">
+  <meta property="og:url" content="https://shliachflow.github.io/chabad-southern-delaware-camp/register.html">
   <meta property="og:site_name" content="Kosher Culinary Camp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kosher Culinary Camp — Registration 2026">
   <meta name="twitter:description" content="Registration for Kosher Culinary Camp at Chabad of Southern Delaware, August 3-7, 2026, 9:00 AM-3:00 PM.">
-  <meta name="twitter:image" content="https://sodelawareculinary.netlify.app/uploads/hero-banner.webp">
+  <meta name="twitter:image" content="https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/hero-banner.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet" />
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --ocean: #1B6CA8; --muted: #5D7A8A; --gold: #F4A01C; }
+    :root { --ocean: #087C8F; --muted: #536B7A; --gold: #FFC845; --raspberry: #F24B6A; }
     html { height: 100%; overflow: auto; overflow-x: hidden; }
-    body { margin: 0; height: 100%; display: flex; flex-direction: column; font-family: 'Nunito', system-ui, sans-serif; background: #E8F4FD; overflow-x: hidden; }
+    body { margin: 0; height: 100%; display: flex; flex-direction: column; font-family: 'Nunito', system-ui, sans-serif; background: #DDF7FF; overflow-x: hidden; }
     a { color: inherit; text-decoration: none; }
 
     .topbar {
@@ -35,7 +34,7 @@
       height: 58px;
       display: flex; align-items: center; justify-content: space-between; gap: 14px;
       padding: 0 clamp(16px, 4vw, 36px);
-      background: #1B6CA8;
+      background: #087C8F;
       color: #fff;
       box-shadow: 0 2px 12px rgba(27,108,168,.3);
       max-width: 100vw; overflow: hidden;
@@ -64,7 +63,7 @@
       width: 100vw; max-width: 100vw;
     }
     .reg-notice {
-      background: #FEF3DC; border-bottom: 2px solid #F4A01C;
+      background: #FFF0B8; border-bottom: 2px solid #FFC845;
       padding: 12px clamp(16px,4vw,36px);
       font-size: 13px; font-weight: 700; color: #2C3E50; line-height: 1.5;
       text-align: center;
@@ -77,12 +76,12 @@
       flex: 1; display: flex; flex-direction: column;
       align-items: center; justify-content: center; gap: 24px;
       padding: 40px 24px; text-align: center;
-      background: #E8F4FD;
+      background: #DDF7FF;
       width: 100vw; max-width: 100vw; overflow: hidden;
     }
     .reg-fallback-title {
       font-family: 'Fredoka One', sans-serif; font-size: clamp(28px,5vw,42px);
-      color: #1B6CA8; line-height: 1.1; max-width: min(100%, 520px); overflow-wrap: anywhere; word-break: break-word;
+      color: #087C8F; line-height: 1.1; max-width: min(100%, 520px); overflow-wrap: anywhere; word-break: break-word;
     }
     .reg-fallback-body { font-size: 16px; color: #5D7A8A; line-height: 1.65; max-width: 480px; }
     .reg-fallback a,
@@ -97,12 +96,12 @@
     .reg-btn {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 14px 28px; border-radius: 100px;
-      background: #1B6CA8; color: #fff;
+      background: #F24B6A; color: #fff;
       font-family: 'Nunito', sans-serif; font-size: 14px; font-weight: 800;
       letter-spacing: .06em; text-transform: uppercase;
-      box-shadow: 0 5px 0 #145484; transition: all 150ms;
+      box-shadow: 0 5px 0 #B42F48; transition: all 150ms;
     }
-    .reg-btn:hover { background: #145484; transform: translateY(-2px); }
+    .reg-btn:hover { background: #d83f5a; transform: translateY(-2px); }
     @media (max-width: 520px) {
       .topbar { padding-inline: 14px; }
       .brand { font-size: 16px; max-width: calc(100vw - 104px); }
@@ -201,15 +200,6 @@ fetch('content/site.json')
   })
   .catch(function(){});
 
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on('init', function(user) {
-    if (!user) {
-      window.netlifyIdentity.on('login', function() {
-        document.location.href = 'admin/';
-      });
-    }
-  });
-}
 </script>
 </body>
 </html>
