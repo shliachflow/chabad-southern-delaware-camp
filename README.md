@@ -37,5 +37,5 @@ Use Pages CMS with this GitHub repository to manage the main content and images.
 ## Design
 
 - Fonts: Barlow Condensed (headings) + Nunito (body) via Google Fonts
-- Colors: warm cream, saturated teal, gold accent, and deep navy
+- Colors: warm cream, saturated orange, gold accent, and deep navy
 - Bold warm camp aesthetic, visually aligned with the Troy camp design family without copying its exact palette
