@@ -68,25 +68,25 @@
     {
       "title": "Kosher cooking",
       "badge": "Mix",
-      "image": "uploads/gallery-cooking.webp",
+      "image": "uploads/activity-cooking.webp",
       "description": "Campers help prepare simple kosher recipes with guidance from staff."
     },
     {
       "title": "Baking",
       "badge": "Bake",
-      "image": "uploads/gallery-challah.webp",
+      "image": "uploads/activity-baking.webp",
       "description": "Hands-on baking projects, including challah."
     },
     {
       "title": "Fun trips",
       "badge": "Go",
-      "image": "uploads/gallery-shore-trip.webp",
+      "image": "uploads/activity-trips.webp",
       "description": "Almost daily trips give campers something new to look forward to."
     },
     {
       "title": "Water play",
       "badge": "Splash",
-      "image": "uploads/gallery-water-play.webp",
+      "image": "uploads/activity-water.webp",
       "description": "Sprinklers, splashing, and outdoor summer fun."
     }
   ],

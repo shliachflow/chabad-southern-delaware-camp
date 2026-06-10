@@ -84,7 +84,7 @@
   <!-- Google Fonts: Barlow Condensed (headings) + Nunito (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800;900&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Barlow+Condensed:wght@800;900&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -107,7 +107,7 @@
       --text:      #2C3E50;   /* main text */
       --muted:     #5D7A8A;   /* secondary text */
       --border:    #D5E8F2;   /* warm cream border */
-      --font-h:    'Barlow Condensed', 'Arial Narrow', 'Impact', sans-serif;
+      --font-h:    'Boogaloo', 'Nunito', system-ui, sans-serif;
       --font-b:    'Nunito', 'Segoe UI', system-ui, sans-serif;
       --max-w:     1200px;
       --px:        clamp(20px, 4vw, 48px);
@@ -2846,7 +2846,7 @@
       --bg: var(--cream);
       --raspberry: #C64B35;
       --lime: #8C9F35;
-      --font-h: 'Barlow Condensed', 'Arial Narrow', 'Impact', sans-serif;
+      --font-h: 'Boogaloo', 'Nunito', system-ui, sans-serif;
     }
     body {
       background: var(--cream) !important;
@@ -3173,6 +3173,205 @@
         border-radius: 6px !important;
       }
     }
+    /* ── TROY-ENERGY IMAGE + STATS ADDENDUM ────────────────── */
+    .camp-ribbon {
+      background: #0F1F3D !important;
+      border-bottom: 0 !important;
+      height: 44px !important;
+    }
+    .camp-ribbon-track {
+      animation-duration: 42s !important;
+    }
+    .camp-ribbon span {
+      color: #F5C842 !important;
+      font-size: 11px !important;
+      font-weight: 900 !important;
+      letter-spacing: .14em !important;
+      padding: 0 26px !important;
+    }
+    .camp-ribbon span:nth-child(even) {
+      color: #E8650A !important;
+    }
+    .camp-ribbon span::after {
+      width: 8px !important;
+      height: 8px !important;
+      right: -4px !important;
+      background: #E8650A !important;
+      border-radius: 0 !important;
+      transform: translateY(-50%) rotate(45deg) !important;
+    }
+    .hero {
+      border-bottom: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    .hero-right {
+      isolation: isolate;
+    }
+    .hero-right-img {
+      object-position: 58% center !important;
+    }
+    .hero-photo-title {
+      position: absolute;
+      z-index: 7;
+      top: clamp(24px, 4vw, 56px);
+      left: clamp(20px, 3.4vw, 54px);
+      max-width: min(430px, calc(100% - 48px));
+      font-family: var(--font-h);
+      font-size: clamp(52px, 5vw, 88px);
+      font-weight: 900;
+      font-style: italic;
+      line-height: .82;
+      letter-spacing: .01em;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 4px 4px 0 rgba(15,31,61,.82), 8px 8px 18px rgba(0,0,0,.45);
+      transform: rotate(-1.5deg);
+      pointer-events: none;
+    }
+    .hero-photo-title span {
+      display: block;
+    }
+    .hero-photo-title span:nth-child(2) {
+      color: #E8650A;
+      text-shadow: 3px 3px 0 rgba(255,255,255,.75), 7px 7px 18px rgba(0,0,0,.4);
+    }
+    .hero-photo-callout {
+      left: clamp(18px, 3vw, 38px) !important;
+      right: auto !important;
+      bottom: clamp(18px, 3vw, 38px) !important;
+      width: min(330px, calc(100% - 42px)) !important;
+      max-width: 330px !important;
+      padding: clamp(12px, 1.3vw, 16px) !important;
+      background: #FFF8EE !important;
+      border: 2px solid rgba(15,31,61,.9) !important;
+      border-radius: 7px !important;
+      box-shadow: 7px 8px 0 rgba(15,31,61,.26), 0 14px 28px rgba(0,0,0,.18) !important;
+      transform: rotate(-2.5deg) !important;
+    }
+    .hero-photo-callout strong {
+      font-size: clamp(23px, 2vw, 31px) !important;
+      line-height: .92 !important;
+      color: #E8650A !important;
+      margin-bottom: 6px !important;
+    }
+    .hero-photo-callout span {
+      color: #0F1F3D !important;
+      font-size: clamp(10px, .82vw, 12px) !important;
+      line-height: 1.35 !important;
+      letter-spacing: .07em !important;
+    }
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: stretch;
+      gap: 0;
+      width: 100%;
+      margin: 0;
+      padding: clamp(60px, 6vw, 80px) var(--px);
+      background: #0F1F3D;
+      color: #fff;
+      position: relative;
+      z-index: 3;
+    }
+    .stats-bar .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 clamp(18px, 3vw, 48px);
+      border-right: 1px solid rgba(255,255,255,.16);
+    }
+    .stats-bar .stat:last-child {
+      border-right: 0;
+    }
+    .stat-number {
+      display: block;
+      font-family: var(--font-h);
+      font-size: clamp(2.5rem, 5vw, 5rem);
+      font-weight: 900;
+      line-height: .9;
+      color: #F5C842;
+      text-transform: uppercase;
+      text-shadow: 3px 3px 0 rgba(232,101,10,.36);
+      white-space: nowrap;
+    }
+    .stat-label {
+      display: block;
+      margin-top: 12px;
+      color: #fff;
+      font-size: clamp(10px, 1vw, 13px);
+      font-weight: 900;
+      letter-spacing: .16em;
+      line-height: 1.35;
+      text-transform: uppercase;
+    }
+    .stats-bar + .features {
+      margin-top: 0 !important;
+      border-radius: 0 !important;
+      padding-top: clamp(72px, 8vw, 104px) !important;
+    }
+    @media (max-width: 960px) {
+      .hero-photo-title {
+        top: 24px;
+        left: 18px;
+        max-width: min(360px, calc(100% - 36px));
+        font-size: clamp(42px, 10vw, 68px);
+      }
+      .hero-photo-callout {
+        width: min(285px, calc(100% - 36px)) !important;
+      }
+      .stats-bar {
+        grid-template-columns: 1fr;
+        padding: 42px var(--px);
+      }
+      .stats-bar .stat {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.16);
+        padding: 22px 0;
+      }
+      .stats-bar .stat:first-child {
+        padding-top: 0;
+      }
+      .stats-bar .stat:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+    @media (max-width: 600px) {
+      .camp-ribbon {
+        height: 38px !important;
+      }
+      .camp-ribbon span {
+        font-size: 9px !important;
+        padding: 0 18px !important;
+      }
+      .hero-right {
+        min-height: 430px !important;
+      }
+      .hero-photo-title {
+        top: 18px;
+        left: 14px;
+        max-width: 250px;
+        font-size: clamp(38px, 11vw, 52px);
+        text-shadow: 3px 3px 0 rgba(15,31,61,.85), 6px 6px 14px rgba(0,0,0,.42);
+      }
+      .hero-photo-callout {
+        left: 14px !important;
+        bottom: 14px !important;
+        width: min(245px, calc(100% - 28px)) !important;
+        padding: 11px 12px !important;
+      }
+      .hero-photo-callout strong {
+        font-size: clamp(20px, 6.4vw, 27px) !important;
+      }
+      .hero-photo-callout span {
+        font-size: 9px !important;
+      }
+      .stats-bar {
+        padding-block: 34px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -3201,16 +3400,12 @@
 <div class="camp-ribbon" aria-hidden="true">
   <div class="camp-ribbon-track">
     <div class="camp-ribbon-set">
-      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
-      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
-      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
-      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+      <span>Kosher Cooking</span><span>Challah Fridays</span><span>Almost Daily Trips</span><span>Water Play</span><span>Jewish Pride</span><span>Baking From Scratch</span><span>Ages 4-12</span><span>Lewes, DE</span><span>Summer 2026</span><span>Register Now</span><span>Messy Aprons</span><span>Best Week Ever</span>
+      <span>Kosher Cooking</span><span>Challah Fridays</span><span>Almost Daily Trips</span><span>Water Play</span><span>Jewish Pride</span><span>Baking From Scratch</span><span>Ages 4-12</span><span>Lewes, DE</span><span>Summer 2026</span><span>Register Now</span><span>Messy Aprons</span><span>Best Week Ever</span>
     </div>
     <div class="camp-ribbon-set" aria-hidden="true">
-      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
-      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
-      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
-      <span>Cooking</span><span>Baking</span><span>Trips</span><span>Water Play</span><span>Jewish Values</span>
+      <span>Kosher Cooking</span><span>Challah Fridays</span><span>Almost Daily Trips</span><span>Water Play</span><span>Jewish Pride</span><span>Baking From Scratch</span><span>Ages 4-12</span><span>Lewes, DE</span><span>Summer 2026</span><span>Register Now</span><span>Messy Aprons</span><span>Best Week Ever</span>
+      <span>Kosher Cooking</span><span>Challah Fridays</span><span>Almost Daily Trips</span><span>Water Play</span><span>Jewish Pride</span><span>Baking From Scratch</span><span>Ages 4-12</span><span>Lewes, DE</span><span>Summer 2026</span><span>Register Now</span><span>Messy Aprons</span><span>Best Week Ever</span>
     </div>
   </div>
 </div>
@@ -3236,11 +3431,31 @@
     </div>
   </div>
   <div class="hero-right">
-    <img class="hero-right-img" src="uploads/hero-banner.webp" alt="Children baking together at Kosher Culinary Camp" loading="eager">
+    <img class="hero-right-img" src="uploads/hero-banner.webp" alt="Boys laughing and baking together at Kosher Culinary Camp" loading="eager">
+    <div class="hero-photo-title" aria-hidden="true">
+      <span>Messy Aprons.</span>
+      <span>Big Smiles.</span>
+      <span>Best Week.</span>
+    </div>
     <div class="hero-photo-callout" aria-hidden="true">
     <strong id="heroCalloutTitle">This is summer done right.</strong>
     <span id="heroCalloutBody">Cooking · Baking · Almost Daily Trips · Water Play · Jewish Values</span>
     </div>
+  </div>
+</section>
+
+<section class="stats-bar" aria-label="Camp quick facts">
+  <div class="stat">
+    <span class="stat-number">Aug 3-7</span>
+    <span class="stat-label">One Week</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">Ages 4-12</span>
+    <span class="stat-label">Boys &amp; Girls</span>
+  </div>
+  <div class="stat">
+    <span class="stat-number">$250</span>
+    <span class="stat-label">Early Bird / $300 Regular</span>
   </div>
 </section>
 
@@ -3249,13 +3464,13 @@
   <div class="wrap">
     <div class="features-hd">
       <p class="sec-label">What Happens At Camp</p>
-      <h2 class="sec-h">Cooking, baking,<br><em>and camp fun.</em></h2>
+      <h2 class="sec-h">A week they'll talk<br><em>about all year.</em></h2>
       <p class="sec-body">Kids cook, bake, head out on almost daily trips, cool off with water play, and enjoy a camp week with a Jewish heart.</p>
     </div>
 
     <div class="feat-grid activity-photo-grid" id="activityList">
       <div class="feat-block c-ocean">
-        <div class="feat-photo"><img src="uploads/gallery-cooking.webp" alt="Children cooking together at Kosher Culinary Camp" loading="eager"></div>
+        <div class="feat-photo"><img src="uploads/activity-cooking.webp" alt="Boy cooking at Kosher Culinary Camp" loading="eager"></div>
         <div class="feat-copy">
           <div class="feat-badge">Mix</div>
           <div class="feat-title">Kosher cooking</div>
@@ -3263,7 +3478,7 @@
         </div>
       </div>
       <div class="feat-block c-sky">
-        <div class="feat-photo"><img src="uploads/gallery-challah.webp" alt="Children baking challah at Kosher Culinary Camp" loading="eager"></div>
+        <div class="feat-photo"><img src="uploads/activity-baking.webp" alt="Girls baking challah at Kosher Culinary Camp" loading="eager"></div>
         <div class="feat-copy">
           <div class="feat-badge">Bake</div>
           <div class="feat-title">Baking</div>
@@ -3271,7 +3486,7 @@
         </div>
       </div>
       <div class="feat-block c-gold">
-        <div class="feat-photo"><img src="uploads/gallery-shore-trip.webp" alt="Children walking together on a summer camp trip" loading="eager"></div>
+        <div class="feat-photo"><img src="uploads/activity-trips.webp" alt="Boys walking together on a summer camp trip" loading="eager"></div>
         <div class="feat-copy">
           <div class="feat-badge">Go</div>
           <div class="feat-title">Fun trips</div>
@@ -3279,7 +3494,7 @@
         </div>
       </div>
       <div class="feat-block c-navy">
-        <div class="feat-photo"><img src="uploads/gallery-water-play.webp" alt="Children running through a sprinkler at camp" loading="eager"></div>
+        <div class="feat-photo"><img src="uploads/activity-water.webp" alt="Girls running through a sprinkler at camp" loading="eager"></div>
         <div class="feat-copy">
           <div class="feat-badge">Splash</div>
           <div class="feat-title">Water play</div>
@@ -3320,7 +3535,7 @@
       </div>
       <div class="sess-media">
         <div class="session-img">
-          <img src="uploads/activity-cooking.webp" alt="Children baking challah at Kosher Culinary Camp" loading="eager">
+          <img src="uploads/activity-cooking.webp" alt="Boy cooking at Kosher Culinary Camp" loading="eager">
         </div>
       </div>
     </div>
@@ -3494,10 +3709,10 @@ initFAQ();
     var colors = ['c-ocean', 'c-sky', 'c-gold', 'c-navy'];
     var badges = ['Mix', 'Bake', 'Play', 'Grow'];
     var images = [
-      ['uploads/gallery-cooking.webp', 'Children cooking together at Kosher Culinary Camp'],
-      ['uploads/gallery-challah.webp', 'Children baking challah at Kosher Culinary Camp'],
-      ['uploads/gallery-shore-trip.webp', 'Children walking together on a summer camp trip'],
-      ['uploads/gallery-water-play.webp', 'Children running through a sprinkler at camp']
+      ['uploads/activity-cooking.webp', 'Boy cooking at Kosher Culinary Camp'],
+      ['uploads/activity-baking.webp', 'Girls baking challah at Kosher Culinary Camp'],
+      ['uploads/activity-trips.webp', 'Boys walking together on a summer camp trip'],
+      ['uploads/activity-water.webp', 'Girls running through a sprinkler at camp']
     ];
     list.innerHTML = '';
     items.slice(0, 4).forEach(function(item, i) {
