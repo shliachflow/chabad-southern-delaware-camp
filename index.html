@@ -697,6 +697,9 @@
     .faq-contact { display: grid; gap: 5px; color: var(--text); font-size: 14px; line-height: 1.45; }
     .faq-contact strong { color: var(--text); font-weight: 900; }
     .faq-contact a { color: var(--ocean); font-weight: 800; overflow-wrap: anywhere; }
+    .faq-answer-contact { display: grid; gap: 3px; margin: 12px 0; color: var(--text); }
+    .faq-answer-contact strong { font-weight: 900; color: var(--text); }
+    .faq-answer-contact a { color: var(--ocean); font-weight: 800; overflow-wrap: anywhere; }
 
     /* ── SAFETY ──────────────────────────────────────────────── */
     .safety { background: var(--ocean); padding: 14px 0; }
@@ -3375,6 +3378,52 @@
         padding-block: 34px;
       }
     }
+    /* ── CLIENT POLISH FIXES ───────────────────────────────── */
+    @media (min-width: 961px) {
+      .hero-right {
+        overflow: hidden !important;
+        border-left: 0 !important;
+        clip-path: none !important;
+      }
+      .hero-right::before {
+        content: '' !important;
+        display: block !important;
+        position: absolute;
+        z-index: 5;
+        inset: 0 auto 0 0;
+        width: clamp(120px, 18vw, 260px);
+        background: linear-gradient(90deg, var(--cream) 0%, rgba(255,250,238,.9) 20%, rgba(255,250,238,.35) 48%, rgba(255,250,238,0) 100%);
+        pointer-events: none;
+      }
+      .hero-photo-title {
+        top: clamp(38px, 5vw, 72px);
+      }
+    }
+    .hero-photo-title {
+      overflow: hidden;
+      contain: paint;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .scroll-rise,
+      .scroll-fade,
+      .stat-pop {
+        opacity: 0 !important;
+        transform: translateY(24px) !important;
+        transition: opacity 520ms cubic-bezier(0.22,1,0.36,1), transform 520ms cubic-bezier(0.22,1,0.36,1);
+      }
+      .scroll-fade {
+        transform: translateY(18px) !important;
+      }
+      .stat-pop {
+        transform: translateY(20px) !important;
+      }
+      .scroll-rise.in-view,
+      .scroll-fade.in-view,
+      .stat-pop.in-view {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -3553,12 +3602,6 @@
         <p class="sec-label">Questions</p>
         <h2 class="sec-h">Frequently Asked<br><em>Questions</em></h2>
         <p class="faq-sidebar-body">For anything else, reach out to Chanale.</p>
-        <div class="faq-contact">
-          <strong>Chanale</strong>
-          <a href="tel:+17184736570">718-473-6570</a>
-          <span>or</span>
-          <a href="mailto:Chanale@JewishSouthernDelaware.com">Chanale@JewishSouthernDelaware.com</a>
-        </div>
       </div>
       <div id="faqList">
         <div class="faq-item">
@@ -3571,7 +3614,13 @@
         </div>
         <div class="faq-item">
           <div class="faq-q" tabindex="0"><span class="faq-qt">How do I register?</span><span class="faq-tog">+</span></div>
-          <div class="faq-ans"><div class="faq-ans-in">The online form is coming soon. For now, contact Rabbi Sholom at (302) 377-1162 or Rabbi@JewishSouthernDelaware.com.</div></div>
+          <div class="faq-ans"><div class="faq-ans-in">To register, reach out to Chanale directly:
+            <div class="faq-answer-contact">
+              <strong>Chanale Vogel</strong>
+              <a href="tel:+17184736570">718-473-6570</a>
+              <a href="mailto:Chanale@JewishSouthernDelaware.com">Chanale@JewishSouthernDelaware.com</a>
+            </div>
+            We'll get back to you with everything you need.</div></div>
         </div>
       </div>
     </div>
@@ -3585,12 +3634,11 @@
       <div>
         <p class="sec-label">Registration</p>
         <h2 class="sec-h">Registration form<br><em>coming soon.</em></h2>
-        <p class="reg-cta-body">Registration form coming soon - contact Rabbi Sholom at (302) 377-1162 or Rabbi@JewishSouthernDelaware.com to register.</p>
+        <p class="reg-cta-body">Registration form coming soon - contact Chanale at <a href="mailto:Chanale@JewishSouthernDelaware.com" style="color:var(--ocean);font-weight:700;">Chanale@JewishSouthernDelaware.com</a> or <a href="tel:+17184736570" style="color:var(--ocean);font-weight:700;">718-473-6570</a> to register.</p>
         <div class="reg-actions">
           <a href="register.html" class="btn btn-ocean registration-cta">Registration Page</a>
-          <a href="mailto:Rabbi@JewishSouthernDelaware.com" class="btn btn-ghost">Email Rabbi Sholom</a>
         </div>
-        <p class="reg-note">You can also reach Chanale at <a href="mailto:Chanale@JewishSouthernDelaware.com" style="color:var(--ocean);font-weight:700;">Chanale@JewishSouthernDelaware.com</a> or <a href="tel:+17184736570" style="color:var(--ocean);font-weight:700;">718-473-6570</a>.</p>
+        <p class="reg-note">Chanale will get back to you with everything you need.</p>
       </div>
     </div>
   </div>
@@ -3706,7 +3754,19 @@ initFAQ();
         '<div class="faq-q" tabindex="0"><span class="faq-qt"></span><span class="faq-tog">+</span></div>' +
         '<div class="faq-ans"><div class="faq-ans-in"></div></div>';
       wrap.querySelector('.faq-qt').textContent = item.question;
-      wrap.querySelector('.faq-ans-in').textContent = item.answer;
+      var answer = wrap.querySelector('.faq-ans-in');
+      if (item.question === 'How do I register?') {
+        answer.innerHTML =
+          'To register, reach out to Chanale directly:' +
+          '<div class="faq-answer-contact">' +
+          '<strong>Chanale Vogel</strong>' +
+          '<a href="tel:+17184736570">718-473-6570</a>' +
+          '<a href="mailto:Chanale@JewishSouthernDelaware.com">Chanale@JewishSouthernDelaware.com</a>' +
+          '</div>' +
+          "We'll get back to you with everything you need.";
+      } else {
+        answer.textContent = item.answer;
+      }
       list.appendChild(wrap);
     });
     initFAQ();
@@ -3859,17 +3919,30 @@ new IntersectionObserver(function(en) {
 (function() {
   if (!window.matchMedia || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  // Hero entrance
-  [
-    {sel:'.hero-tag',  delay:0},
-    {sel:'.hero-h1',   delay:130},
-    {sel:'.hero-sub',  delay:290},
-    {sel:'.hero-btns', delay:430},
-    {sel:'.hero-right',delay:60}
-  ].forEach(function(item) {
-    var el=document.querySelector(item.sel); if(!el)return;
-    el.classList.add('hero-enter');
-    setTimeout(function(){ el.classList.add('hero-go'); }, item.delay+50);
+  var polishObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('in-view');
+      polishObs.unobserve(entry.target);
+    });
+  }, { threshold: 0.16, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('section:not(#hero) .sec-h, section:not(#hero) .session-h').forEach(function(el) {
+    el.classList.add('scroll-fade');
+    polishObs.observe(el);
+  });
+  document.querySelectorAll('.activity-photo-grid .feat-block').forEach(function(card, i) {
+    card.classList.add('scroll-rise');
+    card.style.transitionDelay = (i * 150) + 'ms';
+    polishObs.observe(card);
+  });
+  document.querySelectorAll('.stats-bar .stat-number').forEach(function(stat) {
+    stat.classList.add('stat-pop');
+    polishObs.observe(stat);
+  });
+  document.querySelectorAll('.session-panel').forEach(function(panel) {
+    panel.classList.add('scroll-rise');
+    polishObs.observe(panel);
   });
 
   // Session slide-in
@@ -3902,7 +3975,7 @@ new IntersectionObserver(function(en) {
     new IntersectionObserver(function(entries) {
       if (!entries[0].isIntersecting||featDone) return;
       featDone=true;
-      document.querySelectorAll('.feat-block').forEach(function(card,i){ setTimeout(function(){ card.classList.add('visible'); },i*70); });
+      document.querySelectorAll('.feat-block').forEach(function(card,i){ setTimeout(function(){ card.classList.add('visible'); },i*150); });
     },{threshold:0.12}).observe(featGrid);
   }
 

@@ -58,9 +58,9 @@
   "registration": {
     "notice": "Kosher Culinary Camp 2026 · August 3-7 · 9:00 AM - 3:00 PM · $250 early bird / $300 regular",
     "heading": "Registration Form Coming Soon",
-    "message": "Registration form coming soon — contact Rabbi Sholom at (302) 377-1162 or Rabbi@JewishSouthernDelaware.com to register.",
-    "button_text": "Email Rabbi Sholom",
-    "button_url": "mailto:Rabbi@JewishSouthernDelaware.com",
+    "message": "Registration form coming soon — contact Chanale at 718-473-6570 or Chanale@JewishSouthernDelaware.com to register.",
+    "button_text": "Email Chanale",
+    "button_url": "mailto:Chanale@JewishSouthernDelaware.com",
     "embed_code": "",
     "admin_note": "Add Cognito Forms embed code here when ready."
   },
@@ -122,7 +122,7 @@
     },
     {
       "question": "How do I register?",
-      "answer": "The online form is coming soon. For now, contact Rabbi Sholom at (302) 377-1162 or Rabbi@JewishSouthernDelaware.com."
+      "answer": "To register, reach out to Chanale directly:\n\nChanale Vogel\n718-473-6570\nChanale@JewishSouthernDelaware.com\n\nWe'll get back to you with everything you need."
     }
   ]
 }
