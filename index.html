@@ -68,7 +68,7 @@
           {
             "@type": "Question",
             "name": "What will the kids do?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The week includes kosher cooking, baking, fun trips, water play, and Jewish values." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Kids spend the week cooking and baking real kosher food — including challah — going on trips almost every day, splashing around in the water, and just having a really good time. Jewish values are part of everything we do." }
           },
           {
             "@type": "Question",
@@ -694,6 +694,9 @@
     .faq-item.open .faq-tog { transform: rotate(45deg); color: var(--ocean); }
     .faq-ans { max-height: 0; overflow: hidden; transition: max-height 300ms ease; }
     .faq-ans-in { padding-bottom: 16px; font-size: 14px; color: var(--muted); line-height: 1.75; }
+    .faq-contact { display: grid; gap: 5px; color: var(--text); font-size: 14px; line-height: 1.45; }
+    .faq-contact strong { color: var(--text); font-weight: 900; }
+    .faq-contact a { color: var(--ocean); font-weight: 800; overflow-wrap: anywhere; }
 
     /* ── SAFETY ──────────────────────────────────────────────── */
     .safety { background: var(--ocean); padding: 14px 0; }
@@ -3549,8 +3552,13 @@
       <div>
         <p class="sec-label">Questions</p>
         <h2 class="sec-h">Frequently Asked<br><em>Questions</em></h2>
-        <p class="faq-sidebar-body">For anything else, call or email Rabbi Sholom.</p>
-        <a href="mailto:Rabbi@JewishSouthernDelaware.com" class="btn btn-ghost">Contact Rabbi Sholom</a>
+        <p class="faq-sidebar-body">For anything else, reach out to Chanale.</p>
+        <div class="faq-contact">
+          <strong>Chanale</strong>
+          <a href="tel:+17184736570">718-473-6570</a>
+          <span>or</span>
+          <a href="mailto:Chanale@JewishSouthernDelaware.com">Chanale@JewishSouthernDelaware.com</a>
+        </div>
       </div>
       <div id="faqList">
         <div class="faq-item">
@@ -3559,7 +3567,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-q" tabindex="0"><span class="faq-qt">What will the kids do?</span><span class="faq-tog">+</span></div>
-          <div class="faq-ans"><div class="faq-ans-in">The week includes kosher cooking, baking, almost daily trips, water play, and Jewish values.</div></div>
+          <div class="faq-ans"><div class="faq-ans-in">Kids spend the week cooking and baking real kosher food — including challah — going on trips almost every day, splashing around in the water, and just having a really good time. Jewish values are part of everything we do.</div></div>
         </div>
         <div class="faq-item">
           <div class="faq-q" tabindex="0"><span class="faq-qt">How do I register?</span><span class="faq-tog">+</span></div>
