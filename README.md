@@ -14,10 +14,7 @@ Hosted by Chabad of Southern Delaware.
 ├── content/
 │   ├── site.json       All editable text content (CMS-managed)
 │   └── gallery.json    Photo albums (CMS-managed)
-├── uploads/            Images go here
-└── admin/
-    ├── index.html      Optional Decap admin panel (/admin)
-    └── config.yml      Optional Decap configuration
+└── uploads/            Images go here
 ```
 
 ## Items Needing Client Input
@@ -32,7 +29,7 @@ See full list in PLACEHOLDERS.md or the inline HTML comments.
 
 ## CMS
 
-Use Pages CMS with this GitHub repository to manage the main content and images. The optional `/admin` Decap setup is configured with the GitHub backend.
+Use Pages CMS with this GitHub repository to manage the main content, graphics, and photo albums. The CMS configuration is in `.pages.yml`; editable site content lives in `content/site.json`, and editable photo albums live in `content/gallery.json`.
 
 ## Design
 

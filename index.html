@@ -3503,6 +3503,156 @@
         display: none !important;
       }
     }
+
+    /* ── HOMEPAGE PHOTO ALBUM ENTRY ────────────────────────── */
+    .social-feed {
+      background: var(--bg) !important;
+      padding: clamp(72px, 8vw, 112px) 0 !important;
+    }
+    .social-feed-grid {
+      display: grid !important;
+      grid-template-columns: minmax(280px, .72fr) minmax(420px, 1.28fr) !important;
+      gap: clamp(36px, 7vw, 92px) !important;
+      align-items: center !important;
+    }
+    .social-feed-headline {
+      max-width: 460px;
+      font-family: var(--font-h) !important;
+      font-size: clamp(48px, 5.8vw, 82px) !important;
+      line-height: .88 !important;
+      color: var(--navy) !important;
+      text-transform: none !important;
+      letter-spacing: 0 !important;
+      margin-top: 10px;
+    }
+    .social-feed-headline em {
+      display: block;
+      color: var(--navy) !important;
+      font-style: italic !important;
+      text-transform: none !important;
+    }
+    .social-feed-body {
+      max-width: 430px;
+      margin-top: 22px;
+      color: var(--muted) !important;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+    .social-feed-actions {
+      display: flex !important;
+      flex-wrap: wrap;
+      gap: 12px !important;
+      max-width: 390px;
+      margin-top: 28px !important;
+    }
+    .social-feed-actions .btn {
+      border-radius: 999px !important;
+      min-height: 50px;
+      padding-inline: 26px;
+      box-shadow: 0 7px 0 rgba(232,101,10,.22) !important;
+    }
+    .social-feed-actions .btn-ghost {
+      box-shadow: none !important;
+      background: var(--white) !important;
+      color: var(--navy) !important;
+      border-color: var(--navy) !important;
+    }
+    .photo-callout {
+      display: grid !important;
+      grid-template-columns: auto minmax(0, 1fr) auto !important;
+      align-items: center !important;
+      gap: clamp(18px, 3vw, 34px) !important;
+      min-height: 178px;
+      padding: clamp(26px, 4vw, 44px) !important;
+      background: #FFF8EE !important;
+      border: 2px solid rgba(15,31,61,.13) !important;
+      border-radius: 22px !important;
+      box-shadow: none !important;
+    }
+    .photo-callout-icon {
+      width: 76px !important;
+      height: 76px !important;
+      border-radius: 50% !important;
+      background: var(--gold) !important;
+      color: var(--navy) !important;
+      box-shadow: 7px 7px 0 rgba(15,31,61,.08) !important;
+      position: relative;
+      font-size: 0 !important;
+    }
+    .photo-callout-icon::before {
+      content: '';
+      width: 34px;
+      height: 24px;
+      border-radius: 7px;
+      background: var(--navy);
+      position: absolute;
+      left: 50%;
+      top: 52%;
+      transform: translate(-50%, -50%);
+    }
+    .photo-callout-icon::after {
+      content: '';
+      width: 13px;
+      height: 13px;
+      border: 3px solid var(--white);
+      border-radius: 50%;
+      position: absolute;
+      left: 50%;
+      top: 52%;
+      transform: translate(-50%, -50%);
+      box-shadow: 12px -13px 0 -5px var(--white);
+    }
+    .photo-callout-title {
+      font-family: var(--font-h) !important;
+      font-size: clamp(34px, 3.8vw, 54px) !important;
+      line-height: .9 !important;
+      color: var(--navy) !important;
+      letter-spacing: 0 !important;
+    }
+    .photo-callout-text {
+      max-width: 430px;
+      margin-top: 10px !important;
+      color: var(--muted) !important;
+      font-size: 16px !important;
+      line-height: 1.55 !important;
+    }
+    .photo-callout .btn {
+      white-space: nowrap;
+      border-radius: 999px !important;
+      box-shadow: 0 7px 0 rgba(232,101,10,.22) !important;
+    }
+    @media (max-width: 980px) {
+      .social-feed-grid {
+        grid-template-columns: 1fr !important;
+      }
+      .photo-callout {
+        grid-template-columns: auto minmax(0, 1fr) !important;
+      }
+      .photo-callout .btn {
+        grid-column: 2;
+        justify-self: start;
+      }
+    }
+    @media (max-width: 620px) {
+      .social-feed-headline {
+        font-size: clamp(42px, 15vw, 62px) !important;
+      }
+      .social-feed-actions {
+        max-width: none;
+      }
+      .social-feed-actions .btn {
+        flex: 1 1 160px;
+        justify-content: center;
+      }
+      .photo-callout {
+        grid-template-columns: 1fr !important;
+        text-align: left;
+      }
+      .photo-callout-icon,
+      .photo-callout .btn {
+        grid-column: auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -3687,6 +3837,30 @@
             We'll get back to you with everything you need.</div></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOS -->
+<section class="social-feed" id="photos" data-section="photos">
+  <div class="wrap social-feed-grid">
+    <div>
+      <p class="sec-label social-feed-label">Latest From Camp</p>
+      <h2 class="social-feed-headline">Camp photos<br><em>all summer.</em></h2>
+      <p class="social-feed-body">Browse highlights from the kitchen, trips, activities, and all the smiles in between.</p>
+      <div class="social-feed-actions" aria-label="Photo and social links">
+        <a href="photos.html" class="btn btn-ocean social-albums">View Full Album</a>
+        <a href="https://www.instagram.com/chabadsoutherndelaware/" class="btn btn-ocean social-instagram" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/chabadsoutherndelaware/" class="btn btn-ghost social-facebook" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+    <div class="photo-callout">
+      <div class="photo-callout-icon" aria-hidden="true"></div>
+      <div>
+        <div class="photo-callout-title">Photo albums live here.</div>
+        <div class="photo-callout-text">Browse daily albums, trip highlights, kitchen moments, and camp memories.</div>
+      </div>
+      <a href="photos.html" class="btn btn-ocean social-albums">Open Albums &rarr;</a>
     </div>
   </div>
 </section>

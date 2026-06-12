@@ -91,12 +91,12 @@
     }
   ],
   "photos": {
-    "eyebrow": "Photos",
+    "eyebrow": "Latest From Camp",
     "headline": "Camp photos",
-    "headline_emphasis": "coming soon.",
-    "body": "Photos can be added here once real camp pictures are available.",
-    "callout_title": "Photo albums",
-    "callout_body": "Use the CMS to add or replace real camp photos."
+    "headline_emphasis": "all summer.",
+    "body": "Browse highlights from the kitchen, trips, activities, and all the smiles in between.",
+    "callout_title": "Photo albums live here.",
+    "callout_body": "Browse daily albums, trip highlights, kitchen moments, and camp memories."
   },
   "contact": {
     "email": "Rabbi@JewishSouthernDelaware.com",
