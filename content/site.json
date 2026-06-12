@@ -1,11 +1,11 @@
 {
   "seo": {
-    "site_title": "Kosher Culinary Camp 2026 — Chabad of Southern Delaware",
-    "site_description": "Kosher Culinary Camp at Chabad of Southern Delaware. August 3-7, 2026, 9:00 AM-3:00 PM. Cooking, baking, trips, water play, and Jewish values.",
-    "photos_title": "Kosher Culinary Camp — Photo Albums",
-    "photos_description": "Photo albums for Kosher Culinary Camp at Chabad of Southern Delaware.",
-    "registration_title": "Kosher Culinary Camp — Registration 2026",
-    "registration_description": "Registration for Kosher Culinary Camp at Chabad of Southern Delaware, August 3-7, 2026, 9:00 AM-3:00 PM.",
+    "site_title": "Jewish Summer Day Camp in Southern Delaware | Kosher Culinary Camp 2026",
+    "site_description": "Jewish summer day camp in Southern Delaware for ages 4-12. Kosher Culinary Camp at Chabad of Southern Delaware in Lewes, DE, August 3-7, 2026, with cooking, baking, trips, water play, and Jewish values.",
+    "photos_title": "Jewish Camp Photo Albums | Kosher Culinary Camp Southern Delaware",
+    "photos_description": "Photo albums from Kosher Culinary Camp, a Jewish summer day camp at Chabad of Southern Delaware in Lewes, DE.",
+    "registration_title": "Register for Jewish Summer Day Camp in Southern Delaware | Kosher Culinary Camp",
+    "registration_description": "Register for Kosher Culinary Camp 2026, a Jewish summer day camp for ages 4-12 at Chabad of Southern Delaware in Lewes, DE, August 3-7, 2026.",
     "share_image": "uploads/hero-banner.webp",
     "site_url": "https://shliachflow.github.io/chabad-southern-delaware-camp"
   },
@@ -15,7 +15,7 @@
     "headline_2": "Bake.",
     "headline_3": "Have fun.",
     "image": "uploads/hero-banner.webp",
-    "subtitle": "One week of kosher cooking, baking, almost daily trips, water play, and Jewish values.",
+    "subtitle": "A Jewish summer day camp in Southern Delaware with kosher cooking, baking, almost daily trips, water play, and Jewish values.",
     "callout_title": "This is summer done right.",
     "callout_body": "Cooking · Baking · Almost Daily Trips · Water Play · Jewish Values",
     "fact_1_value": "Aug 3-7",
@@ -119,6 +119,10 @@
     {
       "question": "What will the kids do?",
       "answer": "Kids spend the week cooking and baking real kosher food — including challah — going on trips almost every day, splashing around in the water, and just having a really good time. Jewish values are part of everything we do."
+    },
+    {
+      "question": "Is this a Jewish summer camp for Southern Delaware families?",
+      "answer": "Yes. Kosher Culinary Camp is a Jewish summer day camp in Southern Delaware for families in Lewes, Rehoboth Beach, Milton, Georgetown, Sussex County, and nearby communities."
     },
     {
       "question": "How do I register?",

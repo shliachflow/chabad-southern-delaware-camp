@@ -1,21 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://shliachflow.github.io/chabad-southern-delaware-camp/</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/hero-banner.webp</image:loc>
+      <image:title>Kosher Culinary Camp Jewish summer day camp in Southern Delaware</image:title>
+      <image:caption>Boys baking at Kosher Culinary Camp in Southern Delaware</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/activity-cooking.webp</image:loc>
+      <image:title>Kosher cooking at Jewish day camp in Lewes DE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/activity-baking.webp</image:loc>
+      <image:title>Challah baking at Kosher Culinary Camp</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://shliachflow.github.io/chabad-southern-delaware-camp/photos.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/hero-banner.webp</image:loc>
+      <image:title>Kosher Culinary Camp photo albums</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://shliachflow.github.io/chabad-southern-delaware-camp/register.html</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://shliachflow.github.io/chabad-southern-delaware-camp/uploads/hero-banner.webp</image:loc>
+      <image:title>Register for Kosher Culinary Camp in Southern Delaware</image:title>
+    </image:image>
   </url>
 </urlset>

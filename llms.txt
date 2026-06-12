@@ -1,0 +1,53 @@
+# Kosher Culinary Camp 2026
+
+Kosher Culinary Camp is a one-week Jewish summer day camp in Southern Delaware hosted by Chabad of Southern Delaware in Lewes, DE.
+
+## Primary Page
+
+https://shliachflow.github.io/chabad-southern-delaware-camp/
+
+## What It Is
+
+- Jewish summer day camp in Southern Delaware
+- Kosher cooking and baking camp for children
+- Hosted by Chabad of Southern Delaware
+- Designed for children ages 4-12
+- Includes kosher cooking, challah baking, almost daily trips, water play, and Jewish values
+
+## Dates, Hours, And Pricing
+
+- Dates: August 3-7, 2026
+- Days: Monday-Friday
+- Hours: 9:00 AM-3:00 PM
+- Early bird price: $250 per child
+- Regular price: $300 per child
+
+## Location And Service Area
+
+- Public location: Chabad of Southern Delaware, Lewes, DE
+- Serves families in Lewes, Rehoboth Beach, Milton, Georgetown, Sussex County, and Southern Delaware
+
+## Registration
+
+Registration page: https://shliachflow.github.io/chabad-southern-delaware-camp/register.html
+
+Contact Chanale Vogel:
+
+- Phone: 718-473-6570
+- Email: Chanale@JewishSouthernDelaware.com
+
+## Photo Albums
+
+Photo albums page: https://shliachflow.github.io/chabad-southern-delaware-camp/photos.html
+
+Photo albums are managed through Pages CMS in `content/gallery.json`.
+
+## Organization
+
+Chabad of Southern Delaware
+
+- Website: https://www.jewishsoutherndelaware.com
+- Email: Rabbi@JewishSouthernDelaware.com
+- Phone: (302) 377-1162
+- Instagram: https://www.instagram.com/chabadsoutherndelaware/
+- Facebook: https://www.facebook.com/chabadsoutherndelaware/
