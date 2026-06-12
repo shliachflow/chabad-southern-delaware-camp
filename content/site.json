@@ -61,7 +61,6 @@
     "message": "Registration form coming soon — contact Chanale at 718-473-6570 or Chanale@JewishSouthernDelaware.com to register.",
     "button_text": "Email Chanale",
     "button_url": "mailto:Chanale@JewishSouthernDelaware.com",
-    "embed_code": "",
     "admin_note": "Add Cognito Forms embed code here when ready."
   },
   "activities": [
@@ -93,7 +92,6 @@
   "photos": {
     "eyebrow": "Latest From Camp",
     "headline": "Camp photos",
-    "headline_emphasis": "all summer.",
     "body": "Browse highlights from the kitchen, trips, activities, and all the smiles in between.",
     "callout_title": "Photo albums live here.",
     "callout_body": "Browse daily albums, trip highlights, kitchen moments, and camp memories."
