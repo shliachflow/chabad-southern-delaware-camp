@@ -82,6 +82,19 @@ content:
           - { name: show_registration, label: Show Registration Section, type: boolean }
           - { name: show_floating_button, label: Show Floating Button, type: boolean }
 
+      - name: sections
+        label: Section Headings
+        type: object
+        fields:
+          - { name: activities_eyebrow, label: Activities Eyebrow, type: string }
+          - { name: activities_headline, label: Activities Headline, type: string }
+          - { name: activities_headline_emphasis, label: Activities Headline Emphasis, type: string }
+          - { name: activities_body, label: Activities Body Text, type: text }
+          - { name: faq_eyebrow, label: FAQ Eyebrow, type: string }
+          - { name: faq_headline, label: FAQ Headline, type: string }
+          - { name: faq_headline_emphasis, label: FAQ Headline Emphasis, type: string }
+          - { name: faq_body, label: FAQ Body Text, type: text }
+
       - name: registration
         label: Registration Page
         type: object
@@ -98,7 +111,6 @@ content:
         label: What Happens At Camp
         type: object
         list:
-          max: 4
           collapsible:
             collapsed: true
             summary: "{title}"
@@ -106,6 +118,7 @@ content:
           - { name: title, label: Activity Title, type: string }
           - { name: badge, label: Short Badge, type: string }
           - { name: image, label: Activity Image, type: image }
+          - { name: image_alt, label: Activity Image Alt Text, type: string }
           - { name: description, label: Activity Description, type: text }
 
       - name: photos
@@ -139,7 +152,6 @@ content:
         label: FAQ Items
         type: object
         list:
-          max: 4
           collapsible:
             collapsed: true
             summary: "{question}"

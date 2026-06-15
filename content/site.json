@@ -55,6 +55,16 @@
     "show_registration": true,
     "show_floating_button": true
   },
+  "sections": {
+    "activities_eyebrow": "What Happens At Camp",
+    "activities_headline": "A week they'll talk",
+    "activities_headline_emphasis": "about all year.",
+    "activities_body": "Kids cook, bake, head out on almost daily trips, cool off with water play, and enjoy a camp week with a Jewish heart.",
+    "faq_eyebrow": "Questions",
+    "faq_headline": "Frequently Asked",
+    "faq_headline_emphasis": "Questions",
+    "faq_body": "For anything else, reach out to Chanale."
+  },
   "registration": {
     "notice": "Kosher Culinary Camp 2026 · August 3-7 · 9:00 AM - 3:00 PM · $250 early bird / $300 regular",
     "heading": "Registration Form Coming Soon",
@@ -68,24 +78,28 @@
       "title": "Kosher cooking",
       "badge": "Mix",
       "image": "uploads/activity-cooking.webp",
+      "image_alt": "Boy cooking at Kosher Culinary Camp",
       "description": "Campers help prepare simple kosher recipes with guidance from staff."
     },
     {
       "title": "Baking",
       "badge": "Bake",
       "image": "uploads/activity-baking.webp",
+      "image_alt": "Girls baking challah at Kosher Culinary Camp",
       "description": "Hands-on baking projects, including challah."
     },
     {
       "title": "Fun trips",
       "badge": "Go",
       "image": "uploads/activity-trips.webp",
+      "image_alt": "Boys walking together on a summer camp trip",
       "description": "Almost daily trips give campers something new to look forward to."
     },
     {
       "title": "Water play",
       "badge": "Splash",
       "image": "uploads/activity-water.webp",
+      "image_alt": "Girls running through a sprinkler at camp",
       "description": "Sprinklers, splashing, and outdoor summer fun."
     }
   ],
@@ -116,11 +130,11 @@
     },
     {
       "question": "What will the kids do?",
-      "answer": "Kids spend the week cooking and baking real kosher food — including challah — going on trips almost every day, splashing around in the water, and just having a really good time. Jewish values are part of everything we do."
+      "answer": "Campers enjoy a week filled with hands-on kosher cooking and baking, exciting outings, water fun, games, and creative activities. Core Jewish values and traditions are woven naturally into each day's experiences."
     },
     {
       "question": "Is this a Jewish summer camp for Southern Delaware families?",
-      "answer": "Yes. Kosher Culinary Camp is a Jewish summer day camp in Southern Delaware for families in Lewes, Rehoboth Beach, Milton, Georgetown, Sussex County, and nearby communities."
+      "answer": "Yes. Kosher Culinary Camp is a Jewish summer day camp for families in Sussex County."
     },
     {
       "question": "How do I register?",

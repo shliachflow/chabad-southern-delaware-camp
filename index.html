@@ -164,12 +164,12 @@
           {
             "@type": "Question",
             "name": "What will the kids do?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Kids spend the week cooking and baking real kosher food — including challah — going on trips almost every day, splashing around in the water, and just having a really good time. Jewish values are part of everything we do." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Campers enjoy a week filled with hands-on kosher cooking and baking, exciting outings, water fun, games, and creative activities. Core Jewish values and traditions are woven naturally into each day's experiences." }
           },
           {
             "@type": "Question",
             "name": "Is this a Jewish summer camp for Southern Delaware families?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Kosher Culinary Camp is a Jewish summer day camp in Southern Delaware for families in Lewes, Rehoboth Beach, Milton, Georgetown, Sussex County, and nearby communities." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Kosher Culinary Camp is a Jewish summer day camp for families in Sussex County." }
           },
           {
             "@type": "Question",
@@ -3842,9 +3842,9 @@
 <section class="features" id="about" data-section="activities">
   <div class="wrap">
     <div class="features-hd">
-      <p class="sec-label">What Happens At Camp</p>
-      <h2 class="sec-h">A week they'll talk<br><em>about all year.</em></h2>
-      <p class="sec-body">Kids cook, bake, head out on almost daily trips, cool off with water play, and enjoy a camp week with a Jewish heart.</p>
+      <p class="sec-label activities-eyebrow">What Happens At Camp</p>
+      <h2 class="sec-h activities-headline">A week they'll talk<br><em>about all year.</em></h2>
+      <p class="sec-body activities-body">Kids cook, bake, head out on almost daily trips, cool off with water play, and enjoy a camp week with a Jewish heart.</p>
     </div>
 
     <div class="feat-grid activity-photo-grid" id="activityList">
@@ -3926,9 +3926,9 @@
   <div class="wrap">
     <div class="faq-grid">
       <div>
-        <p class="sec-label">Questions</p>
-        <h2 class="sec-h">Frequently Asked<br><em>Questions</em></h2>
-        <p class="faq-sidebar-body">For anything else, reach out to Chanale.</p>
+        <p class="sec-label faq-eyebrow">Questions</p>
+        <h2 class="sec-h faq-headline">Frequently Asked<br><em>Questions</em></h2>
+        <p class="faq-sidebar-body faq-body">For anything else, reach out to Chanale.</p>
       </div>
       <div id="faqList">
         <div class="faq-item">
@@ -3937,7 +3937,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-q" tabindex="0"><span class="faq-qt">What will the kids do?</span><span class="faq-tog">+</span></div>
-          <div class="faq-ans"><div class="faq-ans-in">Kids spend the week cooking and baking real kosher food — including challah — going on trips almost every day, splashing around in the water, and just having a really good time. Jewish values are part of everything we do.</div></div>
+          <div class="faq-ans"><div class="faq-ans-in">Campers enjoy a week filled with hands-on kosher cooking and baking, exciting outings, water fun, games, and creative activities. Core Jewish values and traditions are woven naturally into each day's experiences.</div></div>
         </div>
         <div class="faq-item">
           <div class="faq-q" tabindex="0"><span class="faq-qt">How do I register?</span><span class="faq-tog">+</span></div>
@@ -4097,7 +4097,7 @@ initFAQ();
     var list = document.getElementById('faqList');
     if (!list || !Array.isArray(items)) return;
     list.innerHTML = '';
-    items.slice(0, 4).forEach(function(item) {
+    items.forEach(function(item) {
       if (!item.question || !item.answer) return;
       var wrap = document.createElement('div');
       wrap.className = 'faq-item';
@@ -4134,20 +4134,25 @@ initFAQ();
       ['uploads/activity-water.webp', 'Girls running through a sprinkler at camp']
     ];
     list.innerHTML = '';
-    items.slice(0, 4).forEach(function(item, i) {
+    items.forEach(function(item, i) {
       if (!item.title || !item.description) return;
       var card = document.createElement('div');
+      var fallback = images[i % images.length];
       card.className = 'feat-block ' + colors[i % colors.length];
       card.innerHTML =
         '<div class="feat-photo"><img src="" alt="" loading="eager"></div>' +
         '<div class="feat-copy"><div class="feat-badge"></div><div class="feat-title"></div><div class="feat-desc"></div></div>';
-      card.querySelector('img').src = item.image || images[i][0];
-      card.querySelector('img').alt = images[i][1];
-      card.querySelector('.feat-badge').textContent = item.badge || badges[i];
+      card.querySelector('img').src = item.image || fallback[0];
+      card.querySelector('img').alt = item.image_alt || fallback[1];
+      card.querySelector('.feat-badge').textContent = item.badge || badges[i % badges.length];
       card.querySelector('.feat-title').textContent = item.title;
       card.querySelector('.feat-desc').textContent = item.description;
       list.appendChild(card);
     });
+  }
+  function heading(sel, main, emphasis) {
+    if (!main && !emphasis) return;
+    html(sel, esc(main || '') + (emphasis ? '<br><em>' + esc(emphasis) + '</em>' : ''));
   }
 
   fetch('content/site.json')
@@ -4202,6 +4207,14 @@ initFAQ();
       }
       renderActivities(site.activities);
 
+      var sections = site.sections || {};
+      text('.activities-eyebrow', sections.activities_eyebrow);
+      heading('.activities-headline', sections.activities_headline, sections.activities_headline_emphasis);
+      text('.activities-body', sections.activities_body);
+      text('.faq-eyebrow', sections.faq_eyebrow);
+      heading('.faq-headline', sections.faq_headline, sections.faq_headline_emphasis);
+      text('.faq-body', sections.faq_body);
+
       var cta = site.cta || {};
       text('.hero-cta', cta.hero_button_text);
       link('.hero-cta', cta.hero_button_url);
@@ -4222,7 +4235,7 @@ initFAQ();
 
       var photos = site.photos || {};
       text('.social-feed-label', photos.eyebrow);
-      html('.social-feed-headline', esc(photos.headline || 'Camp photos') + '<br><em>' + esc(photos.headline_emphasis || 'coming soon.') + '</em>');
+      html('.social-feed-headline', esc(photos.headline || 'Camp photos') + '<br><em>' + esc(photos.headline_emphasis || 'all summer.') + '</em>');
       text('.social-feed-body', photos.body);
       text('.photo-callout-title', photos.callout_title);
       text('.photo-callout-text', photos.callout_body);
