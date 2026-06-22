@@ -174,7 +174,7 @@
           {
             "@type": "Question",
             "name": "How do I register?",
-            "acceptedAnswer": { "@type": "Answer", "text": "To register, contact Chanale Vogel at 718-473-6570 or Chanale@JewishSouthernDelaware.com." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Use the registration page to complete the secure camp form. For help, contact Chanale Vogel at 718-473-6570 or Chanale@JewishSouthernDelaware.com." }
           }
         ]
       },
@@ -3766,6 +3766,16 @@
         grid-column: auto;
       }
     }
+    .camp-ribbon {
+      display: none !important;
+    }
+    .hero,
+    .hero-left {
+      min-height: calc(100vh - 68px) !important;
+    }
+    .hero-tag {
+      border-radius: 18px !important;
+    }
   </style>
 </head>
 <body>
@@ -3790,19 +3800,6 @@
     </div>
   </div>
 </nav>
-
-<div class="camp-ribbon" aria-hidden="true">
-  <div class="camp-ribbon-track">
-    <div class="camp-ribbon-set">
-      <span>Kosher Cooking</span><span>Challah Fridays</span><span>Almost Daily Trips</span><span>Water Play</span><span>Jewish Pride</span><span>Baking From Scratch</span><span>Ages 4-12</span><span>Lewes, DE</span><span>Summer 2026</span><span>Register Now</span><span>Messy Aprons</span><span>Best Week Ever</span>
-      <span>Kosher Cooking</span><span>Challah Fridays</span><span>Almost Daily Trips</span><span>Water Play</span><span>Jewish Pride</span><span>Baking From Scratch</span><span>Ages 4-12</span><span>Lewes, DE</span><span>Summer 2026</span><span>Register Now</span><span>Messy Aprons</span><span>Best Week Ever</span>
-    </div>
-    <div class="camp-ribbon-set" aria-hidden="true">
-      <span>Kosher Cooking</span><span>Challah Fridays</span><span>Almost Daily Trips</span><span>Water Play</span><span>Jewish Pride</span><span>Baking From Scratch</span><span>Ages 4-12</span><span>Lewes, DE</span><span>Summer 2026</span><span>Register Now</span><span>Messy Aprons</span><span>Best Week Ever</span>
-      <span>Kosher Cooking</span><span>Challah Fridays</span><span>Almost Daily Trips</span><span>Water Play</span><span>Jewish Pride</span><span>Baking From Scratch</span><span>Ages 4-12</span><span>Lewes, DE</span><span>Summer 2026</span><span>Register Now</span><span>Messy Aprons</span><span>Best Week Ever</span>
-    </div>
-  </div>
-</div>
 
 <!-- HERO -->
 <section class="hero" id="hero">
@@ -3941,7 +3938,7 @@
         </div>
         <div class="faq-item">
           <div class="faq-q" tabindex="0"><span class="faq-qt">How do I register?</span><span class="faq-tog">+</span></div>
-          <div class="faq-ans"><div class="faq-ans-in">To register, reach out to Chanale directly:
+          <div class="faq-ans"><div class="faq-ans-in">Use the registration page to complete the secure camp form. For help, reach out to Chanale directly:
             <div class="faq-answer-contact">
               <strong>Chanale Vogel</strong>
               <a href="tel:+17184736570">718-473-6570</a>
@@ -3984,12 +3981,12 @@
     <div class="reg-grid">
       <div>
         <p class="sec-label">Registration</p>
-        <h2 class="sec-h">Registration form<br><em>coming soon.</em></h2>
-        <p class="reg-cta-body">Registration form coming soon - contact Chanale at <a href="mailto:Chanale@JewishSouthernDelaware.com" style="color:var(--ocean);font-weight:700;">Chanale@JewishSouthernDelaware.com</a> or <a href="tel:+17184736570" style="color:var(--ocean);font-weight:700;">718-473-6570</a> to register.</p>
+        <h2 class="sec-h">Registration is<br><em>open.</em></h2>
+        <p class="reg-cta-body">Complete the secure registration form online. For help, contact Chanale at <a href="mailto:Chanale@JewishSouthernDelaware.com" style="color:var(--ocean);font-weight:700;">Chanale@JewishSouthernDelaware.com</a> or <a href="tel:+17184736570" style="color:var(--ocean);font-weight:700;">718-473-6570</a>.</p>
         <div class="reg-actions">
           <a href="register.html" class="btn btn-ocean registration-cta">Registration Page</a>
         </div>
-        <p class="reg-note">Chanale will get back to you with everything you need.</p>
+        <p class="reg-note">The form opens on a separate registration page.</p>
       </div>
     </div>
   </div>
@@ -4108,7 +4105,7 @@ initFAQ();
       var answer = wrap.querySelector('.faq-ans-in');
       if (item.question === 'How do I register?') {
         answer.innerHTML =
-          'To register, reach out to Chanale directly:' +
+          'Use the registration page to complete the secure camp form. For help, reach out to Chanale directly:' +
           '<div class="faq-answer-contact">' +
           '<strong>Chanale Vogel</strong>' +
           '<a href="tel:+17184736570">718-473-6570</a>' +
