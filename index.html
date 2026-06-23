@@ -3769,9 +3769,27 @@
     .camp-ribbon {
       display: none !important;
     }
-    .hero,
-    .hero-left {
-      min-height: calc(100vh - 68px) !important;
+    @media (min-width: 961px) {
+      .hero {
+        min-height: clamp(620px, calc(100vh - 68px), 760px) !important;
+      }
+      .hero-left {
+        min-height: inherit !important;
+        padding-top: clamp(60px, 7vh, 88px) !important;
+        padding-bottom: clamp(48px, 6vh, 74px) !important;
+      }
+      .hero-photo-title {
+        top: clamp(54px, 6vw, 86px) !important;
+      }
+      .hero-photo-callout {
+        bottom: clamp(30px, 4vw, 54px) !important;
+      }
+    }
+    @media (max-width: 960px) {
+      .hero,
+      .hero-left {
+        min-height: auto !important;
+      }
     }
     .hero-tag {
       border-radius: 18px !important;
