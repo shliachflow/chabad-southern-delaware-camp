@@ -107,10 +107,8 @@
   "photos": {
     "eyebrow": "Latest From Camp",
     "headline": "Camp photos",
-    "headline_emphasis": "from the week.",
-    "body": "Browse kitchen moments, trips, activities, and smiles from camp.",
-    "callout_title": "All camp pics.",
-    "callout_body": "Open the album page to see the week in one place."
+    "headline_emphasis": "",
+    "body": "Browse kitchen moments, trips, activities, and smiles from camp."
   },
   "contact": {
     "email": "Rabbi@JewishSouthernDelaware.com",

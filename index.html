@@ -3624,9 +3624,10 @@
     }
     .social-feed-grid {
       display: grid !important;
-      grid-template-columns: minmax(280px, .72fr) minmax(420px, 1.28fr) !important;
+      grid-template-columns: minmax(0, 620px) !important;
       gap: clamp(36px, 7vw, 92px) !important;
       align-items: center !important;
+      justify-content: start !important;
     }
     .social-feed-headline {
       max-width: 460px;
@@ -3989,21 +3990,13 @@
   <div class="wrap social-feed-grid">
     <div>
       <p class="sec-label social-feed-label">Latest From Camp</p>
-      <h2 class="social-feed-headline">Camp photos<br><em>from the week.</em></h2>
+      <h2 class="social-feed-headline">Camp photos</h2>
       <p class="social-feed-body">Browse kitchen moments, trips, activities, and smiles from camp.</p>
       <div class="social-feed-actions" aria-label="Photo and social links">
         <a href="photos.html" class="btn btn-ocean social-albums">View Full Album</a>
         <a href="https://www.instagram.com/chabadsoutherndelaware/" class="btn btn-ocean social-instagram" target="_blank" rel="noopener">Instagram</a>
         <a href="https://www.facebook.com/chabadsoutherndelaware/" class="btn btn-ghost social-facebook" target="_blank" rel="noopener">Facebook</a>
       </div>
-    </div>
-    <div class="photo-callout">
-      <div class="photo-callout-icon" aria-hidden="true"></div>
-      <div>
-        <div class="photo-callout-title">All camp pics.</div>
-        <div class="photo-callout-text">Open the album page to see the week in one place.</div>
-      </div>
-      <a href="photos.html" class="btn btn-ocean social-albums">Open Albums &rarr;</a>
     </div>
   </div>
 </section>
@@ -4265,10 +4258,8 @@ initFAQ();
 
       var photos = site.photos || {};
       text('.social-feed-label', photos.eyebrow);
-      html('.social-feed-headline', esc(photos.headline || 'Camp photos') + '<br><em>' + esc(photos.headline_emphasis || 'from the week.') + '</em>');
+      html('.social-feed-headline', esc(photos.headline || 'Camp photos') + (photos.headline_emphasis ? '<br><em>' + esc(photos.headline_emphasis) + '</em>' : ''));
       text('.social-feed-body', photos.body);
-      text('.photo-callout-title', photos.callout_title);
-      text('.photo-callout-text', photos.callout_body);
 
       var contact = site.contact || {};
       href('.social-instagram, .ig-link', contact.instagram);

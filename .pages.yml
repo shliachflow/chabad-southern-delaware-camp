@@ -129,8 +129,6 @@ content:
           - { name: headline, label: Headline, type: string }
           - { name: headline_emphasis, label: Headline Emphasis, type: string }
           - { name: body, label: Body Text, type: text }
-          - { name: callout_title, label: Callout Title, type: string }
-          - { name: callout_body, label: Callout Body, type: text }
 
       - name: contact
         label: Contact & Social
