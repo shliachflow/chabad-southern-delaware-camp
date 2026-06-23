@@ -3775,6 +3775,7 @@
         grid-template-columns: minmax(500px, .86fr) minmax(650px, 1.14fr) !important;
         min-height: clamp(620px, calc(100vh - 68px), 760px) !important;
         isolation: isolate;
+        align-items: stretch !important;
       }
       .hero-left {
         min-height: inherit !important;
@@ -3787,6 +3788,18 @@
       .hero-right {
         margin-left: clamp(-112px, -5.4vw, -58px) !important;
         z-index: 1;
+        align-self: stretch !important;
+        min-height: 100% !important;
+        height: 100% !important;
+        width: calc(100% + clamp(58px, 5.4vw, 112px)) !important;
+        max-width: none !important;
+        border-radius: 0 !important;
+      }
+      .hero-right-img {
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
       }
       .hero-photo-title {
         top: clamp(54px, 6vw, 86px) !important;
