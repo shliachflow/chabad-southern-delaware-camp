@@ -214,11 +214,6 @@
         Complete the secure registration form below.
       </div>
       <div id="registrationEmbed"></div>
-      <a href="mailto:Chanale@JewishSouthernDelaware.com" class="reg-btn" id="registrationButton">Email Chanale</a>
-      <p style="margin-top:14px;font-size:13px;color:var(--muted);line-height:1.6;">
-        Chanale: <a href="tel:+17184736570" style="color:var(--ocean);font-weight:800;">718-473-6570</a> ·
-        <a href="mailto:Chanale@JewishSouthernDelaware.com" style="color:var(--ocean);font-weight:800;">Chanale@JewishSouthernDelaware.com</a>
-      </p>
       <div class="reg-fallback-note" id="registrationNote">
         Need help? Contact Chanale at 718-473-6570 or Chanale@JewishSouthernDelaware.com.
       </div>
@@ -252,11 +247,6 @@ fetch('content/site.json')
     text('registrationHeading', reg.heading);
     text('registrationMessage', reg.message);
     text('registrationNote', reg.admin_note);
-    var btn = document.getElementById('registrationButton');
-    if (btn) {
-      if (reg.button_text) btn.textContent = reg.button_text;
-      if (reg.button_url) btn.href = reg.button_url;
-    }
     function renderEmbed(target, embedCode) {
       if (!target || !embedCode) return;
       target.innerHTML = '';
