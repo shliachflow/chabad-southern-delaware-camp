@@ -209,14 +209,14 @@
     /* ── DESIGN TOKENS ─────────────────────────────────────────── */
     :root {
       --ocean:     #EC4899;   /* warm orange primary */
-      --ocean-dk:  #DB2777;   /* darker ocean for hover */
+      --ocean-dk:  #E0508F;   /* darker ocean for hover */
       --gold:      #FBBF24;   /* sunny golden yellow — secondary */
       --gold-lt:   #FDE8F4;   /* light gold tint */
       --sky:       #FDE8F4;   /* warm cream accent */
       --sky-mid:   #FFD0E8;   /* mid sky */
       --sand:      #FDE8F4;   /* warm sand tone */
       --white:     #FFFFFF;
-      --bg:        #FFFCF8;   /* warm white background */
+      --bg:        #FFF6ED;   /* warm white background */
       --text:      #2C3E50;   /* main text */
       --muted:     #5D7A8A;   /* secondary text */
       --border:    #F5C8DC;   /* warm cream border */
@@ -386,7 +386,7 @@
       position: relative; z-index: 2;
       overflow: hidden;
       /* HERO IMAGE */
-      background: linear-gradient(160deg, var(--ocean) 0%, #DB2777 100%);
+      background: linear-gradient(160deg, var(--ocean) 0%, #E0508F 100%);
       clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
     .hero-right-img {
@@ -399,7 +399,7 @@
       display: flex; flex-direction: column;
       align-items: center; justify-content: center;
       gap: 16px; padding: 40px;
-      background: linear-gradient(160deg, #EC4899 0%, #DB2777 100%);
+      background: linear-gradient(160deg, #EC4899 0%, #E0508F 100%);
     }
     .hero-ph-label {
       font-family: var(--font-h); font-size: clamp(32px,4vw,56px);
@@ -736,7 +736,7 @@
 
     /* ── TRIPS ───────────────────────────────────────────────── */
     .trips {
-      background: linear-gradient(135deg, var(--ocean) 0%, #DB2777 100%);
+      background: linear-gradient(135deg, var(--ocean) 0%, #E0508F 100%);
       padding: 88px 0; position: relative; overflow: hidden;
     }
     /* Decorative wave shapes */
@@ -960,7 +960,7 @@
     body {
       background:
         linear-gradient(90deg, rgba(236,72,153,.045) 1px, transparent 1px) 0 0 / 44px 44px,
-        linear-gradient(180deg, #FFFCF8 0%, #FDE8F4 44%, #FFFCF8 100%);
+        linear-gradient(180deg, #FFF6ED 0%, #FDE8F4 44%, #FFF6ED 100%);
     }
     .wrap { max-width: 1200px; }
     .btn {
@@ -991,10 +991,10 @@
     .nav-logo-badge { border-radius: 8px 18px 8px 18px; transform: rotate(-7deg); }
     .nav-reg { border-radius: 6px 18px 6px 18px; box-shadow: 4px 4px 0 rgba(236,72,153,.16); }
     .nav-menu-btn { background: var(--ocean); border-color: var(--ocean); }
-    .marquee { height: 34px; background: var(--ocean); }
+    .marquee { height: 34px; background: var(--gold); }
     .mq-track { animation-duration: 34s; }
-    .mq-track span { color: var(--white); }
-    .mq-track span.sep { color: var(--gold); }
+    .mq-track span { color: var(--text); }
+    .mq-track span.sep { color: var(--ocean); }
 
     .hero {
       min-height: auto;
@@ -1002,7 +1002,7 @@
       isolation: isolate;
       background:
         linear-gradient(120deg, rgba(255,255,255,.84) 0 38%, transparent 38%),
-        linear-gradient(138deg, #FFFCF8 0%, #FFFCF8 46%, #EC4899 46.2%, #DB2777 100%);
+        linear-gradient(138deg, #FFF6ED 0%, #FFF6ED 46%, #EC4899 46.2%, #E0508F 100%);
     }
     .hero::before {
       top: auto; bottom: -7vw; left: -8vw; right: auto;
@@ -1099,7 +1099,7 @@
       background:
         linear-gradient(180deg, rgba(12,51,80,.08), rgba(12,51,80,.7)),
         radial-gradient(circle at 70% 24%, rgba(244,160,28,.54), transparent 28%),
-        linear-gradient(135deg, #F48FB1 0%, #EC4899 52%, #DB2777 100%);
+        linear-gradient(135deg, #F48FB1 0%, #EC4899 52%, #E0508F 100%);
       padding: clamp(34px, 5vw, 72px);
     }
     .hero-ph-label { text-align: left; max-width: 430px; font-size: clamp(38px,5vw,72px); }
@@ -1340,7 +1340,7 @@
     }
 
     @media (max-width: 1100px) {
-      .hero { grid-template-columns: 1fr; background: linear-gradient(180deg, #FFFCF8 0%, #FFFCF8 58%, #EC4899 58.2%, #DB2777 100%); }
+      .hero { grid-template-columns: 1fr; background: linear-gradient(180deg, #FFF6ED 0%, #FFF6ED 58%, #EC4899 58.2%, #E0508F 100%); }
       .hero-left { width: 100%; max-width: none; margin-left: 0; padding-bottom: 44px; }
       .hero-right { position: relative; inset: auto; width: 100%; min-height: 460px; border-radius: 0; clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%); }
       .hero-facts { position: relative; right: auto; bottom: auto; width: 100%; max-width: 760px; grid-template-columns: repeat(2,1fr); margin-top: 18px; transform: none; }
@@ -1404,7 +1404,7 @@
       background:
         linear-gradient(102deg, rgba(255,255,255,.92) 0 32%, rgba(255,255,255,.78) 32.2% 47%, transparent 47.2%),
         radial-gradient(circle at 18% 86%, rgba(244,160,28,.2) 0 10%, transparent 10.5%),
-        linear-gradient(138deg, #FFFCF8 0%, #FFFCF8 43%, #EC4899 43.2%, #DB2777 100%);
+        linear-gradient(138deg, #FFF6ED 0%, #FFF6ED 43%, #EC4899 43.2%, #E0508F 100%);
     }
     .hero-left {
       width: min(700px, 50vw);
@@ -1505,7 +1505,7 @@
 
     .features {
       background:
-        linear-gradient(168deg, #FFFCF8 0 58%, #FFFCF8 58.2% 100%);
+        linear-gradient(168deg, #FFF6ED 0 58%, #FFF6ED 58.2% 100%);
     }
     .features-top {
       grid-template-columns: minmax(0,1fr) 330px;
@@ -1619,7 +1619,7 @@
 
     .gallery {
       background:
-        linear-gradient(180deg, #FFFCF8 0%, #FFFCF8 72%, #ffffff 72.2%),
+        linear-gradient(180deg, #FFF6ED 0%, #FFF6ED 72%, #ffffff 72.2%),
         var(--sand);
     }
     .gallery-scroll-track { align-items: center; }
@@ -1819,7 +1819,7 @@
       font-size: 13px;
     }
     .btn-ocean {
-      box-shadow: 0 6px 0 #DB2777, 8px 8px 0 rgba(244,160,28,.28);
+      box-shadow: 0 6px 0 #E0508F, 8px 8px 0 rgba(244,160,28,.28);
     }
 
     .hero-right {
@@ -1860,7 +1860,7 @@
       padding: clamp(46px, 6vw, 68px) 0 clamp(34px, 5vw, 56px);
       background:
         radial-gradient(circle at 10% 18%, rgba(244,160,28,.18) 0 7%, transparent 7.4%),
-        linear-gradient(174deg, #FFFCF8 0 68%, #FFFCF8 68.2% 100%);
+        linear-gradient(174deg, #FFF6ED 0 68%, #FFF6ED 68.2% 100%);
     }
     .features-hd { margin-bottom: 24px; }
     .sec-label {
@@ -2021,13 +2021,13 @@
        Pulls the page back from "design portfolio" into warm, kid-facing camp energy. */
     :root {
       --ocean: #EC4899;
-      --ocean-dk: #DB2777;
+      --ocean-dk: #E0508F;
       --gold: #FBBF24;
       --gold-lt:   #FDE8F4;
       --sky: #DDF7FF;
       --sky-mid: #A9E9F7;
       --sand:      #FDE8F4;
-      --bg:        #FFFCF8;
+      --bg:        #FFF6ED;
       --text: #21364B;
       --muted: #536B7A;
       --border: #B8E4EE;
@@ -2945,10 +2945,10 @@
 
     /* ── TROY-FAMILY DESIGN LANGUAGE PASS ────────────────────── */
     :root {
-      --cream: #FFFCF8;
+      --cream: #FFF6ED;
       --cream-dark: #FDE8F4;
       --primary: #EC4899;
-      --primary-dark: #DB2777;
+      --primary-dark: #E0508F;
       --secondary: #FBBF24;
       --navy: #171C2E;
       --white: #FFFFFF;
