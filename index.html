@@ -3865,6 +3865,14 @@
       text-shadow: 3px 3px 0 rgba(173,20,87,.13) !important;
     }
 
+    /* (4) Remove the black curved line over the hero photo — a stale
+       rounded border left on .hero-right::before from an old "pill badge"
+       layer. Keep the soft cream fade, drop the dark ring. */
+    .hero-right::before {
+      border: 0 !important;
+      border-radius: 0 !important;
+    }
+
     /* (6) Premium info cards: white, soft shadow, rounded, light border */
     .session-panel,
     .faq-item,
