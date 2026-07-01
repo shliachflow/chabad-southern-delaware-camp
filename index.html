@@ -3925,6 +3925,20 @@
         width: calc(100% + clamp(40px, 3vw, 72px)) !important;
       }
     }
+
+    /* (1) FAQ toggles: pink instead of gold — pulls back the last
+       prominent yellow, keeps gold to tiny accents only */
+    .faq-tog {
+      background: var(--ocean) !important;
+      color: #fff !important;
+    }
+    .faq-item.open .faq-tog { color: #fff !important; }
+
+    /* (2) Remove the busy candy-stripe down the left of the info panel */
+    .session-panel::before { display: none !important; }
+
+    /* (3) Remove the leftover ghost circle in the activity card corners */
+    .activity-photo-grid .feat-block::before { display: none !important; }
   </style>
 </head>
 <body>
